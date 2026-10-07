@@ -1,0 +1,188 @@
+{
+ "summary": {
+  "per_n": [
+   {
+    "n": 10,
+    "n_completed": 2,
+    "generic": {
+     "mean": 0.0,
+     "std": 0.0,
+     "values": [
+      0.0,
+      0.0
+     ],
+     "cv": null
+    },
+    "specific": {
+     "mean": 0.06349206349206349,
+     "std": 0.01122391716169123,
+     "values": [
+      0.05555555555555555,
+      0.07142857142857142
+     ],
+     "cv": 0.17677669529663687
+    }
+   },
+   {
+    "n": 25,
+    "n_completed": 2,
+    "generic": {
+     "mean": 0.25,
+     "std": 0.07071067811865474,
+     "values": [
+      0.2,
+      0.3
+     ],
+     "cv": 0.28284271247461895
+    },
+    "specific": {
+     "mean": 0.2189153439153439,
+     "std": 0.05705491223859708,
+     "values": [
+      0.17857142857142858,
+      0.25925925925925924
+     ],
+     "cv": 0.2606254601352229
+    }
+   },
+   {
+    "n": 50,
+    "n_completed": 2,
+    "generic": {
+     "mean": 0.7,
+     "std": 0.0,
+     "values": [
+      0.7,
+      0.7
+     ],
+     "cv": 0.0
+    },
+    "specific": {
+     "mean": 0.35377685377685375,
+     "std": 0.07987415477020597,
+     "values": [
+      0.41025641025641024,
+      0.2972972972972973
+     ],
+     "cv": 0.22577552464918163
+    }
+   },
+   {
+    "n": 100,
+    "n_completed": 2,
+    "generic": {
+     "mean": 0.75,
+     "std": 0.07071067811865482,
+     "values": [
+      0.7,
+      0.8
+     ],
+     "cv": 0.09428090415820643
+    },
+    "specific": {
+     "mean": 0.3,
+     "std": 0.07071067811865474,
+     "values": [
+      0.25,
+      0.35
+     ],
+     "cv": 0.2357022603955158
+    }
+   }
+  ],
+  "n_trials": 2
+ },
+ "verdict": {
+  "verdict": "GO",
+  "reasons": [
+   "specific coverage 0.30 ± 0.07 at n=100 (CV 0.24) — signal looks clean enough"
+  ]
+ },
+ "scores": [
+  {
+   "n": 10,
+   "trial": 0,
+   "generic": 0.0,
+   "specific": 0.05555555555555555,
+   "coverage": 0.038461538461538464,
+   "n_generated": 5,
+   "errors": {}
+  },
+  {
+   "n": 10,
+   "trial": 1,
+   "generic": 0.0,
+   "specific": 0.07142857142857142,
+   "coverage": 0.043478260869565216,
+   "n_generated": 6,
+   "errors": {}
+  },
+  {
+   "n": 25,
+   "trial": 0,
+   "generic": 0.2,
+   "specific": 0.17857142857142858,
+   "coverage": 0.18421052631578946,
+   "n_generated": 12,
+   "errors": {}
+  },
+  {
+   "n": 25,
+   "trial": 1,
+   "generic": 0.3,
+   "specific": 0.25925925925925924,
+   "coverage": 0.2702702702702703,
+   "n_generated": 13,
+   "errors": {}
+  },
+  {
+   "n": 50,
+   "trial": 0,
+   "generic": 0.7,
+   "specific": 0.41025641025641024,
+   "coverage": 0.46938775510204084,
+   "n_generated": 33,
+   "errors": {}
+  },
+  {
+   "n": 50,
+   "trial": 1,
+   "generic": 0.7,
+   "specific": 0.2972972972972973,
+   "coverage": 0.3829787234042553,
+   "n_generated": 28,
+   "errors": {}
+  },
+  {
+   "n": 100,
+   "trial": 0,
+   "generic": 0.7,
+   "specific": 0.25,
+   "coverage": 0.34,
+   "n_generated": 52,
+   "errors": {}
+  },
+  {
+   "n": 100,
+   "trial": 1,
+   "generic": 0.8,
+   "specific": 0.35,
+   "coverage": 0.44,
+   "n_generated": 57,
+   "errors": {}
+  }
+ ],
+ "params": {
+  "ns": [
+   10,
+   25,
+   50,
+   100
+  ],
+  "n_trials": 2,
+  "synth_model": "gemini",
+  "matcher_model": "gemini",
+  "noise_threshold": 0.25,
+  "floor": 0.2
+ }
+}

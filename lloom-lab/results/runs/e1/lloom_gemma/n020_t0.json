@@ -1,0 +1,638 @@
+{
+ "status": "complete",
+ "started": "2026-10-06T19:52:30",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "gemma",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_gemma",
+  "n": 20,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_008",
+  "10sent_20prev_014",
+  "10sent_20prev_021",
+  "10sent_20prev_032",
+  "10sent_20prev_039",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_019",
+  "10sent_40prev_030",
+  "10sent_40prev_033",
+  "5sent_20prev_003",
+  "5sent_20prev_005",
+  "5sent_20prev_013",
+  "5sent_20prev_025",
+  "5sent_20prev_027",
+  "5sent_20prev_031",
+  "5sent_40prev_017",
+  "5sent_40prev_030",
+  "5sent_40prev_034",
+  "5sent_40prev_035"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Government Spending",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Second Amendment Rights",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events marked by security and public engagement",
+    "Key moments include ceasefire and ceremonial activities",
+    "Various roles involved in political processes and public service",
+    "Efforts to ensure accessibility and transparency in governance"
+   ],
+   "doc_id": "10sent_20prev_008"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event coverage with media presence",
+    "Public officials address budget and policies",
+    "Security and public engagement at event"
+   ],
+   "doc_id": "10sent_20prev_014"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events draw high visitor numbers",
+    "Regulatory actions target insurance practices",
+    "Budget adjustments made during economic downturn",
+    "Meeting logistics include catering and transcription"
+   ],
+   "doc_id": "10sent_20prev_021"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Lawmakers discuss medicine pricing controls",
+    "Procedural debates disrupt civic center traffic",
+    "Regulators shift sleep aid accessibility status"
+   ],
+   "doc_id": "10sent_20prev_032"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political figures rise through various roles",
+    "Events and meetings often extend beyond time",
+    "Public spaces reflect political activity",
+    "Historical documents are displayed publicly"
+   ],
+   "doc_id": "10sent_20prev_039"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Traffic congestion around civic center",
+    "Authorities deport record number of migrants",
+    "Economy faces spending cuts and overcapacity",
+    "Security and attendance measures heightened"
+   ],
+   "doc_id": "10sent_40prev_007"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Legalizing naloxone access without prescription",
+    "Pharmacists prescribed buprenorphine for opioid dependence",
+    "Leadership challenge highlights party base concerns",
+    "Caucus reelected chairman with overwhelming support"
+   ],
+   "doc_id": "10sent_40prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Government expands worker protections",
+    "New policy links trade to human rights",
+    "Political actions focus on healthcare access",
+    "Officials use technology for surveillance"
+   ],
+   "doc_id": "10sent_40prev_019"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Budget expansion for need-based scholarships",
+    "Coastal planning adapts to climate change",
+    "Political debates over community funding",
+    "Public events face logistical challenges"
+   ],
+   "doc_id": "10sent_40prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Conservation deal preserves ranch from subdivision",
+    "Political events include rallies and treaty ratification",
+    "Legislative actions focus on medicine pricing and bill amendments",
+    "Campaign activities involve crowd engagement and seating arrangements"
+   ],
+   "doc_id": "10sent_40prev_033"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Clerk reads resolution in empty chamber",
+    "Media captures press conference live",
+    "Amendment read due to camera failure",
+    "Settlement mandates sibling placements"
+   ],
+   "doc_id": "5sent_20prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Crossing guard manages morning traffic",
+    "Moderator urges phone silence",
+    "Staff distribute amended bill copies",
+    "Platform pledges to abolish liquor monopoly"
+   ],
+   "doc_id": "5sent_20prev_005"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political activities occur early in the day",
+    "Constitutional rights are reaffirmed publicly",
+    "Public affairs are broadcast on regional channels",
+    "Historical records are displayed publicly"
+   ],
+   "doc_id": "5sent_20prev_013"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Legislators propose gender identity protections",
+    "Meeting extends beyond scheduled time",
+    "Young delegate gives closing speech",
+    "Basement room used for photocopying"
+   ],
+   "doc_id": "5sent_20prev_025"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Staffers distributed amended bill copies",
+    "Parking garage filled early morning",
+    "Janitorial staff prepared assembly hall",
+    "Mayor defended public safety budget line"
+   ],
+   "doc_id": "5sent_20prev_027"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Lawmakers discuss healthcare subsidies for seniors",
+    "Fire marshal limits viewing room attendance",
+    "Aides share press schedule updates",
+    "Commissioner thanks retiring staff"
+   ],
+   "doc_id": "5sent_20prev_031"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Leaders meet for state talks",
+    "Preparations for major event",
+    "High-level diplomatic visit",
+    "Staff ensure venue readiness"
+   ],
+   "doc_id": "5sent_40prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Snowstorm delays committee hearing",
+    "Caterers prepare for session setup",
+    "Purchase delays due to screening process",
+    "Volunteers register voters at market"
+   ],
+   "doc_id": "5sent_40prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Reception desk saw record visitor numbers",
+    "Donors pledged funds for province rebuilding",
+    "Aides shared notes during testimony",
+    "Vaccination campaigns reached two million"
+   ],
+   "doc_id": "5sent_40prev_034"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Foster care support extended to 21",
+    "Legislators ban corporal punishment",
+    "Hearing room filled before session started",
+    "Office staff worked through weekend"
+   ],
+   "doc_id": "5sent_40prev_035"
+  }
+ ],
+ "clusters": {
+  "3": [
+   "10sent_20prev_008",
+   "10sent_20prev_008",
+   "10sent_20prev_008",
+   "10sent_20prev_014",
+   "10sent_20prev_021",
+   "10sent_20prev_032",
+   "10sent_20prev_039",
+   "10sent_20prev_039",
+   "10sent_40prev_017",
+   "10sent_40prev_033",
+   "10sent_40prev_033",
+   "5sent_20prev_003",
+   "5sent_20prev_013",
+   "5sent_20prev_013",
+   "5sent_40prev_017",
+   "5sent_40prev_030",
+   "5sent_40prev_034"
+  ],
+  "5": [
+   "10sent_20prev_014",
+   "10sent_20prev_021",
+   "10sent_40prev_007",
+   "10sent_40prev_030",
+   "10sent_40prev_030",
+   "10sent_40prev_030",
+   "10sent_40prev_033",
+   "5sent_20prev_003",
+   "5sent_20prev_027",
+   "5sent_40prev_034"
+  ],
+  "1": [
+   "10sent_20prev_014",
+   "10sent_20prev_021",
+   "10sent_20prev_039",
+   "10sent_20prev_039",
+   "10sent_40prev_007",
+   "10sent_40prev_007",
+   "10sent_40prev_019",
+   "10sent_40prev_030",
+   "5sent_20prev_013",
+   "5sent_20prev_013",
+   "5sent_20prev_025",
+   "5sent_20prev_027",
+   "5sent_40prev_017",
+   "5sent_40prev_017",
+   "5sent_40prev_030",
+   "5sent_40prev_034"
+  ],
+  "6": [
+   "10sent_20prev_021",
+   "10sent_20prev_032",
+   "10sent_40prev_019",
+   "10sent_40prev_019",
+   "10sent_40prev_033",
+   "5sent_20prev_025",
+   "5sent_20prev_031"
+  ],
+  "4": [
+   "10sent_40prev_007",
+   "5sent_20prev_005",
+   "5sent_20prev_027"
+  ],
+  "7": [
+   "10sent_40prev_017",
+   "10sent_40prev_017",
+   "5sent_20prev_005"
+  ],
+  "0": [
+   "5sent_20prev_003",
+   "5sent_20prev_005",
+   "5sent_20prev_025",
+   "5sent_20prev_025",
+   "5sent_20prev_031",
+   "5sent_40prev_030",
+   "5sent_40prev_035"
+  ],
+  "2": [
+   "5sent_20prev_003",
+   "5sent_20prev_005",
+   "5sent_20prev_027",
+   "5sent_20prev_031",
+   "5sent_20prev_031",
+   "5sent_40prev_034",
+   "5sent_40prev_035"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "Procedural Meeting Logistics",
+   "criteria_prompt": "Does this text describe the administrative, logistical, or procedural details of a political session or hearing?",
+   "representative_example_ids": [
+    "5sent_20prev_003",
+    "5sent_40prev_030"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Official State Operations",
+   "criteria_prompt": "Does this text describe official government actions, state-led security measures, or the logistical management of public political events?",
+   "representative_example_ids": [
+    "10sent_40prev_007",
+    "5sent_20prev_013"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Political Staff Activities",
+   "criteria_prompt": "Does this text describe actions or roles performed by political aides, staffers, or office personnel?",
+   "representative_example_ids": [
+    "5sent_20prev_005",
+    "5sent_40prev_034"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Public Political Activity",
+   "criteria_prompt": "Does this text describe a public political event, campaign activity, or official government function involving public engagement or media coverage?",
+   "representative_example_ids": [
+    "10sent_40prev_033",
+    "10sent_20prev_008"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Municipal Infrastructure Management",
+   "criteria_prompt": "Does this text describe the management or status of city-run infrastructure and public services?",
+   "representative_example_ids": [
+    "10sent_40prev_007",
+    "5sent_20prev_027"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Public Resource Allocation",
+   "criteria_prompt": "Does this text discuss the allocation, adjustment, or debate of government funds and public policies?",
+   "representative_example_ids": [
+    "10sent_20prev_014",
+    "5sent_20prev_027"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Legislative Policy Actions",
+   "criteria_prompt": "Does this text describe actions, discussions, or proposals by lawmakers or regulatory bodies regarding public policy?",
+   "representative_example_ids": [
+    "10sent_20prev_032",
+    "5sent_20prev_031"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Policy and Regulatory Reform",
+   "criteria_prompt": "Does this text describe a change in law, regulation, or official policy regarding public access or government control?",
+   "representative_example_ids": [
+    "10sent_40prev_017",
+    "5sent_20prev_005"
+   ],
+   "cluster_label": 7
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-06T20:04:51",
+ "coverage_split": {
+  "generic": 0.1,
+  "specific": 0.07692307692307693
+ },
+ "coverage": 0.08333333333333333,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically capture economic topics as their primary focus."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "The generated concept covering political events includes general public functions and media coverage rather than exclusively election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "No generated concept addresses environmental issues or policies."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts pertain to international relations or foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": "Policy and Regulatory Reform",
+   "rationale": "This generated concept directly aligns with the discussion and creation of government policies and regulatory changes."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "No generated concept specifically targets gun control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "No generated concept focuses on healthcare topics."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically represent human rights issues."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "No generated concept pertains to immigration."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "None of the generated concepts focus on political parties specifically."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically capture background checks."
+  },
+  {
+   "ground_truth": "Border Control Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address border control policies."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "None of the generated concepts correspond specifically to campaign promises."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": null,
+   "rationale": "None of the generated concepts deal with candidate profiles."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts focus on children's rights."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "None of the generated concepts cover climate change."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "None of the generated concepts represent diplomatic relations."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address drug policy."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts pertain specifically to education policies."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": "Public Resource Allocation",
+   "rationale": "Fiscal policy aligns closely with the allocation, adjustment, and debate of government funds and public policies."
+  },
+  {
+   "ground_truth": "Fundraising",
+   "concept": null,
+   "rationale": "None of the generated concepts capture fundraising specifically."
+  },
+  {
+   "ground_truth": "Government Spending",
+   "concept": "Public Resource Allocation",
+   "rationale": "Public Resource Allocation directly corresponds to the discussion and adjustment of government funds and public budgets."
+  },
+  {
+   "ground_truth": "Health Insurance",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address health insurance."
+  },
+  {
+   "ground_truth": "Healthcare Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts are specific to healthcare policies."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "None of the generated concepts capture illegal immigration."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "None of the generated concepts cover international aid."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts address international relations policies."
+  },
+  {
+   "ground_truth": "LGBTQ+ Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts capture LGBTQ+ rights."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "None of the generated concepts are related to nature conservation."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address party leadership."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically capture political party platforms or policy agendas."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": null,
+   "rationale": "Generated concepts like public political activity are broader or refer to general government functions rather than specifically political rallies."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": null,
+   "rationale": "There is no generated concept that corresponds to gun rights or the Second Amendment."
+  },
+  {
+   "ground_truth": "Universal Healthcare",
+   "concept": null,
+   "rationale": "None of the generated concepts focus on healthcare or universal medical coverage."
+  },
+  {
+   "ground_truth": "War and Peace",
+   "concept": null,
+   "rationale": "No generated concept addresses international conflict, war, or peace treaties."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts capture women's rights or gender-specific social issues."
+  }
+ ],
+ "n_generated": 8
+}

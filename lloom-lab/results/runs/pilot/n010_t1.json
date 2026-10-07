@@ -1,0 +1,267 @@
+{
+ "status": "complete",
+ "started": "2026-10-06T13:39:47",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "gemini",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "pilot": true,
+  "n": 10,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_001",
+  "10sent_20prev_003",
+  "10sent_40prev_024",
+  "10sent_40prev_026",
+  "5sent_20prev_015",
+  "5sent_20prev_017",
+  "5sent_20prev_020",
+  "5sent_20prev_036",
+  "5sent_40prev_005",
+  "5sent_40prev_006"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Political Rallies",
+   "Unemployment",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Women's equality rights demanded at rally",
+    "Political roles underrepresented by women",
+    "Public spaces maintained for civic events",
+    "Civic duties enforced by various roles"
+   ],
+   "doc_id": "10sent_20prev_001"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event attendance exceeded expectations",
+    "Health warnings issued due to high pollution levels",
+    "Security measures enforced at event venues",
+    "County symbols displayed during public celebration"
+   ],
+   "doc_id": "10sent_20prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political rally with public support",
+    "Safety measures enacted for events",
+    "Legislation passed on gun storage",
+    "Public displays and ceremonial events"
+   ],
+   "doc_id": "10sent_40prev_024"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Proposed visa reforms prioritize skilled workers",
+    "Political tensions arise over climate policies",
+    "News events drive media and public attention",
+    "Political factions threaten to split over key issues"
+   ],
+   "doc_id": "10sent_40prev_026"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Federal agents dismantle illegal entry tunnel",
+    "Courtroom artists sketch restricted scene",
+    "Protester opposes immigration policy",
+    "Courthouse weather vane restored"
+   ],
+   "doc_id": "5sent_20prev_015"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Firearms registration under new ban",
+    "Event setup continues in auditorium",
+    "Roll call signaled by bell ringing",
+    "Maintenance on visitors' walkway"
+   ],
+   "doc_id": "5sent_20prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Commissioner thanks retiring staff",
+    "Governor proposes infrastructure stimulus",
+    "High turnout in county precincts",
+    "Convention hall enforces bag security"
+   ],
+   "doc_id": "5sent_20prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Database upgrade reduces purchase screening wait time",
+    "Heavy rain lowers press availability attendance",
+    "Reporters gather outside briefing room for updates",
+    "County clerk confirms election results after recount"
+   ],
+   "doc_id": "5sent_20prev_036"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Annual reports stored in records room",
+    "Conservation deal preserves ranch land",
+    "New reserve protects prairie orchid",
+    "Schoolchildren visit capitol during session"
+   ],
+   "doc_id": "5sent_40prev_005"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Moderator urges audience to silence phones",
+    "Reform bill ties legalization to employment",
+    "Staffers distribute amended bill copies",
+    "Policy links state contracts to local hiring"
+   ],
+   "doc_id": "5sent_40prev_006"
+  }
+ ],
+ "clusters": {
+  "4": [
+   "10sent_20prev_001",
+   "10sent_20prev_001",
+   "10sent_20prev_001",
+   "10sent_20prev_003",
+   "10sent_40prev_024",
+   "10sent_40prev_026",
+   "10sent_40prev_026",
+   "10sent_40prev_026",
+   "5sent_20prev_015",
+   "5sent_20prev_015",
+   "5sent_40prev_005"
+  ],
+  "3": [
+   "10sent_20prev_003",
+   "10sent_40prev_024",
+   "5sent_20prev_020"
+  ],
+  "0": [
+   "10sent_20prev_003",
+   "5sent_20prev_017",
+   "5sent_20prev_020",
+   "5sent_20prev_036"
+  ],
+  "2": [
+   "10sent_40prev_026",
+   "5sent_20prev_020",
+   "5sent_40prev_006",
+   "5sent_40prev_006",
+   "5sent_40prev_006"
+  ],
+  "1": [
+   "5sent_20prev_015",
+   "5sent_20prev_017",
+   "5sent_40prev_005",
+   "5sent_40prev_005"
+  ],
+  "5": [
+   "5sent_20prev_036",
+   "5sent_20prev_036",
+   "5sent_20prev_036",
+   "5sent_40prev_005"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "County Electoral Processes",
+   "criteria_prompt": "Read the provided text and determine whether it describes county-level voting activities, election administration, or official recount results.",
+   "representative_example_ids": [
+    "5sent_20prev_020",
+    "5sent_20prev_036"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Local Infrastructure Preservation",
+   "criteria_prompt": "Does the provided text example discuss government or public initiatives related to the restoration, maintenance, or conservation of local infrastructure, public property, or land?",
+   "representative_example_ids": [
+    "5sent_20prev_015",
+    "5sent_20prev_017"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Legislative Policy Reforms",
+   "criteria_prompt": "Does the text describe a proposed legislative bill, policy change, or reform initiative?",
+   "representative_example_ids": [
+    "10sent_40prev_026",
+    "5sent_40prev_006"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Event Security Measures",
+   "criteria_prompt": "Does the provided text discuss security protocols, bag checks, or safety measures being enforced at public events or venues?",
+   "representative_example_ids": [
+    "10sent_20prev_003",
+    "10sent_40prev_024"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Political Rallies and Protests",
+   "criteria_prompt": "Determine whether the provided text describes a public rally, demonstration, or protest centered around political issues, rights, or policy opposition.",
+   "representative_example_ids": [
+    "10sent_20prev_001",
+    "5sent_20prev_015"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Logistical Event Disruptions",
+   "criteria_prompt": "Determine whether the text describes an unforeseen environmental or technical circumstance that disrupts official schedules, press access, or administrative procedures.",
+   "representative_example_ids": [
+    "5sent_20prev_036",
+    "5sent_20prev_036"
+   ],
+   "cluster_label": 5
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-06T13:39:58"
+}

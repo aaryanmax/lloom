@@ -1,0 +1,25 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# generated artifacts (reproducible from seeds / cached runs)
+lloom-lab/data_store/
+lloom-lab/results/*.sqlite3
+lloom-lab/charts/
+
+# environments
+.venv/
+venv/
+
+# agent/session working files
+.zcode/
+*.log
+*.tmp

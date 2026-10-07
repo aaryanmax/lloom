@@ -1,0 +1,573 @@
+{
+ "status": "complete",
+ "started": "2026-10-06T13:41:27",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "gemini",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "pilot": true,
+  "n": 25,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_000",
+  "10sent_20prev_002",
+  "10sent_20prev_011",
+  "10sent_20prev_020",
+  "10sent_20prev_022",
+  "10sent_20prev_029",
+  "10sent_40prev_001",
+  "10sent_40prev_004",
+  "10sent_40prev_015",
+  "10sent_40prev_018",
+  "10sent_40prev_031",
+  "10sent_40prev_035",
+  "5sent_20prev_000",
+  "5sent_20prev_006",
+  "5sent_20prev_009",
+  "5sent_20prev_015",
+  "5sent_20prev_021",
+  "5sent_20prev_030",
+  "5sent_20prev_035",
+  "5sent_20prev_038",
+  "5sent_40prev_009",
+  "5sent_40prev_010",
+  "5sent_40prev_018",
+  "5sent_40prev_031",
+  "5sent_40prev_032"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Air Pollution",
+   "Background Checks",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Racial Equality",
+   "Refugee Policies",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Amended bill text distributed to staff",
+    "Registry proposal for immigrant status adjustment",
+    "Comprehensive reform pairs enforcement with legalization",
+    "Political events captured through media and imagery"
+   ],
+   "doc_id": "10sent_20prev_000"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political debate broadcast on regional channel",
+    "Court upholds right to bear arms at home",
+    "Public engagement through school tours and live blogs",
+    "Session activities include cleaning and printing"
+   ],
+   "doc_id": "10sent_20prev_002"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Schoolchildren tour state capitol during session",
+    "Volunteers register voters at farmers market",
+    "Treaty creates joint commission on water rights",
+    "Diplomats draft accord for new consular offices"
+   ],
+   "doc_id": "10sent_20prev_011"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events and schedules are communicated to the press.",
+    "Community issues involve legal challenges over voting rights.",
+    "Public meetings extend beyond scheduled times due to discussions."
+   ],
+   "doc_id": "10sent_20prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Volunteers register new voters at market",
+    "Lawmakers debate health coverage for asylum seekers",
+    "High turnout and packed hearing rooms noted",
+    "Weather impacts event schedules and attendance"
+   ],
+   "doc_id": "10sent_20prev_022"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Administrative delays due to technical issues",
+    "Preparation efforts for official events",
+    "Financial discrepancies uncovered in audit",
+    "Support staff ensuring event readiness"
+   ],
+   "doc_id": "10sent_20prev_029"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Retired elevator worker shares experience",
+    "State updates education and civics requirements",
+    "Healthcare plans face criticism for costs",
+    "Legislative activities covered by media and staff"
+   ],
+   "doc_id": "10sent_40prev_001"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political party commemorates historic floor fight",
+    "New oral history project captures member memories",
+    "Municipalities gain authority over firearm rules",
+    "Legal measures address dangerous individuals' weapons"
+   ],
+   "doc_id": "10sent_40prev_004"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Government plans to boost local drug production",
+    "Legislative actions address gun sale loopholes",
+    "Public engagement exceeds expectations in elections",
+    "Political processes highlighted through media coverage"
+   ],
+   "doc_id": "10sent_40prev_015"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Budget surplus prompts spending calls",
+    "Peace talks resume with mediator efforts",
+    "Deficit shrinks with recovery revenues",
+    "County clerk certifies election results"
+   ],
+   "doc_id": "10sent_40prev_018"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Transgender residents face shelter access issues",
+    "Draft platform supports rural broadband expansion",
+    "Political events marked by technical and logistical details",
+    "Candidate's career highlighted in media coverage"
+   ],
+   "doc_id": "10sent_40prev_031"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events face logistical challenges",
+    "Intra-party dynamics shape leadership",
+    "Transparency issues in contract awards",
+    "Mental health support expands in academia"
+   ],
+   "doc_id": "10sent_40prev_035"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "City hall meeting extended beyond schedule",
+    "Security measures heightened at convention hall",
+    "Bipartisan bill targets infrastructure investment",
+    "Courtroom access restricted with sketch artists present"
+   ],
+   "doc_id": "5sent_20prev_000"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Civic ceremony opens with bagpiper's tune",
+    "Sunlight highlights stained glass room",
+    "Cabinet approves sanctions coordination",
+    "Mural shows state's first constitutional convention"
+   ],
+   "doc_id": "5sent_20prev_006"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Librarian displays state archive documents",
+    "Photocopiers operate through weekend hours",
+    "Roll call signaled by corridor bells",
+    "Governor signs firearm dealer licensing bill"
+   ],
+   "doc_id": "5sent_20prev_009"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Federal agents dismantle illegal entry tunnel",
+    "Courtroom artists sketch restricted scene",
+    "Protester opposes immigration policy",
+    "Courthouse weather vane restored"
+   ],
+   "doc_id": "5sent_20prev_015"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political tensions disrupt civic events",
+    "Legal challenges target gender policies",
+    "Legislative operations face logistical issues",
+    "Ceremonial preparations underway"
+   ],
+   "doc_id": "5sent_20prev_021"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Hearing room filled with attendees",
+    "Moderator enforces phone silence",
+    "County flags displayed for celebration",
+    "Vote delays due to labor disputes"
+   ],
+   "doc_id": "5sent_20prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Mobile crisis units handle nonviolent calls",
+    "Clerks update tally board for vote tracking",
+    "Young delegate delivers closing remarks",
+    "Librarian displays state archive documents"
+   ],
+   "doc_id": "5sent_20prev_035"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Candidate promises tax elimination",
+    "Historical figures displayed publicly",
+    "Preparation for major announcement",
+    "Interns organize constituent feedback"
+   ],
+   "doc_id": "5sent_20prev_038"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Residents debate free doctor visits",
+    "Single-payer plan ensures universal coverage",
+    "Capitol event draws media attention",
+    "Delegation delayed by weather issues"
+   ],
+   "doc_id": "5sent_40prev_009"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Interns organize letters into color-coded bins",
+    "Groundskeeper maintains visitors' walkway hedges",
+    "Chairman faces coalition split over endorsement",
+    "Bill proposes loan forgiveness for teaching service"
+   ],
+   "doc_id": "5sent_40prev_010"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Roll call signaled by bells in corridor",
+    "Candidate references party's founding charter",
+    "Printers worked overnight for announcement",
+    "Delegation's youngest member gave closing remarks"
+   ],
+   "doc_id": "5sent_40prev_018"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Refugee admission cap increased by 10,000",
+    "Resettlement services expanded for war refugees",
+    "Event decorations removed quickly after ceremony",
+    "Corporate box mixed officials and donor guests"
+   ],
+   "doc_id": "5sent_40prev_031"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "City hall meeting exceeded scheduled time",
+    "Candidate engaged crowd with chants",
+    "Translation services facilitated communication",
+    "Commission examines global healthcare models"
+   ],
+   "doc_id": "5sent_40prev_032"
+  }
+ ],
+ "clusters": {
+  "9": [
+   "10sent_20prev_000",
+   "10sent_20prev_011",
+   "10sent_20prev_022",
+   "10sent_40prev_001",
+   "10sent_40prev_018",
+   "5sent_20prev_030",
+   "5sent_20prev_035"
+  ],
+  "1": [
+   "10sent_20prev_000",
+   "10sent_20prev_011",
+   "10sent_20prev_011",
+   "5sent_40prev_031"
+  ],
+  "3": [
+   "10sent_20prev_000",
+   "10sent_20prev_002",
+   "10sent_20prev_002",
+   "10sent_20prev_020",
+   "10sent_40prev_004",
+   "10sent_40prev_015",
+   "10sent_40prev_015",
+   "10sent_40prev_018",
+   "10sent_40prev_031",
+   "10sent_40prev_031",
+   "10sent_40prev_035",
+   "10sent_40prev_035",
+   "5sent_20prev_021",
+   "5sent_40prev_009"
+  ],
+  "2": [
+   "10sent_20prev_002",
+   "10sent_40prev_004",
+   "10sent_40prev_004",
+   "10sent_40prev_015",
+   "5sent_20prev_006",
+   "5sent_20prev_009"
+  ],
+  "0": [
+   "10sent_20prev_002",
+   "5sent_20prev_006",
+   "5sent_20prev_009",
+   "5sent_20prev_015",
+   "5sent_40prev_010",
+   "5sent_40prev_018"
+  ],
+  "6": [
+   "10sent_20prev_020",
+   "10sent_40prev_031",
+   "5sent_20prev_021"
+  ],
+  "11": [
+   "10sent_20prev_020",
+   "10sent_20prev_022",
+   "5sent_20prev_000",
+   "5sent_40prev_009",
+   "5sent_40prev_032"
+  ],
+  "8": [
+   "10sent_20prev_022",
+   "10sent_20prev_029",
+   "10sent_40prev_001",
+   "10sent_40prev_018",
+   "10sent_40prev_018",
+   "10sent_40prev_035",
+   "5sent_40prev_009",
+   "5sent_40prev_009",
+   "5sent_40prev_032"
+  ],
+  "7": [
+   "10sent_20prev_022",
+   "5sent_20prev_006",
+   "5sent_20prev_035",
+   "5sent_20prev_038",
+   "5sent_40prev_010",
+   "5sent_40prev_018",
+   "5sent_40prev_018",
+   "5sent_40prev_032"
+  ],
+  "12": [
+   "10sent_20prev_029",
+   "10sent_20prev_029",
+   "5sent_20prev_021",
+   "5sent_20prev_038",
+   "5sent_40prev_031"
+  ],
+  "4": [
+   "10sent_40prev_004",
+   "5sent_20prev_009",
+   "5sent_20prev_035",
+   "5sent_20prev_038",
+   "5sent_20prev_038",
+   "5sent_40prev_010",
+   "5sent_40prev_032"
+  ],
+  "10": [
+   "10sent_40prev_015",
+   "10sent_40prev_031",
+   "5sent_20prev_000",
+   "5sent_40prev_010"
+  ],
+  "5": [
+   "5sent_20prev_009",
+   "5sent_20prev_030",
+   "5sent_20prev_035",
+   "5sent_40prev_018"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "Administrative Office Operations",
+   "criteria_prompt": "Determine whether the text describes routine administrative or office-based tasks such as printing, cleaning, or facility maintenance.",
+   "representative_example_ids": [
+    "10sent_20prev_002",
+    "5sent_40prev_018"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Immigration and Residency Policy",
+   "criteria_prompt": "Determine whether the provided text discusses legislative proposals, government programs, or services related to immigrant status adjustment, registry, or refugee resettlement.",
+   "representative_example_ids": [
+    "10sent_20prev_000",
+    "5sent_40prev_031"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Firearm Regulation Legislation",
+   "criteria_prompt": "Determine whether the text discusses laws, court rulings, or government policies related to firearm ownership, dealer licensing, or gun control measures.",
+   "representative_example_ids": [
+    "10sent_20prev_002",
+    "5sent_20prev_009"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Media Coverage and Public Engagement",
+   "criteria_prompt": "Determine whether the text discusses how political events, elections, or political figures are captured, broadcast, or highlighted through media coverage and public engagement.",
+   "representative_example_ids": [
+    "10sent_20prev_002",
+    "10sent_40prev_015"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Library and Archive Preservation",
+   "criteria_prompt": "Does the text describe a librarian, archivist, or public official displaying, organizing, or preserving historical documents, archives, or oral histories?",
+   "representative_example_ids": [
+    "10sent_40prev_004",
+    "5sent_20prev_009"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Procedural Signaling and Enforcement",
+   "criteria_prompt": "Determine whether the text describes a formal auditory signal, rule, or protocol used to manage behavior, attendance, or operations in a controlled setting.",
+   "representative_example_ids": [
+    "5sent_20prev_009",
+    "5sent_20prev_030"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Legal Rights Challenges",
+   "criteria_prompt": "Determine whether the given text describes legal battles, policy disputes, or rights violations related to voting access or gender identity.",
+   "representative_example_ids": [
+    "10sent_20prev_020",
+    "5sent_20prev_021"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Political Event Highlights",
+   "criteria_prompt": "Does the text describe specific notable moments, speeches, or ceremonies occurring during a political event?",
+   "representative_example_ids": [
+    "5sent_20prev_006",
+    "5sent_20prev_035"
+   ],
+   "cluster_label": 7
+  },
+  {
+   "name": "Healthcare Policy Debates",
+   "criteria_prompt": "Does the text discuss political debates, public discussions, or criticisms regarding healthcare coverage, plans, or medical costs?",
+   "representative_example_ids": [
+    "10sent_20prev_022",
+    "5sent_40prev_009"
+   ],
+   "cluster_label": 8
+  },
+  {
+   "name": "Civic Administration and Elections",
+   "criteria_prompt": "Determine whether the given text describes official government, election, legislative, or civic administrative processes such as certifying results, updating laws, or managing votes.",
+   "representative_example_ids": [
+    "10sent_40prev_018",
+    "5sent_20prev_035"
+   ],
+   "cluster_label": 9
+  },
+  {
+   "name": "Legislative Policy Initiatives",
+   "criteria_prompt": "Determine whether the text describes a proposed bill, government plan, or draft platform aimed at funding or reforming a specific public sector.",
+   "representative_example_ids": [
+    "10sent_40prev_031",
+    "5sent_20prev_000"
+   ],
+   "cluster_label": 10
+  },
+  {
+   "name": "Meeting Schedule Delays",
+   "criteria_prompt": "Determine if the text describes a public or city hall meeting that extended beyond its scheduled duration.",
+   "representative_example_ids": [
+    "10sent_20prev_020",
+    "5sent_40prev_032"
+   ],
+   "cluster_label": 11
+  },
+  {
+   "name": "Political Event Preparation",
+   "criteria_prompt": "Determine if the provided text describes logistical efforts, staff support, or decorations related to the setup or conclusion of official political ceremonies and announcements.",
+   "representative_example_ids": [
+    "10sent_20prev_029",
+    "5sent_20prev_038"
+   ],
+   "cluster_label": 12
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-06T13:42:14"
+}

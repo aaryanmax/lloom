@@ -1,0 +1,240 @@
+{
+  "concepts": [
+    {
+      "name": "Rent Increase Pressure",
+      "criteria_prompt": "Does the text mention a significant rent increase or unaffordable rent that impacts tenants?",
+      "representative_example_ids": [
+        "d1",
+        "d3"
+      ],
+      "cluster_label": 0
+    },
+    {
+      "name": "Maintenance and Reform Calls",
+      "criteria_prompt": "Does the text discuss property neglect or call for rental market reform?",
+      "representative_example_ids": [
+        "d2",
+        "d1"
+      ],
+      "cluster_label": 0
+    },
+    {
+      "name": "Battery Drain Post-Update",
+      "criteria_prompt": "Does the text mention a significant decrease in battery life after a software or firmware update?",
+      "representative_example_ids": [
+        "d4",
+        "d5"
+      ],
+      "cluster_label": 1
+    },
+    {
+      "name": "Battery Health Degradation",
+      "criteria_prompt": "Does the text indicate that the battery health or performance has been negatively affected by a recent update?",
+      "representative_example_ids": [
+        "d4",
+        "d5"
+      ],
+      "cluster_label": 1
+    }
+  ],
+  "scores": {
+    "Rent Increase Pressure": {
+      "d1": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text clearly mentions a significant rent increase of $300 and dissatisfaction with the landlord's lack of repairs, indicating unaffordable rent impacting tenants."
+      },
+      "d2": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text states that housing prices are 'insane' and tenants pay half their salary in rent with no improvements from the landlord, showing unaffordable rent impacting tenants."
+      },
+      "d3": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text refers to a lease renewal with another rent increase and mentions landlords squeezing tenants while housing supply is low, indicating unaffordable rent impacting tenants."
+      },
+      "d4": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses a new phone update that destroyed battery life, which is unrelated to rent or housing issues."
+      },
+      "d5": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text talks about a firmware update that negatively affected battery life, which is unrelated to rent or housing issues."
+      },
+      "d6": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text describes issues with a software update affecting battery life, which is unrelated to rent or housing issues."
+      }
+    },
+    "Maintenance and Reform Calls": {
+      "d1": {
+        "score": 0.75,
+        "answer": "B",
+        "rationale": "The text discusses property neglect as the landlord has not done any repairs and is increasing rent, indicating dissatisfaction with the condition of the property."
+      },
+      "d2": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text calls for rental market reform by expressing frustration with high rent and the lack of landlord action, indicating a demand for systemic change."
+      },
+      "d3": {
+        "score": 0.75,
+        "answer": "B",
+        "rationale": "The text discusses property neglect through the repeated rent increases and the lack of housing supply, which points to systemic issues in the rental market."
+      },
+      "d4": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses a technical issue with a phone's battery life due to a software update, which is unrelated to property neglect or rental market reform."
+      },
+      "d5": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses a technical issue with a phone's battery life due to a software update, which is unrelated to property neglect or rental market reform."
+      },
+      "d6": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses a technical issue with a phone's battery life due to a software update, which is unrelated to property neglect or rental market reform."
+      }
+    },
+    "Battery Drain Post-Update": {
+      "d1": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses rent increases and landlord issues, not battery life or software updates. It is unrelated to the pattern."
+      },
+      "d2": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses housing prices and rent, not battery life or software updates. It is unrelated to the pattern."
+      },
+      "d3": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses rent increases and housing supply, not battery life or software updates. It is unrelated to the pattern."
+      },
+      "d4": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text mentions a new phone update causing significant battery drain, which matches the pattern."
+      },
+      "d5": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text mentions a firmware update causing battery life to decrease significantly, which matches the pattern."
+      },
+      "d6": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text mentions a software update causing battery drain and phone overheating, which matches the pattern."
+      }
+    },
+    "Battery Health Degradation": {
+      "d1": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses rent increases and landlord issues, not battery health or performance. It is unrelated to the pattern."
+      },
+      "d2": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses housing prices and rent, not battery health or performance. It is unrelated to the pattern."
+      },
+      "d3": {
+        "score": 0.5,
+        "answer": "C",
+        "rationale": "The text discusses rent increases and housing supply, not battery health or performance. It is unrelated to the pattern."
+      },
+      "d4": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text clearly states that a recent phone update caused the battery to drain quickly, indicating negative impact on battery health."
+      },
+      "d5": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text states that the latest firmware killed the phone battery and that battery life is now poor, indicating negative impact on battery health."
+      },
+      "d6": {
+        "score": 1.0,
+        "answer": "A",
+        "rationale": "The text mentions that the phone battery drains fast since the update and that the phone gets hot while charging, indicating negative impact on battery health."
+      }
+    }
+  },
+  "distilled": [
+    {
+      "quotes": [],
+      "bullets": [
+        "Landlord increased rent by $300",
+        "No repairs done in over a year",
+        "Renting is deemed impossible"
+      ],
+      "doc_id": "d1"
+    },
+    {
+      "quotes": [],
+      "bullets": [
+        "Housing prices are unmanageable",
+        "Rent consumes significant income",
+        "Landlords neglect property maintenance",
+        "Call for rental market reform"
+      ],
+      "doc_id": "d2"
+    },
+    {
+      "quotes": [],
+      "bullets": [
+        "Lease renewal with rent hike",
+        "Landlords raise tenant costs",
+        "Housing supply remains low",
+        "Rent becomes unaffordable"
+      ],
+      "doc_id": "d3"
+    },
+    {
+      "quotes": [],
+      "bullets": [
+        "Phone update causes severe battery drain",
+        "Battery drops from 100% to 20% by noon",
+        "Battery life becomes unusable post-update"
+      ],
+      "doc_id": "d4"
+    },
+    {
+      "quotes": [],
+      "bullets": [
+        "Firmware update harms battery life",
+        "Battery lasts only three hours now",
+        "Software update negatively impacts battery health"
+      ],
+      "doc_id": "d5"
+    },
+    {
+      "quotes": [],
+      "bullets": [
+        "Battery drains quickly after update",
+        "Phone overheats while charging",
+        "Software patch impacts battery life"
+      ],
+      "doc_id": "d6"
+    }
+  ],
+  "clusters": {
+    "0": [
+      "d1",
+      "d2",
+      "d3"
+    ],
+    "1": [
+      "d4",
+      "d5",
+      "d6"
+    ]
+  }
+}

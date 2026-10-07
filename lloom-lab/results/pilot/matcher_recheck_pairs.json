@@ -1,0 +1,142 @@
+[
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Election Campaigns",
+  "concept": "Voter and Campaign Activity",
+  "concept_criteria": "Does the text discuss voter registration efforts, campaign promises, or voting system proposals?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "broader: adds voter registration and voting systems beyond election-campaign topics",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Political Parties",
+  "concept": "Factional Conflict and Splits",
+  "concept_criteria": "Determine whether the text describes political factions competing for leadership, threatening to split, or experiencing internal tensions over key issues.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "narrower: only factionalism, misses platforms/leadership/history",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Campaign Promises",
+  "concept": "Voter and Campaign Activity",
+  "concept_criteria": "Does the text discuss voter registration efforts, campaign promises, or voting system proposals?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "broader: promises are one of several unrelated facets",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Candidate Profiles",
+  "concept": "Candidate Background and Actions",
+  "concept_criteria": "Analyze if the text focuses on a political candidate's past military and political background or their specific policy actions.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "broader: adds policy actions; profile is biography-only",
+  "matcher_matched_new": true
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Party Factionalism",
+  "concept": "Factional Conflict and Splits",
+  "concept_criteria": "Determine whether the text describes political factions competing for leadership, threatening to split, or experiencing internal tensions over key issues.",
+  "matcher_matched": true,
+  "label": 1,
+  "rationale": "exact match",
+  "matcher_matched_new": true
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Party Leadership",
+  "concept": "Factional Conflict and Splits",
+  "concept_criteria": "Determine whether the text describes political factions competing for leadership, threatening to split, or experiencing internal tensions over key issues.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "different facet: leadership contests are only part of factional conflict",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Party Platforms",
+  "concept": "Voter and Campaign Activity",
+  "concept_criteria": "Does the text discuss voter registration efforts, campaign promises, or voting system proposals?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "unrelated",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Taxes",
+  "concept": "Tax and Ballot Decisions",
+  "concept_criteria": "Does the text involve policy decisions, ballot measures, or disputes regarding taxes and property valuations?",
+  "matcher_matched": true,
+  "label": 1,
+  "rationale": "same meaning: taxation policy decisions",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Background Checks",
+  "concept": "Public Services Support",
+  "concept_criteria": "Does the provided text discuss efforts to improve public services and safety?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "unrelated",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Gun Control",
+  "concept": "Policy Tensions and Regulation",
+  "concept_criteria": "Evaluate whether the text highlights political disagreements, tensions, or specific legislative actions related to public policies such as climate or firearms.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "broader and reframed: generic policy-tension concept",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Immigration",
+  "concept": "Skilled Worker Priorities",
+  "concept_criteria": "Determine whether the text discusses prioritizing skilled workers or employment-based criteria in visa and immigration reforms.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "narrower: one visa slice of a 4-child concept",
+  "matcher_matched_new": true
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Immigration Reform",
+  "concept": "Skilled Worker Priorities",
+  "concept_criteria": "Determine whether the text discusses prioritizing skilled workers or employment-based criteria in visa and immigration reforms.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "narrower: skilled-worker priority is one reform type",
+  "matcher_matched_new": true
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Election Campaigns",
+  "concept": "Legislative Process Actions",
+  "concept_criteria": "Determine whether the text describes the procedural distribution or amendment of legislative bills by staffers.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "unrelated",
+  "matcher_matched_new": false
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Environment",
+  "concept": "Civic Event Security",
+  "concept_criteria": "Does the text describe security measures, safety protocols, or attendance management at a public political or civic event?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": "unrelated",
+  "matcher_matched_new": false
+ }
+]

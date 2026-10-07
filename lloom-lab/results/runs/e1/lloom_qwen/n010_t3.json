@@ -1,0 +1,233 @@
+{
+ "status": "complete",
+ "started": "2026-10-07T19:41:44",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "qwen",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 10,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_039",
+  "10sent_40prev_025",
+  "10sent_40prev_027",
+  "5sent_20prev_001",
+  "5sent_20prev_003",
+  "5sent_20prev_027",
+  "5sent_20prev_028",
+  "5sent_40prev_014",
+  "5sent_40prev_022",
+  "5sent_40prev_028"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Government Spending",
+   "International Aid",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Platforms",
+   "Racial Equality",
+   "Trade Agreements",
+   "Unemployment"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Healthcare",
+   "Human Rights",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Political figures rise through various roles",
+    "Events and meetings often extend beyond time",
+    "Public spaces reflect political activity",
+    "Historical documents are displayed publicly"
+   ],
+   "doc_id": "10sent_20prev_039"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event with large attendance",
+    "Platform shifts from single-payer to public option",
+    "Historical apology for segregation policies",
+    "Legislative actions on discriminatory language"
+   ],
+   "doc_id": "10sent_40prev_025"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Security measures at convention entrances",
+    "Volunteers restore trout habitat efforts",
+    "Schools plan to hire psychologists",
+    "Partnership reduces customs paperwork"
+   ],
+   "doc_id": "10sent_40prev_027"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Snowstorm delays committee hearing",
+    "Candidate's career highlighted in profiles",
+    "Delegation arrives late due to fog",
+    "Caterers prepare refreshments before session"
+   ],
+   "doc_id": "5sent_20prev_001"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Clerk reads resolution in empty chamber",
+    "Media captures press conference live",
+    "Amendment read due to camera failure",
+    "Settlement mandates sibling placements"
+   ],
+   "doc_id": "5sent_20prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Staffers distributed amended bill copies",
+    "Parking garage filled early morning",
+    "Janitorial staff prepared assembly hall",
+    "Mayor defended public safety budget line"
+   ],
+   "doc_id": "5sent_20prev_027"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Radio stations live-streamed press conference",
+    "Volunteers register voters at farmers market",
+    "Interns organize constituent letters by color",
+    "Farmers adopt carbon-storing soil techniques"
+   ],
+   "doc_id": "5sent_20prev_028"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Reporters await briefings in hallways",
+    "Crossing guards manage morning traffic",
+    "Officials and donors gather at arena",
+    "Aid workers deliver relief supplies"
+   ],
+   "doc_id": "5sent_40prev_014"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Council debates procedural issues",
+    "Youth unemployment doubles",
+    "State commits to net-zero by 2050",
+    "Audience urged to silence phones"
+   ],
+   "doc_id": "5sent_40prev_022"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Candidates' personal histories highlighted",
+    "Media coverage focuses on past events",
+    "Public interest drives political attention",
+    "Political narratives shaped by media"
+   ],
+   "doc_id": "5sent_40prev_028"
+  }
+ ],
+ "clusters": {
+  "1": [
+   "10sent_20prev_039",
+   "10sent_20prev_039",
+   "10sent_20prev_039",
+   "10sent_40prev_025",
+   "5sent_20prev_001",
+   "5sent_20prev_003",
+   "5sent_20prev_028",
+   "5sent_40prev_022",
+   "5sent_40prev_028",
+   "5sent_40prev_028",
+   "5sent_40prev_028",
+   "5sent_40prev_028"
+  ],
+  "0": [
+   "10sent_40prev_025",
+   "10sent_40prev_025",
+   "10sent_40prev_027",
+   "5sent_20prev_003",
+   "5sent_20prev_003",
+   "5sent_20prev_003",
+   "5sent_20prev_027",
+   "5sent_20prev_027",
+   "5sent_20prev_028",
+   "5sent_40prev_022",
+   "5sent_40prev_022",
+   "5sent_40prev_022"
+  ],
+  "2": [
+   "10sent_40prev_027",
+   "5sent_20prev_001",
+   "5sent_20prev_001",
+   "5sent_20prev_027",
+   "5sent_20prev_027",
+   "5sent_20prev_028",
+   "5sent_40prev_014",
+   "5sent_40prev_014",
+   "5sent_40prev_014"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "Policy Reforms",
+   "criteria_prompt": "Does the text describe legislative or institutional changes aimed at addressing historical injustices or improving public services?",
+   "representative_example_ids": [
+    "10sent_40prev_025",
+    "5sent_40prev_022"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Media Coverage",
+   "criteria_prompt": "Does the text describe how media outlets report on political events or figures?",
+   "representative_example_ids": [
+    "5sent_20prev_028",
+    "5sent_40prev_028"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Event Preparation",
+   "criteria_prompt": "Is the text describing actions taken to prepare for an event or gathering?",
+   "representative_example_ids": [
+    "5sent_20prev_027",
+    "5sent_40prev_014"
+   ],
+   "cluster_label": 2
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T19:46:36"
+}

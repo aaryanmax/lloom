@@ -1,0 +1,382 @@
+{
+ "status": "running",
+ "started": "2026-10-07T19:45:48",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "qwen",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 20,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_006",
+  "10sent_20prev_016",
+  "10sent_20prev_022",
+  "10sent_20prev_026",
+  "10sent_40prev_000",
+  "10sent_40prev_016",
+  "10sent_40prev_019",
+  "10sent_40prev_026",
+  "10sent_40prev_027",
+  "10sent_40prev_029",
+  "5sent_20prev_003",
+  "5sent_20prev_019",
+  "5sent_20prev_035",
+  "5sent_20prev_037",
+  "5sent_20prev_038",
+  "5sent_40prev_003",
+  "5sent_40prev_004",
+  "5sent_40prev_018",
+  "5sent_40prev_020",
+  "5sent_40prev_032"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Assault Weapons Ban",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Government Spending",
+   "Gun Control Legislation",
+   "Healthcare Policies",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Refugee Policies",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "Universal Healthcare",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events draw large crowds",
+    "Legislators debate economic strategies",
+    "Facility operations ensure smooth proceedings",
+    "New fiscal rules limit spending growth"
+   ],
+   "doc_id": "10sent_20prev_006"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event preparations underway",
+    "Public healthcare policy advancement",
+    "Legislative actions and civic engagement",
+    "Event remnants and facility usage"
+   ],
+   "doc_id": "10sent_20prev_016"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Volunteers register new voters at market",
+    "Lawmakers debate health coverage for asylum seekers",
+    "High turnout and packed hearing rooms noted",
+    "Weather impacts event schedules and attendance"
+   ],
+   "doc_id": "10sent_20prev_022"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political activities during morning rush",
+    "Preparation for official events and briefings",
+    "Policy proposals for small businesses",
+    "Infrastructure and event readiness highlighted"
+   ],
+   "doc_id": "10sent_20prev_026"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "City honors heritage with pride flag display",
+    "Sister-city ties celebrated with reception",
+    "Budget highlights growth in discretionary spending",
+    "Federal aid sought for border town staffing"
+   ],
+   "doc_id": "10sent_40prev_000"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Cities invest in electric fleets for emissions",
+    "Schools update libraries with LGBTQ+ materials",
+    "Political events covered by media and auditors",
+    "Candidates' military service revealed to voters"
+   ],
+   "doc_id": "10sent_40prev_016"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Government expands worker protections",
+    "New policy links trade to human rights",
+    "Political actions focus on healthcare access",
+    "Officials use technology for surveillance"
+   ],
+   "doc_id": "10sent_40prev_019"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Proposed visa reforms prioritize skilled workers",
+    "Political tensions arise over climate policies",
+    "News events drive media and public attention",
+    "Political factions threaten to split over key issues"
+   ],
+   "doc_id": "10sent_40prev_026"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Security measures at convention entrances",
+    "Volunteers restore trout habitat efforts",
+    "Schools plan to hire psychologists",
+    "Partnership reduces customs paperwork"
+   ],
+   "doc_id": "10sent_40prev_027"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "State honors constitutional history",
+    "Legislative reforms protect victims",
+    "Public safety and security measures",
+    "Political events and ceremonial preparations"
+   ],
+   "doc_id": "10sent_40prev_029"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Clerk reads resolution in empty chamber",
+    "Media captures press conference live",
+    "Amendment read due to camera failure",
+    "Settlement mandates sibling placements"
+   ],
+   "doc_id": "5sent_20prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "County clerk certifies election results",
+    "Schoolchildren visit state capitol",
+    "Governor proposes flat tax rate",
+    "Media captures political event moments"
+   ],
+   "doc_id": "5sent_20prev_019"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Mobile crisis units handle nonviolent calls",
+    "Clerks update tally board for vote tracking",
+    "Young delegate delivers closing remarks",
+    "Librarian displays state archive documents"
+   ],
+   "doc_id": "5sent_20prev_035"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event details described",
+    "Media coverage of legislative actions",
+    "Historical political lineage mentioned",
+    "Event logistics and preparations"
+   ],
+   "doc_id": "5sent_20prev_037"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Candidate promises tax elimination",
+    "Historical figures displayed publicly",
+    "Preparation for major announcement",
+    "Interns organize constituent feedback"
+   ],
+   "doc_id": "5sent_20prev_038"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Party chair announces term end",
+    "Amendment read due to tech failure",
+    "Protester expresses dissent outside",
+    "Caucus elects chairman with wide margin"
+   ],
+   "doc_id": "5sent_40prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political actions include firearm regulations",
+    "Ranked-choice voting proposed in congressional races",
+    "Volunteers focus on voter registration efforts",
+    "Facility preparation starts early for events"
+   ],
+   "doc_id": "5sent_40prev_004"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Roll call signaled by bells in corridor",
+    "Candidate references party's founding charter",
+    "Printers worked overnight for announcement",
+    "Delegation's youngest member gave closing remarks"
+   ],
+   "doc_id": "5sent_40prev_018"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Volunteers assist asylum seekers with housing",
+    "County clerk certifies election results",
+    "Aides update press on upcoming schedule",
+    "Sunset clause ends prohibition after ten years"
+   ],
+   "doc_id": "5sent_40prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "City hall meeting exceeded scheduled time",
+    "Candidate engaged crowd with chants",
+    "Translation services facilitated communication",
+    "Commission examines global healthcare models"
+   ],
+   "doc_id": "5sent_40prev_032"
+  }
+ ],
+ "clusters": {
+  "8": [
+   "10sent_20prev_006",
+   "10sent_20prev_022",
+   "10sent_20prev_026",
+   "10sent_40prev_016",
+   "10sent_40prev_026",
+   "5sent_20prev_003",
+   "5sent_20prev_019",
+   "5sent_40prev_003",
+   "5sent_40prev_018",
+   "5sent_40prev_032"
+  ],
+  "5": [
+   "10sent_20prev_006",
+   "10sent_40prev_026",
+   "10sent_40prev_026",
+   "5sent_40prev_004"
+  ],
+  "7": [
+   "10sent_20prev_006",
+   "10sent_20prev_016",
+   "10sent_20prev_022",
+   "10sent_20prev_026",
+   "10sent_20prev_026",
+   "5sent_20prev_037",
+   "5sent_20prev_038",
+   "5sent_40prev_004",
+   "5sent_40prev_020"
+  ],
+  "6": [
+   "10sent_20prev_006",
+   "10sent_40prev_000",
+   "5sent_20prev_019"
+  ],
+  "9": [
+   "10sent_20prev_016",
+   "10sent_40prev_016",
+   "10sent_40prev_029",
+   "5sent_20prev_037",
+   "5sent_20prev_037"
+  ],
+  "3": [
+   "10sent_20prev_016",
+   "10sent_20prev_016",
+   "10sent_20prev_022",
+   "10sent_20prev_026",
+   "10sent_40prev_019",
+   "10sent_40prev_019",
+   "10sent_40prev_019",
+   "10sent_40prev_026",
+   "10sent_40prev_027",
+   "10sent_40prev_029",
+   "5sent_20prev_003",
+   "5sent_40prev_004",
+   "5sent_40prev_032"
+  ],
+  "1": [
+   "10sent_20prev_022",
+   "10sent_40prev_000",
+   "10sent_40prev_027",
+   "5sent_20prev_003",
+   "5sent_20prev_019",
+   "5sent_20prev_035",
+   "5sent_40prev_004",
+   "5sent_40prev_020",
+   "5sent_40prev_020"
+  ],
+  "2": [
+   "10sent_40prev_000",
+   "10sent_40prev_016",
+   "10sent_40prev_029",
+   "5sent_20prev_019",
+   "5sent_20prev_035",
+   "5sent_20prev_038"
+  ],
+  "4": [
+   "10sent_40prev_019",
+   "10sent_40prev_027",
+   "10sent_40prev_029",
+   "5sent_20prev_035",
+   "5sent_20prev_038",
+   "5sent_40prev_032"
+  ],
+  "0": [
+   "5sent_20prev_035",
+   "5sent_20prev_038",
+   "5sent_40prev_003",
+   "5sent_40prev_003",
+   "5sent_40prev_018"
+  ]
+ }
+}

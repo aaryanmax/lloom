@@ -1,0 +1,121 @@
+{
+ "status": "complete",
+ "started": "2026-10-06T15:36:47",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 10,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_013",
+  "10sent_20prev_034",
+  "10sent_20prev_038",
+  "10sent_40prev_011",
+  "10sent_40prev_026",
+  "5sent_20prev_036",
+  "5sent_20prev_038",
+  "5sent_40prev_000",
+  "5sent_40prev_004",
+  "5sent_40prev_015"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Gun Control",
+   "Healthcare",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Gun Control Legislation",
+   "Immigration Reform",
+   "International Aid",
+   "Mental Health",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "Universal Healthcare"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_038": [
+   "Economy",
+   "Election Campaigns",
+   "Campaign Promises",
+   "Taxes"
+  ],
+  "10sent_40prev_011": [
+   "Economy",
+   "Environment",
+   "Healthcare",
+   "International Aid",
+   "Mental Health",
+   "Universal Healthcare"
+  ],
+  "10sent_40prev_026": [
+   "Economy",
+   "Foreign Policy",
+   "Immigration",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Immigration Reform",
+   "Party Factionalism",
+   "Unemployment"
+  ],
+  "5sent_40prev_000": [
+   "Election Campaigns",
+   "Candidate Profiles"
+  ],
+  "5sent_40prev_015": [
+   "Economy",
+   "Education Policies",
+   "Taxes"
+  ],
+  "10sent_20prev_038": [
+   "Gun Control",
+   "Assault Weapons Ban",
+   "Gun Control Legislation",
+   "Second Amendment Rights"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Air Pollution"
+  ],
+  "10sent_20prev_013": [
+   "Election Campaigns",
+   "Party Factionalism",
+   "Party Leadership"
+  ],
+  "5sent_20prev_036": [
+   "Gun Control",
+   "Background Checks"
+  ],
+  "5sent_40prev_004": [
+   "Election Campaigns",
+   "Gun Control",
+   "Party Platforms"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.875,
+  "specific": 0.9444444444444444
+ },
+ "coverage": 0.9097222222222222,
+ "n_generated": 50,
+ "finished": "2026-10-06T15:36:53"
+}

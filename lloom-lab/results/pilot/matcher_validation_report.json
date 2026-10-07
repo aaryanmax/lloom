@@ -1,0 +1,18 @@
+{
+ "n_pairs": 38,
+ "agreement": 0.7105263157894737,
+ "precision": 0.21428571428571427,
+ "recall": 1.0,
+ "n_matches": 3,
+ "per_run_manual_coverage": {
+  "n010_t0": 0.25,
+  "n010_t1": 0.0,
+  "n025_t0": 0.2,
+  "n025_t1": 0.2,
+  "n050_t0": 0.0,
+  "n050_t1": 0.0,
+  "n100_t0": 0.0,
+  "n100_t1": 0.0
+ },
+ "note": "labels authored by the coding agent following the project author's v1 exact-meaning standard (paraphrase=1; subset/superset/umbrella=0); not independent annotators"
+}

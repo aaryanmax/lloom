@@ -1,0 +1,149 @@
+[
+ {
+  "kind": "synthesize.cluster_29",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "name": "Civic Events and Politics",
+   "criteria": "Determine whether the text discusses political proceedings, government policies, elections, legislative actions, or public civic events.",
+   "ids": [
+    "10sent_20prev_006",
+    "5sent_20prev_019"
+   ],
+   "latency_s": 2.2
+  },
+  "gemma": {
+   "valid": true,
+   "why": "ok",
+   "name": "Civic and Legislative Affairs",
+   "criteria": "Does this text describe government activities, legislative processes, public policy, or the logistics of civic events?",
+   "ids": [
+    "10sent_20prev_006",
+    "10sent_40prev_010"
+   ],
+   "latency_s": 61.1
+  }
+ },
+ {
+  "kind": "synthesize.cluster_26",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "name": "Political Tensions and Leadership",
+   "criteria": "Read the provided text and determine whether it discusses internal political party conflicts, leadership challenges, delegate rules, or legislative proceedings.",
+   "ids": [
+    "10sent_20prev_023",
+    "10sent_40prev_026"
+   ],
+   "latency_s": 1.5
+  },
+  "gemma": {
+   "valid": true,
+   "why": "ok",
+   "name": "Political Governance Dynamics",
+   "criteria": "Does this text describe political processes, legislative actions, or internal party conflicts?",
+   "ids": [
+    "10sent_20prev_023",
+    "10sent_40prev_026"
+   ],
+   "latency_s": 60.8
+  }
+ },
+ {
+  "kind": "synthesize.cluster_33",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "name": "Civic Proceedings and Events",
+   "criteria": "Determine whether the text describes events, administrative actions, or administrative procedures taking place during a civic, political, or municipal meeting.",
+   "ids": [
+    "5sent_20prev_005",
+    "5sent_20prev_027"
+   ],
+   "latency_s": 1.6
+  },
+  "gemma": {
+   "valid": true,
+   "why": "ok",
+   "name": "Civic Procedural Events",
+   "criteria": "Does this text describe administrative, procedural, or organizational activities occurring during a civic or governmental event?",
+   "ids": [
+    "5sent_40prev_006",
+    "5sent_40prev_021"
+   ],
+   "latency_s": 52.3
+  }
+ },
+ {
+  "kind": "synthesize.cluster_23",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "name": "Public Officials Recognition",
+   "criteria": "Determine whether the text describes a commissioner, government official, or organization expressing gratitude or formally recognizing retiring staff members.",
+   "ids": [
+    "5sent_20prev_020",
+    "5sent_20prev_031"
+   ],
+   "latency_s": 1.3
+  },
+  "gemma": {
+   "valid": true,
+   "why": "ok",
+   "name": "Official News Summaries",
+   "criteria": "Does this text describe an official government action, administrative announcement, or public sector event?",
+   "ids": [
+    "5sent_20prev_020",
+    "5sent_20prev_031"
+   ],
+   "latency_s": 72.0
+  }
+ },
+ {
+  "kind": "matcher.batch_0",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "matched": 6,
+   "of": 10,
+   "latency_s": 2.3
+  },
+  "gemma": {
+   "valid": true,
+   "why": "ok",
+   "matched": 4,
+   "of": 10,
+   "latency_s": 221.3
+  }
+ },
+ {
+  "kind": "matcher.batch_1",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "matched": 2,
+   "of": 10,
+   "latency_s": 2.8
+  },
+  "gemma": {
+   "valid": false,
+   "why": "API error after 72s: Gemini call to gemma-4-31b-it failed after 3 retries: 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}",
+   "latency_s": 71.9
+  }
+ },
+ {
+  "kind": "matcher.batch_2",
+  "flashlite": {
+   "valid": true,
+   "why": "ok",
+   "matched": 5,
+   "of": 10,
+   "latency_s": 2.1
+  },
+  "gemma": {
+   "valid": false,
+   "why": "API error after 18s: Gemini call to gemma-4-31b-it failed after 3 retries: 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}",
+   "latency_s": 17.9
+  }
+ }
+]

@@ -1,0 +1,35 @@
+{
+ "per_method": {
+  "lloom_gemma": {
+   "per_n": [
+    {
+     "n": 10,
+     "n_completed": 0,
+     "generic": {
+      "mean": null,
+      "std": 0.0,
+      "values": [],
+      "cv": null
+     },
+     "specific": {
+      "mean": null,
+      "std": 0.0,
+      "values": [],
+      "cv": null
+     }
+    }
+   ],
+   "n_trials": 1
+  }
+ },
+ "params": {
+  "ns": [
+   10
+  ],
+  "n_trials": 1,
+  "methods": [
+   "lloom_gemma"
+  ]
+ },
+ "paused": null
+}

@@ -1,0 +1,344 @@
+[
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Party Factionalism",
+  "concept": "Political Faction Dynamics",
+  "concept_criteria": "Read the provided text and determine whether it discusses political factions competing, splitting, or experiencing tensions over leadership and key issues.",
+  "matcher_matched": true,
+  "label": 1,
+  "rationale": "concept is a paraphrase of the ground truth"
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Background Checks",
+  "concept": "Public Political Events",
+  "concept_criteria": "Does the text describe public gatherings, meetings, protests, or events related to political issues and legislative sessions?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Party Platforms",
+  "concept": "Public Political Events",
+  "concept_criteria": "Does the text describe public gatherings, meetings, protests, or events related to political issues and legislative sessions?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t0",
+  "ground_truth": "Immigration",
+  "concept": "Elections and Results",
+  "concept_criteria": "Determine whether the provided text discusses the process, counting, confirmation, or outcomes of political elections and leadership votes.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Political Rallies",
+  "concept": "Political Rallies and Protests",
+  "concept_criteria": "Determine whether the provided text describes a public rally, demonstration, or protest centered around political issues, rights, or policy opposition.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Unemployment",
+  "concept": "Legislative Policy Reforms",
+  "concept_criteria": "Does the text describe a proposed legislative bill, policy change, or reform initiative?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Political Parties",
+  "concept": "Political Rallies and Protests",
+  "concept_criteria": "Determine whether the provided text describes a public rally, demonstration, or protest centered around political issues, rights, or policy opposition.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n010_t1",
+  "ground_truth": "Government Policies",
+  "concept": "Political Rallies and Protests",
+  "concept_criteria": "Determine whether the provided text describes a public rally, demonstration, or protest centered around political issues, rights, or policy opposition.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t0",
+  "ground_truth": "Environment",
+  "concept": "Land Conservation Deals",
+  "concept_criteria": "Does the text describe a political initiative, conservation agreement, or reserve creation that protects land and natural habitats?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t0",
+  "ground_truth": "Gun Control",
+  "concept": "Firearm Regulation and Legislation",
+  "concept_criteria": "Determine whether the provided text example discusses new laws, bans, dealer licensing, or court rulings related to firearms and gun control.",
+  "matcher_matched": true,
+  "label": 1,
+  "rationale": "concept is a paraphrase of the ground truth"
+ },
+ {
+  "run_id": "n025_t0",
+  "ground_truth": "Foreign Policy",
+  "concept": "Auditing Government Contracts",
+  "concept_criteria": "Determine whether the text discusses official audits or reviews uncovering financial discrepancies, no-bid contracts, or administrative record-keeping issues within a government context.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t0",
+  "ground_truth": "Government Spending",
+  "concept": "Civic Public Engagement",
+  "concept_criteria": "Determine whether the text describes public involvement, participation in civic activities, or political transparency and ceremonial aspects.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t0",
+  "ground_truth": "Election Campaigns",
+  "concept": "Youthful Closing Remarks",
+  "concept_criteria": "Does the text describe a young delegate or member of a political organization delivering a closing speech or remarks?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t1",
+  "ground_truth": "Gun Control",
+  "concept": "Firearm Regulation Legislation",
+  "concept_criteria": "Determine whether the text discusses laws, court rulings, or government policies related to firearm ownership, dealer licensing, or gun control measures.",
+  "matcher_matched": true,
+  "label": 1,
+  "rationale": "concept is a paraphrase of the ground truth"
+ },
+ {
+  "run_id": "n025_t1",
+  "ground_truth": "Healthcare",
+  "concept": "Healthcare Policy Debates",
+  "concept_criteria": "Does the text discuss political debates, public discussions, or criticisms regarding healthcare coverage, plans, or medical costs?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t1",
+  "ground_truth": "Economic Policies",
+  "concept": "Procedural Signaling and Enforcement",
+  "concept_criteria": "Determine whether the text describes a formal auditory signal, rule, or protocol used to manage behavior, attendance, or operations in a controlled setting.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t1",
+  "ground_truth": "Campaign Promises",
+  "concept": "Firearm Regulation Legislation",
+  "concept_criteria": "Determine whether the text discusses laws, court rulings, or government policies related to firearm ownership, dealer licensing, or gun control measures.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n025_t1",
+  "ground_truth": "Party Platforms",
+  "concept": "Media Coverage and Public Engagement",
+  "concept_criteria": "Determine whether the text discusses how political events, elections, or political figures are captured, broadcast, or highlighted through media coverage and public engagement.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t0",
+  "ground_truth": "Economy",
+  "concept": "Legislative Budget Allocations",
+  "concept_criteria": "Does this text discuss government budget allocations, financial surpluses, or funding decisions for public programs and services?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t0",
+  "ground_truth": "Election Campaigns",
+  "concept": "Political Rallies and Events",
+  "concept_criteria": "Determine whether the text describes public political events, rallies, campaigns, or demonstrations involving crowds and public support.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t0",
+  "ground_truth": "Drug Policy",
+  "concept": "Asylum And Migration",
+  "concept_criteria": "Determine whether the provided text discusses policies, legal processes, or assistance related to asylum seekers and refugees.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t0",
+  "ground_truth": "Government Spending",
+  "concept": "Clean Energy Policies",
+  "concept_criteria": "Does the text describe government or community initiatives implementing renewable energy, electric vehicles, or sustainable infrastructure?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t0",
+  "ground_truth": "Gun Control",
+  "concept": "Voter Registration Drives",
+  "concept_criteria": "Determine if the text describes volunteers actively registering voters at a public location such as a farmers market.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t1",
+  "ground_truth": "Economy",
+  "concept": "Tax Policy Debates",
+  "concept_criteria": "Determine whether the text discusses legislative actions, cuts, relief, or political divisions regarding taxation and state budgets.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t1",
+  "ground_truth": "Election Campaigns",
+  "concept": "Campaign Events and Public Activities",
+  "concept_criteria": "Does this text describe public campaign events, political activities, or public engagement moments such as rallies, protests, or morning campaigning?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t1",
+  "ground_truth": "Gun Control",
+  "concept": "Legislative Rights Protections",
+  "concept_criteria": "Does the text discuss new laws, legislative efforts, or constitutional amendments aimed at protecting the rights and safety of vulnerable populations such as children, minors, victims, or tenants?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t1",
+  "ground_truth": "Economy",
+  "concept": "Border Security Enforcement",
+  "concept_criteria": "Determine whether the provided text discusses government actions, policy changes, or law enforcement operations related to managing unauthorized border crossings, deportations, or illegal entry.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n050_t1",
+  "ground_truth": "Diplomatic Relations",
+  "concept": "Environmental Policy Updates",
+  "concept_criteria": "Determine whether the provided text example discusses political actions, policies, or organizational updates related to climate change and renewable energy infrastructure.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t0",
+  "ground_truth": "Election Campaigns",
+  "concept": "Campaign Promises and Pledges",
+  "concept_criteria": "Determine whether the text describes specific policy promises, economic pledges, or commitments made by political candidates during a campaign.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t0",
+  "ground_truth": "Environment",
+  "concept": "Clean Energy Policy",
+  "concept_criteria": "Determine whether the text discusses government policies, public investments, or infrastructure projects related to renewable energy and emissions reduction.",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t0",
+  "ground_truth": "Nature Conservation",
+  "concept": "Legal Rights and Protections",
+  "concept_criteria": "Does the text discuss government policies, court rulings, or constitutional amendments that establish or expand legal rights and protections for specific groups such as children, workers, minorities, or families?",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t0",
+  "ground_truth": "Political Rallies",
+  "concept": "Election Results Certification",
+  "concept_criteria": "Determine whether the given text describes a county clerk certifying or confirming official election results.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t0",
+  "ground_truth": "Government Spending",
+  "concept": "Logistical Event Challenges",
+  "concept_criteria": "Determine whether the text describes political or public events encountering logistical difficulties, venue preparations, or attendance hurdles.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t1",
+  "ground_truth": "Economy",
+  "concept": "Budget Surpluses Spark Spending",
+  "concept_criteria": "Does the provided text discuss how a budget surplus or economic recovery leads to political debates or calls for increased spending?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t1",
+  "ground_truth": "Election Campaigns",
+  "concept": "Record Fundraising Success",
+  "concept_criteria": "Does the provided text discuss achieving record-breaking levels in political fundraising or campaign financial support?",
+  "matcher_matched": true,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t1",
+  "ground_truth": "War and Peace",
+  "concept": "Crowded Hearing Preparation",
+  "concept_criteria": "Determine whether the text describes a packed legislative hearing room and preparations such as microphone checks before a session.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t1",
+  "ground_truth": "Party Leadership",
+  "concept": "Event Preparation Staff",
+  "concept_criteria": "Determine whether the text describes support staff, caterers, or personnel preparing facilities and venues for an upcoming political event or session.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ },
+ {
+  "run_id": "n100_t1",
+  "ground_truth": "Renewable Energy",
+  "concept": "Public Archival Display",
+  "concept_criteria": "Determine if the text describes historical documents, records, or figures being displayed publicly or preserved for the public.",
+  "matcher_matched": false,
+  "label": 0,
+  "rationale": ""
+ }
+]

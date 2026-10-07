@@ -1,0 +1,250 @@
+{
+ "status": "complete",
+ "started": "2026-10-07T19:37:44",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "qwen",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 10,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_010",
+  "10sent_20prev_016",
+  "10sent_20prev_019",
+  "10sent_20prev_032",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_012",
+  "5sent_40prev_002",
+  "5sent_40prev_018",
+  "5sent_40prev_027"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Border Control Policies",
+   "Drug Policy",
+   "Education Policies",
+   "Fundraising",
+   "Healthcare Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party History",
+   "Party Leadership",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "War and Peace"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Political meeting details and activities",
+    "Staff and interns engaged in routine tasks",
+    "Business interests and policy discussions",
+    "Facility maintenance and operational status"
+   ],
+   "doc_id": "10sent_20prev_010"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event preparations underway",
+    "Public healthcare policy advancement",
+    "Legislative actions and civic engagement",
+    "Event remnants and facility usage"
+   ],
+   "doc_id": "10sent_20prev_016"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political operations in a statehouse environment",
+    "Public engagement through various civic activities",
+    "Leadership challenges and institutional changes",
+    "Symbolic actions reflecting political priorities"
+   ],
+   "doc_id": "10sent_20prev_019"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Lawmakers discuss medicine pricing controls",
+    "Procedural debates disrupt civic center traffic",
+    "Regulators shift sleep aid accessibility status"
+   ],
+   "doc_id": "10sent_20prev_032"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Bill funds universal pre-kindergarten",
+    "Meeting opened with staff recognition",
+    "Vendor sold items at plaza",
+    "Clock stopped during final vote"
+   ],
+   "doc_id": "5sent_20prev_007"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Event logistics and coordination",
+    "Volunteer fundraising efforts",
+    "Venue setup and technical support",
+    "Operational maintenance tasks"
+   ],
+   "doc_id": "5sent_20prev_010"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "High turnout in county precincts",
+    "Fire marshal limits viewing room capacity",
+    "Fragile peace at risk without monitors",
+    "Gallery cleared after outburst"
+   ],
+   "doc_id": "5sent_20prev_012"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Legal ownership protects individual freedoms",
+    "Court rules against same-sex adoption ban",
+    "Event aftermath shows lingering impact",
+    "Increased visitor activity noted at reception"
+   ],
+   "doc_id": "5sent_40prev_002"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Roll call signaled by bells in corridor",
+    "Candidate references party's founding charter",
+    "Printers worked overnight for announcement",
+    "Delegation's youngest member gave closing remarks"
+   ],
+   "doc_id": "5sent_40prev_018"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "New shipping rules announced",
+    "State imposes online retail surcharge",
+    "Retiring staff recognized at meeting",
+    "Protester voices concerns outside"
+   ],
+   "doc_id": "5sent_40prev_027"
+  }
+ ],
+ "clusters": {
+  "2": [
+   "10sent_20prev_010",
+   "10sent_20prev_010",
+   "10sent_20prev_016",
+   "10sent_20prev_016",
+   "10sent_20prev_016",
+   "10sent_20prev_019",
+   "10sent_20prev_019",
+   "10sent_20prev_019",
+   "10sent_20prev_019",
+   "10sent_20prev_032",
+   "5sent_20prev_010",
+   "5sent_40prev_002",
+   "5sent_40prev_018"
+  ],
+  "0": [
+   "10sent_20prev_010",
+   "10sent_20prev_010",
+   "10sent_20prev_016",
+   "5sent_20prev_007",
+   "5sent_20prev_010",
+   "5sent_20prev_010",
+   "5sent_20prev_010",
+   "5sent_20prev_012",
+   "5sent_40prev_002",
+   "5sent_40prev_018",
+   "5sent_40prev_027"
+  ],
+  "3": [
+   "10sent_20prev_032",
+   "5sent_20prev_012",
+   "5sent_40prev_027"
+  ],
+  "1": [
+   "10sent_20prev_032",
+   "5sent_20prev_007",
+   "5sent_20prev_007",
+   "5sent_20prev_012",
+   "5sent_20prev_012",
+   "5sent_40prev_002",
+   "5sent_40prev_018",
+   "5sent_40prev_018",
+   "5sent_40prev_027"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "Event Logistics",
+   "criteria_prompt": "Does the text describe activities related to organizing, managing, or coordinating an event?",
+   "representative_example_ids": [
+    "5sent_20prev_010",
+    "5sent_40prev_002"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Policy Change",
+   "criteria_prompt": "Does the text describe a change in policy or regulation affecting public access or operations?",
+   "representative_example_ids": [
+    "10sent_20prev_032",
+    "5sent_40prev_027"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Political Operations",
+   "criteria_prompt": "Does the text describe activities related to political processes, governance, or institutional functions within a political system?",
+   "representative_example_ids": [
+    "10sent_20prev_019",
+    "10sent_20prev_016"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Public Engagement",
+   "criteria_prompt": "Does the text describe public participation in political processes or civic activities?",
+   "representative_example_ids": [
+    "5sent_20prev_012",
+    "5sent_40prev_027"
+   ],
+   "cluster_label": 3
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T19:42:46"
+}

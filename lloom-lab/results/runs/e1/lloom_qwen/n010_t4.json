@@ -1,0 +1,211 @@
+{
+ "status": "running",
+ "started": "2026-10-07T19:43:54",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "qwen",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 10,
+  "trial": 4
+ },
+ "doc_ids": [
+  "10sent_20prev_017",
+  "10sent_20prev_026",
+  "10sent_40prev_001",
+  "10sent_40prev_008",
+  "5sent_20prev_007",
+  "5sent_20prev_008",
+  "5sent_20prev_010",
+  "5sent_20prev_023",
+  "5sent_20prev_025",
+  "5sent_40prev_022"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Air Pollution",
+   "Background Checks",
+   "Climate Change",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fundraising",
+   "Health Insurance",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Unemployment",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events disrupt local traffic",
+    "Legislation expands firearm vetting",
+    "Government commits to arms control talks",
+    "Political activities involve multiple stakeholders"
+   ],
+   "doc_id": "10sent_20prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political activities during morning rush",
+    "Preparation for official events and briefings",
+    "Policy proposals for small businesses",
+    "Infrastructure and event readiness highlighted"
+   ],
+   "doc_id": "10sent_20prev_026"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Retired elevator worker shares experience",
+    "State updates education and civics requirements",
+    "Healthcare plans face criticism for costs",
+    "Legislative activities covered by media and staff"
+   ],
+   "doc_id": "10sent_40prev_001"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political actions address workplace harassment",
+    "Legislative efforts focus on public safety",
+    "Historical events depicted in public spaces",
+    "Policy changes target environmental and social issues"
+   ],
+   "doc_id": "10sent_40prev_008"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Bill funds universal pre-kindergarten",
+    "Meeting opened with staff recognition",
+    "Vendor sold items at plaza",
+    "Clock stopped during final vote"
+   ],
+   "doc_id": "5sent_20prev_007"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Delegation member delivers closing remarks",
+    "Small businesses collaborate for employee benefits",
+    "Groundskeeper maintains visitors' walkway",
+    "Traffic congestion due to motorcade arrivals"
+   ],
+   "doc_id": "5sent_20prev_008"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Event logistics and coordination",
+    "Volunteer fundraising efforts",
+    "Venue setup and technical support",
+    "Operational maintenance tasks"
+   ],
+   "doc_id": "5sent_20prev_010"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Local bloggers cover council debates",
+    "Budget boosts aid for drought region",
+    "Clerk reads resolution in sparse chamber",
+    "Civic event features bagpiper and hand-lettered seating"
+   ],
+   "doc_id": "5sent_20prev_023"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Legislators propose gender identity protections",
+    "Meeting extends beyond scheduled time",
+    "Young delegate gives closing speech",
+    "Basement room used for photocopying"
+   ],
+   "doc_id": "5sent_20prev_025"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Council debates procedural issues",
+    "Youth unemployment doubles",
+    "State commits to net-zero by 2050",
+    "Audience urged to silence phones"
+   ],
+   "doc_id": "5sent_40prev_022"
+  }
+ ],
+ "clusters": {
+  "1": [
+   "10sent_20prev_017",
+   "10sent_20prev_026",
+   "10sent_40prev_008",
+   "5sent_20prev_007",
+   "5sent_20prev_007",
+   "5sent_20prev_007",
+   "5sent_20prev_008",
+   "5sent_20prev_008",
+   "5sent_20prev_008",
+   "5sent_20prev_023",
+   "5sent_20prev_023",
+   "5sent_20prev_025",
+   "5sent_20prev_025",
+   "5sent_20prev_025",
+   "5sent_40prev_022"
+  ],
+  "0": [
+   "10sent_20prev_017",
+   "10sent_20prev_017",
+   "10sent_20prev_017",
+   "10sent_20prev_026",
+   "10sent_40prev_001",
+   "10sent_40prev_001",
+   "10sent_40prev_001",
+   "10sent_40prev_008",
+   "10sent_40prev_008",
+   "10sent_40prev_008",
+   "5sent_20prev_007",
+   "5sent_20prev_008",
+   "5sent_20prev_010",
+   "5sent_20prev_023",
+   "5sent_20prev_023",
+   "5sent_20prev_025",
+   "5sent_40prev_022",
+   "5sent_40prev_022"
+  ],
+  "2": [
+   "10sent_20prev_026",
+   "10sent_20prev_026",
+   "5sent_20prev_010",
+   "5sent_20prev_010",
+   "5sent_20prev_010"
+  ]
+ }
+}
