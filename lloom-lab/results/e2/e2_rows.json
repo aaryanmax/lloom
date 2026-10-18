@@ -1,0 +1,1490 @@
+[
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 10,
+  "failure_rate": 0.185,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 30,
+  "failure_rate": 0.1775,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 50,
+  "failure_rate": 0.1275,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 70,
+  "failure_rate": 0.07,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 90,
+  "failure_rate": 0.0375,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 110,
+  "failure_rate": 0.0175,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 130,
+  "failure_rate": 0.01,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 150,
+  "failure_rate": 0.005,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 170,
+  "failure_rate": 0.0025,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 190,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 210,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.05,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 445,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 10,
+  "failure_rate": 0.1375,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 30,
+  "failure_rate": 0.1525,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 50,
+  "failure_rate": 0.1325,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 70,
+  "failure_rate": 0.0675,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 90,
+  "failure_rate": 0.0425,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 110,
+  "failure_rate": 0.0325,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 130,
+  "failure_rate": 0.0025,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 150,
+  "failure_rate": 0.005,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 170,
+  "failure_rate": 0.0025,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 190,
+  "failure_rate": 0.0025,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 210,
+  "failure_rate": 0.0025,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.05,
+  "delta": 0.1,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 390,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 10,
+  "failure_rate": 0.09,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 30,
+  "failure_rate": 0.06,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 50,
+  "failure_rate": 0.015,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 70,
+  "failure_rate": 0.005,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 90,
+  "failure_rate": 0.005,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 110,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 130,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 150,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 170,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 190,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 210,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.05,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 223,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 10,
+  "failure_rate": 0.095,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 30,
+  "failure_rate": 0.0575,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 50,
+  "failure_rate": 0.0275,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 70,
+  "failure_rate": 0.0075,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 90,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 110,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 130,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 150,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 170,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 190,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 210,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.1,
+  "delta": 0.1,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 195,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 10,
+  "failure_rate": 0.045,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 30,
+  "failure_rate": 0.0025,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 50,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 70,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 90,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 110,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 130,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 150,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 170,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 190,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 210,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.05,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 112,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 10,
+  "failure_rate": 0.0425,
+  "bound_m": 98,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 30,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 50,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 70,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 90,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": false
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 110,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 130,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 150,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 170,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 190,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 210,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 230,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 250,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 270,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 290,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 310,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 330,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 350,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 370,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 390,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 410,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 430,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 450,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 470,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 490,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 510,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 530,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 550,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 570,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 590,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ },
+ {
+  "eps": 0.2,
+  "delta": 0.1,
+  "m": 610,
+  "failure_rate": 0.0,
+  "bound_m": 98,
+  "theory_ok": true
+ }
+]
