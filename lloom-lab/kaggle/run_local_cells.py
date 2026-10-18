@@ -26,7 +26,7 @@ def main():
     ap.add_argument("--method", default="lloom_qwen")
     ap.add_argument("--ns", nargs="+", type=int, default=[10, 20, 40, 80, 160])
     ap.add_argument("--trials", type=int, default=5)
-    ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--jobs", type=int, default=2)
     args = ap.parse_args()
 
     from concurrent.futures import ThreadPoolExecutor
@@ -34,10 +34,13 @@ def main():
     out_dir = RUNS_DIR / "e1" / args.method
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    total_cells = len(args.ns) * args.trials
+    print(f"Starting {args.method} across ns={args.ns}, {args.trials} trials ({total_cells} cells total) with {args.jobs} worker(s)...")
+
     def cell(n, t):
         path = out_dir / f"n{n:03d}_t{t}.json"
         if path.exists() and json.loads(path.read_text(encoding="utf-8")).get("concepts"):
-            return f"skip n{n} t{t}"
+            return f"[skip] n{n} t{t} (already completed)"
         docs = sampling.subsample_docs(corpus, n, trial=t)
         rec = {
             "status": "running",
@@ -46,13 +49,16 @@ def main():
             "doc_ids": sorted(d["doc_id"] for d in docs),
             "errors": {}
         }
+        t0 = time.time()
         try:
             run_subset(make_client(), docs,
                        run_cfg={"synth_model": "qwen", "skip_score": True},
                        run_meta=rec["meta"], out_path=path)
-            return f"done n{n} t{t}"
+            elapsed = time.time() - t0
+            return f"[done] n{n} t{t} in {elapsed:.1f}s"
         except Exception as ex:
-            return f"FAIL n{n} t{t}: {ex}"
+            elapsed = time.time() - t0
+            return f"[FAIL] n{n} t{t} after {elapsed:.1f}s: {ex}"
 
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         for res in pool.map(lambda c: cell(*c), [(n, t) for n in args.ns for t in range(args.trials)]):

@@ -7,7 +7,7 @@ name = "lloom-lab"
 version = "0.1.0"
 description = "How Many Examples Does It Take? — sample-complexity and capacity analysis of LLM concept induction (LLooM, arXiv:2404.12259)"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { text = "Proprietary" }
 authors = [{ name = "AML-Project" }]
 dependencies = [
