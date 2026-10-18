@@ -1,0 +1,305 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:32:19",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 20,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_008",
+  "10sent_20prev_014",
+  "10sent_20prev_021",
+  "10sent_20prev_032",
+  "10sent_20prev_039",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_019",
+  "10sent_40prev_030",
+  "10sent_40prev_033",
+  "5sent_20prev_003",
+  "5sent_20prev_005",
+  "5sent_20prev_013",
+  "5sent_20prev_025",
+  "5sent_20prev_027",
+  "5sent_20prev_031",
+  "5sent_40prev_017",
+  "5sent_40prev_030",
+  "5sent_40prev_034",
+  "5sent_40prev_035"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Government Spending",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Second Amendment Rights",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 3,
+  "n_docs": 20,
+  "n_topics": 2
+ },
+ "concepts": [
+  {
+   "name": "The To Of",
+   "criteria_prompt": "Documents about: the, to, of, state, at, in, for, outside",
+   "topic_id": 0,
+   "top_words": [
+    "the",
+    "to",
+    "of",
+    "state",
+    "at",
+    "in",
+    "for",
+    "outside",
+    "on",
+    "before"
+   ]
+  },
+  {
+   "name": "The To At",
+   "criteria_prompt": "Documents about: the, to, at, of, room, would, traffic, ran",
+   "topic_id": 1,
+   "top_words": [
+    "the",
+    "to",
+    "at",
+    "of",
+    "room",
+    "would",
+    "traffic",
+    "ran",
+    "hall",
+    "on"
+   ]
+  }
+ ],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent the economy."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent the environment."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent government policies."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent gun control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent healthcare."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent human rights."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent immigration."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to represent political parties."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to background checks."
+  },
+  {
+   "ground_truth": "Border Control Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to border control."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to campaign promises."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to candidate profiles."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to children's rights."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to climate change."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to diplomatic relations."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to drug policy."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to education policies."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and lack semantic relevance to fiscal policy."
+  },
+  {
+   "ground_truth": "Fundraising",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of fundraising."
+  },
+  {
+   "ground_truth": "Government Spending",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of government spending."
+  },
+  {
+   "ground_truth": "Health Insurance",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of health insurance."
+  },
+  {
+   "ground_truth": "Healthcare Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of healthcare policies."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of illegal immigration."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of international aid."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of international relations policies."
+  },
+  {
+   "ground_truth": "LGBTQ+ Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of LGBTQ+ rights."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of nature conservation."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of party leadership."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of party platforms."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of political rallies."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of Second Amendment rights."
+  },
+  {
+   "ground_truth": "Universal Healthcare",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of universal healthcare."
+  },
+  {
+   "ground_truth": "War and Peace",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of war and peace."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and unrelated terms, failing to capture the meaning of women's rights."
+  }
+ ],
+ "n_generated": 2,
+ "finished": "2026-10-08T15:33:15"
+}

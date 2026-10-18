@@ -1,0 +1,197 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:36:01",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 20,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_006",
+  "10sent_20prev_016",
+  "10sent_20prev_022",
+  "10sent_20prev_026",
+  "10sent_40prev_000",
+  "10sent_40prev_016",
+  "10sent_40prev_019",
+  "10sent_40prev_026",
+  "10sent_40prev_027",
+  "10sent_40prev_029",
+  "5sent_20prev_003",
+  "5sent_20prev_019",
+  "5sent_20prev_035",
+  "5sent_20prev_037",
+  "5sent_20prev_038",
+  "5sent_40prev_003",
+  "5sent_40prev_004",
+  "5sent_40prev_018",
+  "5sent_40prev_020",
+  "5sent_40prev_032"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Assault Weapons Ban",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Government Spending",
+   "Gun Control Legislation",
+   "Healthcare Policies",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Refugee Policies",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "Universal Healthcare",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_40prev_032": [
+   "Political Rallies",
+   "Healthcare Policies",
+   "Government Policies"
+  ],
+  "10sent_40prev_016": [
+   "Environment",
+   "LGBTQ+ Rights",
+   "Government Spending",
+   "War and Peace",
+   "International Relations Policies"
+  ],
+  "10sent_20prev_016": [
+   "Healthcare Policies",
+   "Government Policies",
+   "Political Rallies"
+  ],
+  "10sent_20prev_022": [
+   "Immigration Reform",
+   "Healthcare Policies",
+   "Refugee Policies",
+   "Political Rallies"
+  ],
+  "5sent_40prev_020": [
+   "Immigration",
+   "Healthcare Policies",
+   "Political Rallies"
+  ],
+  "5sent_20prev_019": [
+   "Political Rallies",
+   "Government Policies"
+  ],
+  "5sent_40prev_003": [
+   "Political Parties",
+   "Government Policies"
+  ],
+  "10sent_40prev_000": [
+   "LGBTQ+ Rights",
+   "International Relations Policies",
+   "Government Policies",
+   "Immigration"
+  ],
+  "10sent_40prev_029": [
+   "Government Policies",
+   "Human Rights",
+   "Education Policies",
+   "Political Rallies",
+   "International Relations Policies"
+  ],
+  "5sent_40prev_018": [
+   "Political Parties",
+   "Government Policies"
+  ],
+  "5sent_40prev_004": [
+   "Government Policies",
+   "Party Platforms",
+   "Campaign Promises",
+   "Election Campaigns"
+  ],
+  "10sent_20prev_006": [
+   "Government Policies",
+   "Fiscal Policy",
+   "Economic Policies",
+   "International Relations Policies"
+  ],
+  "10sent_40prev_019": [
+   "Government Policies",
+   "Trade Agreements",
+   "Human Rights",
+   "Healthcare Policies"
+  ],
+  "10sent_40prev_026": [
+   "Immigration Reform",
+   "Economic Policies",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Unemployment"
+  ],
+  "10sent_40prev_027": [
+   "Healthcare Policies",
+   "Government Policies",
+   "Education Policies",
+   "Political Rallies"
+  ],
+  "5sent_20prev_038": [
+   "Taxes",
+   "Government Policies",
+   "Political Rallies",
+   "Party Platforms"
+  ],
+  "5sent_20prev_003": [
+   "Government Policies",
+   "Healthcare Policies",
+   "Political Rallies"
+  ],
+  "5sent_20prev_037": [
+   "Government Policies",
+   "Political Rallies",
+   "Party History"
+  ],
+  "5sent_20prev_035": [
+   "Mental Health",
+   "Government Policies",
+   "Political Rallies"
+  ],
+  "10sent_20prev_026": [
+   "Government Policies",
+   "Economic Policies",
+   "Political Rallies",
+   "Immigration Reform"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.6,
+  "specific": 0.6428571428571429
+ },
+ "coverage": 0.6214285714285714,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:41:08"
+}

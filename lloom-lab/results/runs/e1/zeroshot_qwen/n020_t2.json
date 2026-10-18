@@ -1,0 +1,203 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:41:08",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 20,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_005",
+  "10sent_20prev_015",
+  "10sent_20prev_026",
+  "10sent_20prev_031",
+  "10sent_20prev_034",
+  "10sent_20prev_038",
+  "10sent_40prev_001",
+  "10sent_40prev_002",
+  "10sent_40prev_003",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_023",
+  "10sent_40prev_028",
+  "5sent_20prev_009",
+  "5sent_20prev_016",
+  "5sent_20prev_017",
+  "5sent_20prev_026",
+  "5sent_20prev_037",
+  "5sent_40prev_000",
+  "5sent_40prev_034"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "Mental Health",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_026": [
+   "Government Policies",
+   "Immigration Reform",
+   "Environment",
+   "Climate Change"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Climate Change",
+   "Government Policies"
+  ],
+  "5sent_20prev_016": [
+   "Environment",
+   "Renewable Energy"
+  ],
+  "10sent_20prev_038": [
+   "Gun Control Legislation",
+   "Assault Weapons Ban",
+   "Immigration",
+   "Political Rallies"
+  ],
+  "10sent_40prev_001": [
+   "Healthcare Policies",
+   "Education Policies",
+   "Healthcare"
+  ],
+  "10sent_20prev_015": [
+   "Healthcare",
+   "Drug Policy",
+   "Government Policies"
+  ],
+  "10sent_40prev_023": [
+   "Gun Control Legislation",
+   "Assault Weapons Ban",
+   "Education Policies",
+   "Government Policies"
+  ],
+  "10sent_20prev_005": [
+   "Government Policies",
+   "Party Factionalism",
+   "Economy"
+  ],
+  "10sent_40prev_007": [
+   "Economy",
+   "Immigration",
+   "Government Policies"
+  ],
+  "5sent_20prev_037": [
+   "Political Parties",
+   "Government Policies"
+  ],
+  "10sent_40prev_017": [
+   "Government Policies",
+   "Political Parties",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Government Spending",
+   "Healthcare Policies",
+   "Drug Policy",
+   "Party Factionalism"
+  ],
+  "5sent_20prev_009": [
+   "Government Policies",
+   "Gun Control Legislation",
+   "International Relations Policies"
+  ],
+  "5sent_40prev_000": [
+   "Election Campaigns",
+   "Candidate Profiles",
+   "Political Rallies",
+   "Government Policies",
+   "Immigration"
+  ],
+  "10sent_20prev_031": [
+   "Government Policies",
+   "Gun Control Legislation",
+   "Political Rallies",
+   "Party Leadership",
+   "Party Platforms",
+   "International Relations Policies",
+   "Economic Policies"
+  ],
+  "5sent_20prev_017": [
+   "Government Policies",
+   "Gun Control Legislation",
+   "Political Rallies",
+   "Party Leadership",
+   "Party Platforms"
+  ],
+  "5sent_40prev_034": [
+   "Government Policies",
+   "International Aid",
+   "International Relations Policies",
+   "Foreign Policy",
+   "War and Peace"
+  ],
+  "5sent_20prev_026": [
+   "Government Policies",
+   "Economic Policies",
+   "International Relations Policies",
+   "Foreign Policy",
+   "Immigration"
+  ],
+  "10sent_40prev_003": [
+   "Government Policies",
+   "Economic Policies",
+   "International Relations Policies",
+   "Foreign Policy",
+   "War and Peace",
+   "Second Amendment Rights",
+   "Party Leadership",
+   "Party Platforms"
+  ],
+  "10sent_40prev_002": [
+   "Government Policies",
+   "Political Parties",
+   "Party Factionalism",
+   "Party Platforms",
+   "Political Rallies",
+   "Gun Control Legislation",
+   "Second Amendment Rights",
+   "International Relations Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.8888888888888888,
+  "specific": 0.6086956521739131
+ },
+ "coverage": 0.748792270531401,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:46:55"
+}

@@ -1,0 +1,106 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:19:18",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 10,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_013",
+  "10sent_20prev_034",
+  "10sent_20prev_038",
+  "10sent_40prev_011",
+  "10sent_40prev_026",
+  "5sent_20prev_036",
+  "5sent_20prev_038",
+  "5sent_40prev_000",
+  "5sent_40prev_004",
+  "5sent_40prev_015"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Gun Control",
+   "Healthcare",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Gun Control Legislation",
+   "Immigration Reform",
+   "International Aid",
+   "Mental Health",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "Universal Healthcare"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_038": [
+   "Economy",
+   "Government Policies",
+   "Political Rallies"
+  ],
+  "10sent_40prev_011": [
+   "Economy",
+   "International Relations Policies",
+   "Unemployment"
+  ],
+  "5sent_40prev_000": [
+   "Election Campaigns",
+   "Government Policies"
+  ],
+  "5sent_40prev_015": [
+   "Taxes",
+   "Economy"
+  ],
+  "10sent_20prev_038": [
+   "Gun Control Legislation",
+   "Education Policies",
+   "Election Campaigns"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Government Policies",
+   "Election Campaigns"
+  ],
+  "10sent_20prev_013": [
+   "Election Campaigns",
+   "Party Factionalism",
+   "Government Policies"
+  ],
+  "5sent_20prev_036": [
+   "Economy",
+   "Election Campaigns"
+  ],
+  "5sent_40prev_004": [
+   "Election Campaigns",
+   "Gun Control Legislation",
+   "Political Parties"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.5,
+  "specific": 0.2222222222222222
+ },
+ "coverage": 0.3611111111111111,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:21:41"
+}

@@ -1,0 +1,118 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:16:37",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 10,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_001",
+  "10sent_20prev_003",
+  "10sent_40prev_024",
+  "10sent_40prev_026",
+  "5sent_20prev_015",
+  "5sent_20prev_017",
+  "5sent_20prev_020",
+  "5sent_20prev_036",
+  "5sent_40prev_005",
+  "5sent_40prev_006"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Political Rallies",
+   "Unemployment",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_017": [
+   "Gun Control",
+   "Gun Control Legislation"
+  ],
+  "10sent_20prev_003": [
+   "Environment",
+   "Air Pollution"
+  ],
+  "5sent_20prev_036": [
+   "Gun Control",
+   "Background Checks"
+  ],
+  "5sent_20prev_015": [
+   "Immigration",
+   "Illegal Immigration",
+   "Border Control Policies"
+  ],
+  "5sent_20prev_020": [
+   "Government Policies",
+   "Economic Policies",
+   "Government Spending"
+  ],
+  "5sent_40prev_006": [
+   "Government Policies",
+   "Immigration",
+   "Immigration Reform"
+  ],
+  "5sent_40prev_005": [
+   "Environment",
+   "Nature Conservation"
+  ],
+  "10sent_20prev_001": [
+   "Human Rights",
+   "Women's Rights",
+   "Racial Equality"
+  ],
+  "10sent_40prev_026": [
+   "Immigration",
+   "Immigration Reform",
+   "Economy",
+   "Unemployment",
+   "Political Parties",
+   "Party Factionalism",
+   "Party Leadership",
+   "Environment",
+   "Climate Change",
+   "Foreign Policy",
+   "Diplomatic Relations",
+   "International Relations Policies"
+  ],
+  "10sent_40prev_024": [
+   "Election Campaigns",
+   "Candidate Profiles",
+   "Political Rallies",
+   "Gun Control",
+   "Gun Control Legislation"
+  ]
+ },
+ "coverage_split": {
+  "generic": 1.0,
+  "specific": 0.8571428571428571
+ },
+ "coverage": 0.9285714285714286,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:17:06"
+}

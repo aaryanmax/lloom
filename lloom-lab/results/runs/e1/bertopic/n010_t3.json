@@ -1,0 +1,61 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:32:07",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 10,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_039",
+  "10sent_40prev_025",
+  "10sent_40prev_027",
+  "5sent_20prev_001",
+  "5sent_20prev_003",
+  "5sent_20prev_027",
+  "5sent_20prev_028",
+  "5sent_40prev_014",
+  "5sent_40prev_022",
+  "5sent_40prev_028"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Healthcare",
+   "Human Rights",
+   "Political Parties"
+  ],
+  "specific": [
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Government Spending",
+   "International Aid",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Platforms",
+   "Racial Equality",
+   "Trade Agreements",
+   "Unemployment"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 3,
+  "n_docs": 10,
+  "n_topics": 0
+ },
+ "concepts": [],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "n_generated": 0,
+ "finished": "2026-10-08T15:32:15"
+}

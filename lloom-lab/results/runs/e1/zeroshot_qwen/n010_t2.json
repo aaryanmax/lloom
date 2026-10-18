@@ -1,0 +1,85 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:23:52",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 10,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_010",
+  "10sent_20prev_016",
+  "10sent_20prev_019",
+  "10sent_20prev_032",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_012",
+  "5sent_40prev_002",
+  "5sent_40prev_018",
+  "5sent_40prev_027"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Border Control Policies",
+   "Drug Policy",
+   "Education Policies",
+   "Fundraising",
+   "Healthcare Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party History",
+   "Party Leadership",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "War and Peace"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_010": [],
+  "10sent_20prev_032": [
+   "Healthcare Policies"
+  ],
+  "5sent_40prev_002": [
+   "LGBTQ+ Rights"
+  ],
+  "5sent_20prev_012": [
+   "Foreign Policy"
+  ],
+  "5sent_40prev_018": [
+   "Political Parties"
+  ],
+  "5sent_20prev_007": [
+   "Education Policies"
+  ],
+  "5sent_20prev_010": [],
+  "10sent_20prev_019": [
+   "Political Parties"
+  ],
+  "5sent_40prev_027": [],
+  "10sent_20prev_016": [
+   "Healthcare Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.2,
+  "specific": 0.23076923076923078
+ },
+ "coverage": 0.2153846153846154,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:25:44"
+}

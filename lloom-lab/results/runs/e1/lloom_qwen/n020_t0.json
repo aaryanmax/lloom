@@ -1,6 +1,6 @@
 {
- "status": "running",
- "started": "2026-10-07T19:44:44",
+ "status": "complete",
+ "started": "2026-10-07T19:59:14",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -370,5 +370,90 @@
    "5sent_40prev_034",
    "5sent_40prev_035"
   ]
- }
+ },
+ "concepts": [
+  {
+   "name": "Policy Adjustments",
+   "criteria_prompt": "Does the text describe changes in government policies or regulations in response to economic, social, or political conditions?",
+   "representative_example_ids": [
+    "10sent_20prev_021",
+    "10sent_40prev_030"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Political Engagement",
+   "criteria_prompt": "Does the text describe public participation in political events or activities?",
+   "representative_example_ids": [
+    "10sent_20prev_008",
+    "10sent_40prev_033"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Traffic Management",
+   "criteria_prompt": "Does the text describe activities or issues related to managing or navigating traffic in a civic or public area?",
+   "representative_example_ids": [
+    "10sent_20prev_032",
+    "10sent_40prev_007"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Public Display of Records",
+   "criteria_prompt": "Does the text mention the public display of historical or official records?",
+   "representative_example_ids": [
+    "10sent_20prev_039",
+    "5sent_20prev_013"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Healthcare Regulation",
+   "criteria_prompt": "Does the text mention legislative or regulatory actions related to healthcare pricing, access, or subsidies?",
+   "representative_example_ids": [
+    "10sent_40prev_033",
+    "5sent_20prev_031"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Policy Innovation",
+   "criteria_prompt": "Does the text describe a new policy or initiative aimed at addressing a societal issue through legislative or administrative action?",
+   "representative_example_ids": [
+    "10sent_40prev_017",
+    "5sent_20prev_005"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Amendment Distribution",
+   "criteria_prompt": "Does the text mention the distribution of amended documents or bills by staff?",
+   "representative_example_ids": [
+    "5sent_20prev_003",
+    "5sent_20prev_027"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Event Preparation",
+   "criteria_prompt": "Does the text mention activities related to organizing or setting up an event?",
+   "representative_example_ids": [
+    "5sent_40prev_017",
+    "5sent_40prev_030"
+   ],
+   "cluster_label": 7
+  },
+  {
+   "name": "Schedule Disruption",
+   "criteria_prompt": "Does the text describe an event or meeting that was delayed, extended, or affected by external factors beyond its scheduled time?",
+   "representative_example_ids": [
+    "5sent_40prev_035",
+    "5sent_20prev_025"
+   ],
+   "cluster_label": 8
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T20:10:04"
 }

@@ -1,0 +1,117 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:17:07",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 10,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_010",
+  "10sent_20prev_016",
+  "10sent_20prev_019",
+  "10sent_20prev_032",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_012",
+  "5sent_40prev_002",
+  "5sent_40prev_018",
+  "5sent_40prev_027"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Border Control Policies",
+   "Drug Policy",
+   "Education Policies",
+   "Fundraising",
+   "Healthcare Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party History",
+   "Party Leadership",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "War and Peace"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_010": [
+   "Economy",
+   "Government Policies",
+   "Trade Agreements"
+  ],
+  "10sent_20prev_032": [
+   "Government Policies",
+   "Healthcare",
+   "Healthcare Policies",
+   "Drug Policy"
+  ],
+  "5sent_40prev_002": [
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Second Amendment Rights"
+  ],
+  "5sent_20prev_012": [
+   "Election Campaigns",
+   "Foreign Policy",
+   "War and Peace"
+  ],
+  "5sent_40prev_018": [
+   "Political Parties",
+   "Party History",
+   "Candidate Profiles"
+  ],
+  "5sent_20prev_007": [
+   "Government Policies",
+   "Education Policies"
+  ],
+  "5sent_20prev_010": [
+   "Election Campaigns",
+   "Fundraising"
+  ],
+  "10sent_20prev_019": [
+   "Election Campaigns",
+   "Political Parties",
+   "Party Leadership",
+   "Party Factionalism",
+   "Environment",
+   "Nature Conservation"
+  ],
+  "5sent_40prev_027": [
+   "Government Policies",
+   "Immigration",
+   "Border Control Policies",
+   "Economy",
+   "Taxes"
+  ],
+  "10sent_20prev_016": [
+   "Government Policies",
+   "Healthcare",
+   "Healthcare Policies",
+   "Health Insurance",
+   "Election Campaigns"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.9,
+  "specific": 1.0
+ },
+ "coverage": 0.95,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:17:10"
+}

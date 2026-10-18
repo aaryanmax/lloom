@@ -1,0 +1,65 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:30:20",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 10,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_001",
+  "10sent_20prev_003",
+  "10sent_40prev_024",
+  "10sent_40prev_026",
+  "5sent_20prev_015",
+  "5sent_20prev_017",
+  "5sent_20prev_020",
+  "5sent_20prev_036",
+  "5sent_40prev_005",
+  "5sent_40prev_006"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Political Rallies",
+   "Unemployment",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 3,
+  "n_docs": 10,
+  "n_topics": 0
+ },
+ "concepts": [],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "n_generated": 0,
+ "finished": "2026-10-08T15:32:01"
+}

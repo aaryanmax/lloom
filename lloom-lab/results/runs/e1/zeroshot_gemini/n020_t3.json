@@ -1,0 +1,206 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:17:55",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 20,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_007",
+  "10sent_20prev_012",
+  "10sent_20prev_019",
+  "10sent_20prev_025",
+  "10sent_20prev_034",
+  "10sent_40prev_002",
+  "10sent_40prev_003",
+  "10sent_40prev_010",
+  "10sent_40prev_022",
+  "10sent_40prev_034",
+  "5sent_20prev_001",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_018",
+  "5sent_20prev_019",
+  "5sent_20prev_035",
+  "5sent_40prev_002",
+  "5sent_40prev_020",
+  "5sent_40prev_021",
+  "5sent_40prev_022"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Refugee Policies",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes",
+   "Unemployment",
+   "Universal Healthcare",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_025": [
+   "Healthcare",
+   "Healthcare Policies"
+  ],
+  "5sent_40prev_020": [
+   "Election Campaigns",
+   "Immigration",
+   "Refugee Policies",
+   "Gun Control",
+   "Gun Control Legislation"
+  ],
+  "5sent_20prev_010": [
+   "Fundraising"
+  ],
+  "5sent_20prev_019": [
+   "Economic Policies",
+   "Taxes"
+  ],
+  "10sent_40prev_034": [
+   "Immigration",
+   "Immigration Reform",
+   "Refugee Policies",
+   "Government Spending",
+   "Gun Control",
+   "Second Amendment Rights"
+  ],
+  "5sent_20prev_018": [
+   "Environment",
+   "Air Pollution"
+  ],
+  "10sent_20prev_019": [
+   "Political Parties",
+   "Party Leadership",
+   "Party Factionalism",
+   "Environment",
+   "Nature Conservation"
+  ],
+  "10sent_40prev_022": [
+   "Environment",
+   "Air Pollution",
+   "Immigration",
+   "Renewable Energy",
+   "Party History"
+  ],
+  "10sent_40prev_002": [
+   "Immigration",
+   "Immigration Reform",
+   "Gun Control",
+   "Second Amendment Rights",
+   "Political Parties",
+   "Party Factionalism",
+   "Party Platforms",
+   "Political Rallies"
+  ],
+  "5sent_40prev_002": [
+   "Gun Control",
+   "Second Amendment Rights",
+   "Human Rights",
+   "LGBTQ+ Rights"
+  ],
+  "10sent_20prev_012": [
+   "Economy",
+   "Government Policies",
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Economic Policies"
+  ],
+  "10sent_40prev_010": [
+   "Election Campaigns",
+   "Government Policies",
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Environment",
+   "Fundraising",
+   "Nature Conservation",
+   "Party Platforms"
+  ],
+  "5sent_40prev_021": [
+   "Government Policies",
+   "Election Campaigns",
+   "Gun Control",
+   "Background Checks",
+   "Gun Control Legislation"
+  ],
+  "5sent_40prev_022": [
+   "Economy",
+   "Unemployment",
+   "Environment",
+   "Climate Change"
+  ],
+  "10sent_40prev_003": [
+   "Government Policies",
+   "Fiscal Policy",
+   "Taxes",
+   "Foreign Policy",
+   "International Relations Policies",
+   "Diplomatic Relations"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Air Pollution",
+   "Election Campaigns",
+   "Government Policies"
+  ],
+  "10sent_20prev_007": [
+   "Environment",
+   "Renewable Energy",
+   "Election Campaigns",
+   "Party History"
+  ],
+  "5sent_20prev_035": [
+   "Government Policies",
+   "Mental Health"
+  ],
+  "5sent_20prev_001": [
+   "Election Campaigns",
+   "Candidate Profiles"
+  ],
+  "5sent_20prev_007": [
+   "Government Policies",
+   "Education Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 1.0,
+  "specific": 0.8846153846153846
+ },
+ "coverage": 0.9423076923076923,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:18:06"
+}

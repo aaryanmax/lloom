@@ -1,0 +1,115 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:25:44",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 10,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_039",
+  "10sent_40prev_025",
+  "10sent_40prev_027",
+  "5sent_20prev_001",
+  "5sent_20prev_003",
+  "5sent_20prev_027",
+  "5sent_20prev_028",
+  "5sent_40prev_014",
+  "5sent_40prev_022",
+  "5sent_40prev_028"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Healthcare",
+   "Human Rights",
+   "Political Parties"
+  ],
+  "specific": [
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Government Spending",
+   "International Aid",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Platforms",
+   "Racial Equality",
+   "Trade Agreements",
+   "Unemployment"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_028": [
+   "Environment",
+   "Climate Change"
+  ],
+  "5sent_20prev_001": [
+   "Political Rallies",
+   "Campaign Promises",
+   "Candidate Profiles"
+  ],
+  "5sent_20prev_027": [
+   "Government Policies",
+   "Government Spending"
+  ],
+  "5sent_40prev_022": [
+   "Unemployment",
+   "Climate Change",
+   "International Relations Policies"
+  ],
+  "10sent_20prev_039": [
+   "Political Rallies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Election Campaigns",
+   "Political Parties"
+  ],
+  "10sent_40prev_027": [
+   "Immigration Reform",
+   "Environment",
+   "Healthcare Policies",
+   "Education Policies",
+   "Trade Agreements",
+   "Government Policies",
+   "Political Parties"
+  ],
+  "5sent_40prev_014": [
+   "Environment",
+   "Human Rights",
+   "Refugee Policies"
+  ],
+  "10sent_40prev_025": [
+   "Political Parties",
+   "Government Policies",
+   "Healthcare Policies",
+   "Human Rights",
+   "Education Policies",
+   "Political Rallies"
+  ],
+  "5sent_20prev_003": [
+   "Government Policies",
+   "Human Rights",
+   "Healthcare Policies"
+  ],
+  "5sent_40prev_028": [
+   "Election Campaigns",
+   "Candidate Profiles",
+   "Political Rallies",
+   "Political Parties"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.5714285714285714,
+  "specific": 0.5
+ },
+ "coverage": 0.5357142857142857,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:28:07"
+}

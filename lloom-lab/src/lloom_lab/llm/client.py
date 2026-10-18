@@ -122,6 +122,25 @@ def extract_json(text: str):
                         return _json.loads(text[start:i + 1])
                     except _json.JSONDecodeError:
                         break
+
+    # Fallback: if text contains an assignments list with some malformed rows,
+    # recover all valid doc_id and concepts entries.
+    import re
+    if '"assignments"' in text and '"doc_id"' in text:
+        item_pat = re.compile(
+            r'\{\s*"doc_id"\s*:\s*"([^"]+)"\s*,\s*"concepts"\s*:\s*(\[[^\]]*\])\s*\}',
+            re.DOTALL
+        )
+        recovered = []
+        for doc_id, concepts_raw in item_pat.findall(text):
+            try:
+                concepts = _json.loads(concepts_raw)
+                recovered.append({"doc_id": doc_id, "concepts": concepts})
+            except Exception:
+                pass
+        if recovered:
+            return {"assignments": recovered}
+
     raise LLMError(f"no valid JSON found in response: {text[:200]!r}")
 
 
@@ -278,6 +297,7 @@ class LLMClient:
             "model": QWEN_MODEL_NAME,
             "messages": messages,
             "temperature": temperature,
+            "max_tokens": 2048,
         }
         if json_mode:
             payload["response_format"] = {"type": "json_object"}

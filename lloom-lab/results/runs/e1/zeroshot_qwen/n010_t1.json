@@ -1,0 +1,105 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:21:41",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 10,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_001",
+  "10sent_20prev_003",
+  "10sent_40prev_024",
+  "10sent_40prev_026",
+  "5sent_20prev_015",
+  "5sent_20prev_017",
+  "5sent_20prev_020",
+  "5sent_20prev_036",
+  "5sent_40prev_005",
+  "5sent_40prev_006"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Political Rallies",
+   "Unemployment",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_017": [
+   "Gun Control Legislation",
+   "Air Pollution"
+  ],
+  "10sent_20prev_003": [
+   "Environment",
+   "Healthcare"
+  ],
+  "5sent_20prev_036": [
+   "Government Policies"
+  ],
+  "5sent_20prev_015": [
+   "Immigration",
+   "Environment"
+  ],
+  "5sent_20prev_020": [
+   "Government Policies",
+   "Economy"
+  ],
+  "5sent_40prev_006": [
+   "Immigration Reform",
+   "Government Policies"
+  ],
+  "5sent_40prev_005": [
+   "Environment",
+   "Education Policies"
+  ],
+  "10sent_20prev_001": [
+   "Environment",
+   "Political Rallies"
+  ],
+  "10sent_40prev_026": [
+   "Immigration Reform",
+   "Environment",
+   "Foreign Policy",
+   "Party Factionalism",
+   "Diplomatic Relations"
+  ],
+  "10sent_40prev_024": [
+   "Election Campaigns",
+   "Environment",
+   "Gun Control Legislation",
+   "Political Rallies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.6666666666666666,
+  "specific": 0.42857142857142855
+ },
+ "coverage": 0.5476190476190476,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:23:52"
+}

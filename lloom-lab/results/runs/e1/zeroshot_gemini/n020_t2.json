@@ -1,0 +1,184 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:17:45",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 20,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_005",
+  "10sent_20prev_015",
+  "10sent_20prev_026",
+  "10sent_20prev_031",
+  "10sent_20prev_034",
+  "10sent_20prev_038",
+  "10sent_40prev_001",
+  "10sent_40prev_002",
+  "10sent_40prev_003",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_023",
+  "10sent_40prev_028",
+  "5sent_20prev_009",
+  "5sent_20prev_016",
+  "5sent_20prev_017",
+  "5sent_20prev_026",
+  "5sent_20prev_037",
+  "5sent_40prev_000",
+  "5sent_40prev_034"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "Mental Health",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_026": [
+   "Government Policies",
+   "Economic Policies",
+   "Immigration Reform"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Air Pollution",
+   "Government Policies"
+  ],
+  "5sent_20prev_016": [
+   "Environment",
+   "Renewable Energy"
+  ],
+  "10sent_20prev_038": [
+   "Gun Control",
+   "Assault Weapons Ban",
+   "Gun Control Legislation"
+  ],
+  "10sent_40prev_001": [
+   "Healthcare",
+   "Education Policies",
+   "Health Insurance",
+   "Healthcare Policies"
+  ],
+  "10sent_20prev_015": [
+   "Healthcare",
+   "Drug Policy",
+   "Mental Health"
+  ],
+  "10sent_40prev_023": [
+   "Gun Control",
+   "Assault Weapons Ban",
+   "Education Policies",
+   "Gun Control Legislation"
+  ],
+  "10sent_20prev_005": [
+   "Healthcare",
+   "Mental Health",
+   "Party Factionalism"
+  ],
+  "10sent_40prev_007": [
+   "Economy",
+   "Government Policies",
+   "Immigration",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Government Spending",
+   "Illegal Immigration",
+   "Taxes"
+  ],
+  "5sent_20prev_037": [
+   "Party History"
+  ],
+  "10sent_40prev_017": [
+   "Drug Policy",
+   "Healthcare Policies",
+   "Party Leadership",
+   "Party Factionalism"
+  ],
+  "5sent_20prev_009": [
+   "Gun Control Legislation"
+  ],
+  "10sent_40prev_028": [
+   "Election Campaigns",
+   "Fundraising",
+   "Candidate Profiles",
+   "Healthcare Policies"
+  ],
+  "5sent_40prev_000": [
+   "Election Campaigns",
+   "Candidate Profiles"
+  ],
+  "10sent_20prev_031": [
+   "Mental Health",
+   "Election Campaigns",
+   "Fundraising"
+  ],
+  "5sent_20prev_017": [
+   "Gun Control",
+   "Gun Control Legislation"
+  ],
+  "5sent_40prev_034": [
+   "International Aid",
+   "Children's Rights"
+  ],
+  "5sent_20prev_026": [
+   "Immigration Reform"
+  ],
+  "10sent_40prev_003": [
+   "Government Policies",
+   "Taxes",
+   "International Relations Policies",
+   "Diplomatic Relations"
+  ],
+  "10sent_40prev_002": [
+   "Immigration Reform",
+   "Gun Control",
+   "Second Amendment Rights",
+   "International Relations Policies",
+   "Diplomatic Relations",
+   "Party Factionalism",
+   "Party Platforms"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.7777777777777778,
+  "specific": 0.9565217391304348
+ },
+ "coverage": 0.8671497584541064,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:17:55"
+}

@@ -1,0 +1,349 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:37:23",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 40,
+  "trial": 1
+ },
+ "doc_ids": [
+  "10sent_20prev_000",
+  "10sent_20prev_004",
+  "10sent_20prev_007",
+  "10sent_20prev_011",
+  "10sent_20prev_015",
+  "10sent_20prev_023",
+  "10sent_20prev_024",
+  "10sent_20prev_033",
+  "10sent_40prev_002",
+  "10sent_40prev_007",
+  "10sent_40prev_013",
+  "10sent_40prev_018",
+  "10sent_40prev_020",
+  "10sent_40prev_033",
+  "10sent_40prev_038",
+  "5sent_20prev_000",
+  "5sent_20prev_005",
+  "5sent_20prev_006",
+  "5sent_20prev_012",
+  "5sent_20prev_017",
+  "5sent_20prev_018",
+  "5sent_20prev_020",
+  "5sent_20prev_022",
+  "5sent_20prev_024",
+  "5sent_20prev_032",
+  "5sent_20prev_037",
+  "5sent_40prev_002",
+  "5sent_40prev_004",
+  "5sent_40prev_005",
+  "5sent_40prev_007",
+  "5sent_40prev_015",
+  "5sent_40prev_021",
+  "5sent_40prev_023",
+  "5sent_40prev_024",
+  "5sent_40prev_025",
+  "5sent_40prev_026",
+  "5sent_40prev_029",
+  "5sent_40prev_033",
+  "5sent_40prev_035",
+  "5sent_40prev_038"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Children's Rights",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Platforms",
+   "Political Rallies",
+   "Racial Equality",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes",
+   "War and Peace",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 4,
+  "n_docs": 40,
+  "n_topics": 2
+ },
+ "concepts": [
+  {
+   "name": "The To Of",
+   "criteria_prompt": "Documents about: the, to, of, in, at, for, room, on",
+   "topic_id": 0,
+   "top_words": [
+    "the",
+    "to",
+    "of",
+    "in",
+    "at",
+    "for",
+    "room",
+    "on",
+    "before",
+    "press"
+   ]
+  },
+  {
+   "name": "The Of In",
+   "criteria_prompt": "Documents about: the, of, in, an, to, after, room, than",
+   "topic_id": 1,
+   "top_words": [
+    "the",
+    "of",
+    "in",
+    "an",
+    "to",
+    "after",
+    "room",
+    "than",
+    "outside",
+    "rather"
+   ]
+  }
+ ],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent the economy."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent the environment."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent government policies."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent gun control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent healthcare."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent human rights."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent immigration."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "The generated concepts consist of stop words and unrelated terms, failing to represent political parties."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of air pollution."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of assault weapons."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of background checks."
+  },
+  {
+   "ground_truth": "Border Control Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of border control."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of campaign promises."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of children's rights."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of diplomatic relations."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of drug policy."
+  },
+  {
+   "ground_truth": "Economic Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of economic policies."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of stop words and do not represent the topic of education policies."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent fiscal policy."
+  },
+  {
+   "ground_truth": "Gun Control Legislation",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent gun control legislation."
+  },
+  {
+   "ground_truth": "Health Insurance",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent health insurance."
+  },
+  {
+   "ground_truth": "Healthcare Policies",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent healthcare policies."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent illegal immigration."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent immigration reform."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent international relations policies."
+  },
+  {
+   "ground_truth": "LGBTQ+ Rights",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent LGBTQ+ rights."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent mental health."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent nature conservation."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent political factionalism."
+  },
+  {
+   "ground_truth": "Party History",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent party history."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent party platforms."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent political rallies."
+  },
+  {
+   "ground_truth": "Racial Equality",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent racial equality."
+  },
+  {
+   "ground_truth": "Renewable Energy",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent renewable energy."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent gun rights."
+  },
+  {
+   "ground_truth": "Taxes",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent taxes."
+  },
+  {
+   "ground_truth": "War and Peace",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent war and peace."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "The generated concepts are stop-word lists and do not represent women's rights."
+  }
+ ],
+ "n_generated": 2,
+ "finished": "2026-10-08T15:38:00"
+}

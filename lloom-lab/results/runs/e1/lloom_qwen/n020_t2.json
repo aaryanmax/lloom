@@ -1,6 +1,6 @@
 {
- "status": "running",
- "started": "2026-10-07T19:49:37",
+ "status": "complete",
+ "started": "2026-10-07T19:59:14",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -365,5 +365,81 @@
    "10sent_40prev_028",
    "5sent_40prev_034"
   ]
- }
+ },
+ "concepts": [
+  {
+   "name": "Immigration Policy",
+   "criteria_prompt": "Does the text discuss policies or actions related to immigration, border control, or the treatment of migrants?",
+   "representative_example_ids": [
+    "10sent_40prev_007",
+    "5sent_20prev_026"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Firearm Regulation",
+   "criteria_prompt": "Is the text discussing laws or proposals related to firearm control, licensing, or restrictions?",
+   "representative_example_ids": [
+    "10sent_20prev_038",
+    "5sent_20prev_017"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Event Preparation",
+   "criteria_prompt": "Is the text describing activities related to organizing or preparing for a political event or meeting?",
+   "representative_example_ids": [
+    "10sent_20prev_026",
+    "5sent_40prev_000"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Policy and Governance",
+   "criteria_prompt": "Does the text mention specific policies, proposals, or initiatives related to governance, regulation, or public administration?",
+   "representative_example_ids": [
+    "10sent_20prev_026",
+    "10sent_40prev_028"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Political Campaign Activities",
+   "criteria_prompt": "Does the text describe activities related to political campaigns, such as fundraising, voter registration, or media coverage?",
+   "representative_example_ids": [
+    "10sent_40prev_028",
+    "10sent_40prev_028"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Legislative Transparency",
+   "criteria_prompt": "Does the text describe actions taken by legislators or government officials that involve public disclosure, media coverage, or public engagement?",
+   "representative_example_ids": [
+    "10sent_20prev_005",
+    "10sent_40prev_001"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Public Service Operations",
+   "criteria_prompt": "Does the text describe a public service operation or facility activity?",
+   "representative_example_ids": [
+    "5sent_20prev_016",
+    "5sent_40prev_034"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Political Event Coverage",
+   "criteria_prompt": "Does the text describe a political event or activity and its associated details, such as security measures, public broadcasting, or historical context?",
+   "representative_example_ids": [
+    "10sent_40prev_002",
+    "10sent_40prev_023"
+   ],
+   "cluster_label": 7
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T20:13:07"
 }

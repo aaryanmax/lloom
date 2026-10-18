@@ -1,6 +1,6 @@
 {
- "status": "running",
- "started": "2026-10-07T19:45:48",
+ "status": "complete",
+ "started": "2026-10-07T19:59:14",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -378,5 +378,99 @@
    "5sent_40prev_003",
    "5sent_40prev_018"
   ]
- }
+ },
+ "concepts": [
+  {
+   "name": "Leadership Transition",
+   "criteria_prompt": "Does the text mention a change in leadership or the end of a term?",
+   "representative_example_ids": [
+    "5sent_40prev_003",
+    "5sent_40prev_003"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Election Administration",
+   "criteria_prompt": "Is the text about the process of managing or certifying election results?",
+   "representative_example_ids": [
+    "5sent_20prev_019",
+    "5sent_40prev_020"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Civic Education",
+   "criteria_prompt": "Does the text describe an educational activity related to civic knowledge or historical understanding?",
+   "representative_example_ids": [
+    "5sent_20prev_035",
+    "5sent_20prev_019"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Healthcare Policy Focus",
+   "criteria_prompt": "Does the text discuss policies, legislation, or reforms related to healthcare access, coverage, or public health systems?",
+   "representative_example_ids": [
+    "10sent_20prev_016",
+    "10sent_40prev_019"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Security Measures",
+   "criteria_prompt": "Does the text describe actions taken to ensure public safety or secure locations?",
+   "representative_example_ids": [
+    "10sent_40prev_027",
+    "10sent_40prev_029"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Political Conflict",
+   "criteria_prompt": "Does the text describe disagreement or tension between political groups or individuals over a specific issue?",
+   "representative_example_ids": [
+    "10sent_40prev_026",
+    "10sent_40prev_026"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Fiscal Policy Changes",
+   "criteria_prompt": "Does the text describe a change in fiscal policy or spending rules?",
+   "representative_example_ids": [
+    "10sent_20prev_006",
+    "5sent_20prev_019"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Event Preparation",
+   "criteria_prompt": "Does the text mention activities related to organizing, setting up, or getting ready for an official event?",
+   "representative_example_ids": [
+    "10sent_20prev_026",
+    "5sent_40prev_004"
+   ],
+   "cluster_label": 7
+  },
+  {
+   "name": "Public Engagement",
+   "criteria_prompt": "Does the text describe a situation where people are actively participating in or responding to political events?",
+   "representative_example_ids": [
+    "10sent_20prev_006",
+    "10sent_20prev_022"
+   ],
+   "cluster_label": 8
+  },
+  {
+   "name": "Political Preparations",
+   "criteria_prompt": "Does the text describe activities related to organizing or preparing for political events or ceremonies?",
+   "representative_example_ids": [
+    "10sent_20prev_016",
+    "10sent_40prev_029"
+   ],
+   "cluster_label": 9
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T20:12:36"
 }

@@ -1,0 +1,100 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:17:10",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 10,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_039",
+  "10sent_40prev_025",
+  "10sent_40prev_027",
+  "5sent_20prev_001",
+  "5sent_20prev_003",
+  "5sent_20prev_027",
+  "5sent_20prev_028",
+  "5sent_40prev_014",
+  "5sent_40prev_022",
+  "5sent_40prev_028"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Healthcare",
+   "Human Rights",
+   "Political Parties"
+  ],
+  "specific": [
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Government Spending",
+   "International Aid",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Platforms",
+   "Racial Equality",
+   "Trade Agreements",
+   "Unemployment"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_028": [
+   "Environment",
+   "Climate Change"
+  ],
+  "5sent_20prev_001": [
+   "Candidate Profiles"
+  ],
+  "5sent_20prev_027": [
+   "Government Policies",
+   "Government Spending"
+  ],
+  "5sent_40prev_022": [
+   "Economy",
+   "Environment",
+   "Unemployment",
+   "Climate Change"
+  ],
+  "10sent_20prev_039": [
+   "Candidate Profiles"
+  ],
+  "10sent_40prev_027": [
+   "Environment",
+   "Healthcare",
+   "Nature Conservation",
+   "Mental Health",
+   "Campaign Promises",
+   "Election Campaigns"
+  ],
+  "5sent_40prev_014": [
+   "International Aid"
+  ],
+  "10sent_40prev_025": [
+   "Government Policies",
+   "Party Platforms",
+   "Healthcare Policies",
+   "Universal Healthcare",
+   "Human Rights",
+   "Racial Equality"
+  ],
+  "5sent_20prev_003": [],
+  "5sent_40prev_028": [
+   "Candidate Profiles"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.7142857142857143,
+  "specific": 0.8333333333333334
+ },
+ "coverage": 0.7738095238095238,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:17:14"
+}

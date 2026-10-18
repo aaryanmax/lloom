@@ -1,0 +1,186 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:18:06",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_gemini",
+  "n": 20,
+  "trial": 4
+ },
+ "doc_ids": [
+  "10sent_20prev_012",
+  "10sent_20prev_019",
+  "10sent_20prev_039",
+  "10sent_40prev_000",
+  "10sent_40prev_009",
+  "10sent_40prev_019",
+  "10sent_40prev_023",
+  "10sent_40prev_026",
+  "10sent_40prev_031",
+  "5sent_20prev_010",
+  "5sent_20prev_015",
+  "5sent_20prev_017",
+  "5sent_20prev_026",
+  "5sent_40prev_004",
+  "5sent_40prev_007",
+  "5sent_40prev_017",
+  "5sent_40prev_021",
+  "5sent_40prev_023",
+  "5sent_40prev_024",
+  "5sent_40prev_037"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Border Control Policies",
+   "Candidate Profiles",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Education Policies",
+   "Fundraising",
+   "Government Spending",
+   "Gun Control Legislation",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Racial Equality",
+   "Renewable Energy",
+   "Unemployment",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_40prev_000": [
+   "Government Spending",
+   "Border Control Policies"
+  ],
+  "5sent_40prev_004": [
+   "Gun Control Legislation",
+   "Party Platforms",
+   "Candidate Profiles"
+  ],
+  "10sent_40prev_026": [
+   "Immigration Reform",
+   "Unemployment",
+   "Party Factionalism",
+   "Party Leadership",
+   "Climate Change",
+   "International Relations Policies"
+  ],
+  "10sent_40prev_031": [
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Party Platforms",
+   "Air Pollution",
+   "Candidate Profiles"
+  ],
+  "10sent_40prev_009": [
+   "War and Peace",
+   "Government Spending",
+   "Renewable Energy"
+  ],
+  "5sent_40prev_023": [
+   "Political Rallies",
+   "Healthcare Policies"
+  ],
+  "5sent_40prev_007": [
+   "Government Policies",
+   "Racial Equality",
+   "International Relations Policies"
+  ],
+  "5sent_40prev_021": [
+   "Government Policies",
+   "Background Checks"
+  ],
+  "10sent_40prev_023": [
+   "Assault Weapons Ban",
+   "Gun Control Legislation",
+   "Education Policies"
+  ],
+  "5sent_40prev_024": [
+   "Mental Health",
+   "Border Control Policies"
+  ],
+  "5sent_40prev_037": [
+   "Government Policies",
+   "Gun Control",
+   "Gun Control Legislation"
+  ],
+  "5sent_20prev_017": [
+   "Government Policies",
+   "Gun Control",
+   "Gun Control Legislation"
+  ],
+  "5sent_40prev_017": [
+   "Diplomatic Relations",
+   "International Relations Policies"
+  ],
+  "10sent_20prev_019": [
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party Leadership"
+  ],
+  "10sent_20prev_012": [
+   "Economy",
+   "Economic Policies",
+   "Human Rights",
+   "LGBTQ+ Rights"
+  ],
+  "5sent_20prev_015": [
+   "Border Control Policies",
+   "Illegal Immigration"
+  ],
+  "10sent_20prev_039": [
+   "Candidate Profiles"
+  ],
+  "10sent_40prev_019": [
+   "Foreign Policy",
+   "Government Policies",
+   "Healthcare",
+   "Human Rights",
+   "Trade Agreements",
+   "Universal Healthcare",
+   "Women's Rights"
+  ],
+  "5sent_20prev_010": [
+   "Fundraising"
+  ],
+  "5sent_20prev_026": [
+   "Government Policies",
+   "Immigration",
+   "Immigration Reform"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.7,
+  "specific": 1.0
+ },
+ "coverage": 0.85,
+ "n_generated": 50,
+ "finished": "2026-10-08T15:18:14"
+}

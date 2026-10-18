@@ -1,5 +1,5 @@
 {
- "status": "running",
+ "status": "complete",
  "started": "2026-10-07T19:43:54",
  "config": {
   "distill_model": "qwen",
@@ -207,5 +207,36 @@
    "5sent_20prev_010",
    "5sent_20prev_010"
   ]
- }
+ },
+ "concepts": [
+  {
+   "name": "Policy and Legislation",
+   "criteria_prompt": "Does the text describe a new policy, law, or legislative action aimed at addressing a societal issue or reform?",
+   "representative_example_ids": [
+    "10sent_20prev_017",
+    "10sent_40prev_001"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Public Event Disruption",
+   "criteria_prompt": "Does the text describe a public event that causes disruption or changes to normal activities?",
+   "representative_example_ids": [
+    "10sent_20prev_017",
+    "5sent_20prev_008"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Event Readiness",
+   "criteria_prompt": "Does the text focus on preparing for official events, including infrastructure, logistics, and coordination?",
+   "representative_example_ids": [
+    "10sent_20prev_026",
+    "5sent_20prev_010"
+   ],
+   "cluster_label": 2
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-07T19:52:47"
 }

@@ -1,0 +1,212 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:46:55",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 20,
+  "trial": 3
+ },
+ "doc_ids": [
+  "10sent_20prev_007",
+  "10sent_20prev_012",
+  "10sent_20prev_019",
+  "10sent_20prev_025",
+  "10sent_20prev_034",
+  "10sent_40prev_002",
+  "10sent_40prev_003",
+  "10sent_40prev_010",
+  "10sent_40prev_022",
+  "10sent_40prev_034",
+  "5sent_20prev_001",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_018",
+  "5sent_20prev_019",
+  "5sent_20prev_035",
+  "5sent_40prev_002",
+  "5sent_40prev_020",
+  "5sent_40prev_021",
+  "5sent_40prev_022"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Immigration Reform",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Refugee Policies",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes",
+   "Unemployment",
+   "Universal Healthcare",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_20prev_025": [
+   "Healthcare Policies",
+   "Government Spending",
+   "Campaign Promises",
+   "Party Platforms",
+   "Political Rallies",
+   "Government Policies"
+  ],
+  "5sent_40prev_020": [
+   "Immigration Reform",
+   "Fundraising",
+   "Government Policies"
+  ],
+  "5sent_20prev_010": [
+   "Fundraising",
+   "Government Policies"
+  ],
+  "5sent_20prev_019": [
+   "Government Policies",
+   "Immigration Reform",
+   "International Aid",
+   "Government Spending"
+  ],
+  "10sent_40prev_034": [
+   "Government Policies",
+   "Immigration Reform",
+   "International Aid",
+   "Government Spending",
+   "Gun Control Legislation",
+   "Second Amendment Rights"
+  ],
+  "5sent_20prev_018": [
+   "Government Policies",
+   "Environment",
+   "Gun Control Legislation"
+  ],
+  "10sent_20prev_019": [
+   "Government Policies",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "Environment",
+   "Government Spending"
+  ],
+  "10sent_40prev_022": [
+   "Environment",
+   "Government Policies",
+   "Immigration Reform",
+   "Government Spending",
+   "Renewable Energy",
+   "Party History",
+   "Party Platforms"
+  ],
+  "10sent_40prev_002": [
+   "Environment",
+   "Government Policies",
+   "Gun Control Legislation",
+   "Second Amendment Rights",
+   "Party Platforms",
+   "Political Rallies",
+   "Government Spending"
+  ],
+  "5sent_40prev_002": [
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Government Policies",
+   "Political Rallies"
+  ],
+  "10sent_20prev_012": [
+   "Economy",
+   "Education Policies",
+   "Government Policies",
+   "Healthcare",
+   "Immigration",
+   "Political Rallies"
+  ],
+  "10sent_40prev_010": [
+   "Election Campaigns",
+   "Government Policies",
+   "Human Rights",
+   "LGBTQ+ Rights",
+   "Political Parties"
+  ],
+  "5sent_40prev_021": [
+   "Economy",
+   "Government Policies",
+   "Human Rights",
+   "Unemployment"
+  ],
+  "5sent_40prev_022": [
+   "Economy",
+   "Education Policies",
+   "Environment",
+   "Unemployment"
+  ],
+  "10sent_40prev_003": [
+   "Economic Policies",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Taxes"
+  ],
+  "10sent_20prev_034": [
+   "Environment",
+   "Election Campaigns",
+   "Government Policies",
+   "Political Parties"
+  ],
+  "10sent_20prev_007": [
+   "Environment",
+   "Election Campaigns",
+   "Government Policies",
+   "Political Parties"
+  ],
+  "5sent_20prev_035": [
+   "Healthcare",
+   "Mental Health",
+   "Political Parties"
+  ],
+  "5sent_20prev_001": [
+   "Election Campaigns",
+   "Government Policies",
+   "Political Parties"
+  ],
+  "5sent_20prev_007": [
+   "Education Policies",
+   "Government Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.9,
+  "specific": 0.5384615384615384
+ },
+ "coverage": 0.7192307692307692,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:52:24"
+}

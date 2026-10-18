@@ -1,0 +1,298 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:34:06",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 20,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_005",
+  "10sent_20prev_015",
+  "10sent_20prev_026",
+  "10sent_20prev_031",
+  "10sent_20prev_034",
+  "10sent_20prev_038",
+  "10sent_40prev_001",
+  "10sent_40prev_002",
+  "10sent_40prev_003",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_023",
+  "10sent_40prev_028",
+  "5sent_20prev_009",
+  "5sent_20prev_016",
+  "5sent_20prev_017",
+  "5sent_20prev_026",
+  "5sent_20prev_037",
+  "5sent_40prev_000",
+  "5sent_40prev_034"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Candidate Profiles",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "Mental Health",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 3,
+  "n_docs": 20,
+  "n_topics": 3
+ },
+ "concepts": [
+  {
+   "name": "The Room To",
+   "criteria_prompt": "Documents about: the, room, to, ran, traffic, tax, in, announcement",
+   "topic_id": 0,
+   "top_words": [
+    "the",
+    "room",
+    "to",
+    "ran",
+    "traffic",
+    "tax",
+    "in",
+    "announcement",
+    "ahead",
+    "printers"
+   ]
+  },
+  {
+   "name": "The At To",
+   "criteria_prompt": "Documents about: the, at, to, for, of, was, in, along",
+   "topic_id": 1,
+   "top_words": [
+    "the",
+    "at",
+    "to",
+    "for",
+    "of",
+    "was",
+    "in",
+    "along",
+    "from",
+    "on"
+   ]
+  },
+  {
+   "name": "The To Of",
+   "criteria_prompt": "Documents about: the, to, of, ban, and, with, in, by",
+   "topic_id": 2,
+   "top_words": [
+    "the",
+    "to",
+    "of",
+    "ban",
+    "and",
+    "with",
+    "in",
+    "by",
+    "chairman",
+    "its"
+   ]
+  }
+ ],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.043478260869565216
+ },
+ "coverage": 0.03125,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "The generated concepts are based on stop-word lists and do not represent the semantic meaning of the economy."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "None of the generated concepts contain keywords or themes related to election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "The generated concepts lack thematic coherence related to environmental issues."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to international relations or foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": null,
+   "rationale": "The generated concepts are composed of generic stop words and do not describe government policy."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "None of the generated concepts contain keywords or themes related to gun control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to healthcare."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to immigration."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to political parties."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "While 'traffic' is mentioned in the first concept, it is part of a list of unrelated stop words and does not constitute a match for air pollution."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address assault weapons or gun legislation."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": null,
+   "rationale": "The generated concepts are based on generic stop words and do not represent candidate profiles."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "None of the generated concepts contain keywords related to environmental issues or climate change."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "The generated concepts lack any thematic focus on international affairs or diplomacy."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to drug policy or regulation."
+  },
+  {
+   "ground_truth": "Economic Policies",
+   "concept": null,
+   "rationale": "While 'tax' is mentioned in one concept, it is grouped with unrelated words and does not represent economic policy."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to education or school policy."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": null,
+   "rationale": "The generated concepts are too broad and incoherent to represent fiscal policy."
+  },
+  {
+   "ground_truth": "Fundraising",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to political fundraising or campaign finance."
+  },
+  {
+   "ground_truth": "Gun Control Legislation",
+   "concept": "The To Of",
+   "rationale": "The inclusion of the word 'ban' in the criterion for 'The To Of' is insufficient to match the specific topic of gun control legislation."
+  },
+  {
+   "ground_truth": "Health Insurance",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to health insurance."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to illegal immigration."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to immigration reform."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to international aid."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to international relations."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to mental health."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to party factionalism."
+  },
+  {
+   "ground_truth": "Party History",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to party history."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to party leadership."
+  },
+  {
+   "ground_truth": "Renewable Energy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to renewable energy."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts contain keywords or semantic indicators related to firearms, the Second Amendment, or constitutional rights."
+  },
+  {
+   "ground_truth": "Taxes",
+   "concept": null,
+   "rationale": "The generated concept 'The Room To' includes the word 'tax' but is defined by a list of unrelated stop words, failing to represent the concept of taxes as a coherent topic."
+  }
+ ],
+ "n_generated": 3,
+ "finished": "2026-10-08T15:34:57"
+}

@@ -1,0 +1,228 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:30:31",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 20,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_008",
+  "10sent_20prev_014",
+  "10sent_20prev_021",
+  "10sent_20prev_032",
+  "10sent_20prev_039",
+  "10sent_40prev_007",
+  "10sent_40prev_017",
+  "10sent_40prev_019",
+  "10sent_40prev_030",
+  "10sent_40prev_033",
+  "5sent_20prev_003",
+  "5sent_20prev_005",
+  "5sent_20prev_013",
+  "5sent_20prev_025",
+  "5sent_20prev_027",
+  "5sent_20prev_031",
+  "5sent_40prev_017",
+  "5sent_40prev_030",
+  "5sent_40prev_034",
+  "5sent_40prev_035"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Government Spending",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Second Amendment Rights",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "10sent_40prev_007": [
+   "Economy",
+   "Government Spending",
+   "Immigration",
+   "Illegal Immigration",
+   "Background Checks",
+   "Economic Policies",
+   "Taxes"
+  ],
+  "5sent_40prev_017": [
+   "International Relations Policies",
+   "Diplomatic Relations",
+   "Foreign Policy"
+  ],
+  "10sent_40prev_033": [
+   "Environment",
+   "Nature Conservation",
+   "Climate Change",
+   "Immigration Reform",
+   "Healthcare Policies",
+   "Health Insurance",
+   "Drug Policy",
+   "Government Policies"
+  ],
+  "5sent_20prev_025": [
+   "LGBTQ+ Rights",
+   "Political Parties",
+   "Party Platforms",
+   "Government Policies"
+  ],
+  "10sent_20prev_014": [
+   "Election Campaigns",
+   "Political Rallies",
+   "Campaign Promises",
+   "Fundraising",
+   "Government Policies",
+   "Background Checks",
+   "Healthcare Policies",
+   "Health Insurance"
+  ],
+  "10sent_40prev_030": [
+   "Education Policies",
+   "Environment",
+   "Climate Change",
+   "Government Policies",
+   "Healthcare Policies",
+   "Health Insurance",
+   "Immigration",
+   "Government Spending"
+  ],
+  "10sent_40prev_017": [
+   "Drug Policy",
+   "Healthcare Policies",
+   "Health Insurance",
+   "Political Parties",
+   "Party Factionalism",
+   "Party Leadership",
+   "Government Policies",
+   "Background Checks"
+  ],
+  "10sent_20prev_032": [
+   "Healthcare Policies",
+   "Health Insurance",
+   "Drug Policy",
+   "Immigration",
+   "Government Policies",
+   "Background Checks",
+   "Fundraising",
+   "Political Parties",
+   "Party Platforms"
+  ],
+  "5sent_20prev_027": [
+   "Government Policies",
+   "Immigration",
+   "Healthcare Policies",
+   "Health Insurance",
+   "Political Parties",
+   "Party Platforms",
+   "Background Checks"
+  ],
+  "5sent_40prev_030": [
+   "Healthcare Policies",
+   "Health Insurance",
+   "Drug Policy",
+   "Election Campaigns",
+   "Political Parties",
+   "Party Platforms",
+   "Government Policies",
+   "Background Checks",
+   "Gun Control Legislation"
+  ],
+  "5sent_20prev_031": [
+   "Healthcare"
+  ],
+  "10sent_40prev_019": [
+   "Healthcare",
+   "Human Rights",
+   "International Relations Policies",
+   "Healthcare Policies",
+   "Education Policies",
+   "Government Policies"
+  ],
+  "10sent_20prev_008": [
+   "Healthcare",
+   "War and Peace",
+   "Government Policies",
+   "Political Rallies"
+  ],
+  "10sent_20prev_039": [
+   "Healthcare",
+   "Political Rallies",
+   "Party History",
+   "Party Leadership"
+  ],
+  "5sent_20prev_005": [
+   "Healthcare",
+   "Party Platforms"
+  ],
+  "5sent_40prev_034": [
+   "Healthcare",
+   "International Aid",
+   "Foreign Policy"
+  ],
+  "5sent_20prev_013": [
+   "Healthcare",
+   "Second Amendment Rights",
+   "Political Parties"
+  ],
+  "10sent_20prev_021": [
+   "Healthcare",
+   "Government Policies",
+   "Economic Policies",
+   "Government Spending",
+   "Fiscal Policy"
+  ],
+  "5sent_40prev_035": [
+   "Healthcare",
+   "Government Policies",
+   "Education Policies"
+  ],
+  "5sent_20prev_003": [
+   "Healthcare",
+   "Government Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.9,
+  "specific": 0.8076923076923077
+ },
+ "coverage": 0.8538461538461539,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:36:01"
+}

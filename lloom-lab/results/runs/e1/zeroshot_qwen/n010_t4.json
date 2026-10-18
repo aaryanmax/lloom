@@ -1,0 +1,116 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T22:28:07",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 10,
+  "trial": 4
+ },
+ "doc_ids": [
+  "10sent_20prev_017",
+  "10sent_20prev_026",
+  "10sent_40prev_001",
+  "10sent_40prev_008",
+  "5sent_20prev_007",
+  "5sent_20prev_008",
+  "5sent_20prev_010",
+  "5sent_20prev_023",
+  "5sent_20prev_025",
+  "5sent_40prev_022"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Background Checks",
+   "Climate Change",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fundraising",
+   "Health Insurance",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Unemployment",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_20prev_023": [
+   "Government Policies",
+   "Economy",
+   "International Aid"
+  ],
+  "10sent_40prev_008": [
+   "Government Policies",
+   "Environment",
+   "Healthcare Policies",
+   "Immigration Reform",
+   "Drug Policy",
+   "Education Policies"
+  ],
+  "5sent_40prev_022": [
+   "Economy",
+   "Environment",
+   "Government Policies"
+  ],
+  "5sent_20prev_008": [
+   "Government Policies",
+   "Healthcare Policies",
+   "Education Policies"
+  ],
+  "10sent_40prev_001": [
+   "Government Policies",
+   "Healthcare Policies",
+   "Education Policies",
+   "Economy"
+  ],
+  "5sent_20prev_007": [
+   "Government Policies",
+   "Economy",
+   "Healthcare Policies"
+  ],
+  "10sent_20prev_017": [
+   "Government Policies",
+   "Foreign Policy",
+   "Environment",
+   "International Relations Policies"
+  ],
+  "10sent_20prev_026": [
+   "Government Policies",
+   "Immigration Reform",
+   "Environment",
+   "International Relations Policies"
+  ],
+  "5sent_20prev_025": [
+   "Government Policies",
+   "Human Rights"
+  ],
+  "5sent_20prev_010": [
+   "Government Policies",
+   "Fundraising",
+   "Healthcare Policies"
+  ]
+ },
+ "coverage_split": {
+  "generic": 0.5555555555555556,
+  "specific": 0.42857142857142855
+ },
+ "coverage": 0.4920634920634921,
+ "n_generated": 50,
+ "finished": "2026-10-08T22:30:31"
+}

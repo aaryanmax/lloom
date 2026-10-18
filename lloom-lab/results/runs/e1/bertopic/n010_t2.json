@@ -1,0 +1,65 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T15:32:01",
+ "meta": {
+  "experiment": "E1",
+  "method": "bertopic",
+  "n": 10,
+  "trial": 2
+ },
+ "doc_ids": [
+  "10sent_20prev_010",
+  "10sent_20prev_016",
+  "10sent_20prev_019",
+  "10sent_20prev_032",
+  "5sent_20prev_007",
+  "5sent_20prev_010",
+  "5sent_20prev_012",
+  "5sent_40prev_002",
+  "5sent_40prev_018",
+  "5sent_40prev_027"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Border Control Policies",
+   "Drug Policy",
+   "Education Policies",
+   "Fundraising",
+   "Healthcare Policies",
+   "LGBTQ+ Rights",
+   "Nature Conservation",
+   "Party History",
+   "Party Leadership",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "War and Peace"
+  ]
+ },
+ "errors": {},
+ "bertopic": {
+  "min_topic_size": 3,
+  "n_docs": 10,
+  "n_topics": 0
+ },
+ "concepts": [],
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "n_generated": 0,
+ "finished": "2026-10-08T15:32:07"
+}

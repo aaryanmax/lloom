@@ -1,0 +1,588 @@
+{
+ "status": "complete",
+ "started": "2026-10-09T09:49:43",
+ "meta": {
+  "experiment": "E1",
+  "method": "zeroshot_qwen",
+  "n": 80,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_000",
+  "10sent_20prev_005",
+  "10sent_20prev_006",
+  "10sent_20prev_007",
+  "10sent_20prev_010",
+  "10sent_20prev_012",
+  "10sent_20prev_014",
+  "10sent_20prev_015",
+  "10sent_20prev_016",
+  "10sent_20prev_017",
+  "10sent_20prev_018",
+  "10sent_20prev_019",
+  "10sent_20prev_020",
+  "10sent_20prev_021",
+  "10sent_20prev_023",
+  "10sent_20prev_031",
+  "10sent_20prev_032",
+  "10sent_20prev_034",
+  "10sent_20prev_036",
+  "10sent_20prev_039",
+  "10sent_40prev_002",
+  "10sent_40prev_007",
+  "10sent_40prev_008",
+  "10sent_40prev_009",
+  "10sent_40prev_010",
+  "10sent_40prev_014",
+  "10sent_40prev_016",
+  "10sent_40prev_017",
+  "10sent_40prev_018",
+  "10sent_40prev_019",
+  "10sent_40prev_022",
+  "10sent_40prev_023",
+  "10sent_40prev_024",
+  "10sent_40prev_026",
+  "10sent_40prev_030",
+  "10sent_40prev_032",
+  "10sent_40prev_034",
+  "10sent_40prev_037",
+  "10sent_40prev_039",
+  "5sent_20prev_002",
+  "5sent_20prev_004",
+  "5sent_20prev_005",
+  "5sent_20prev_006",
+  "5sent_20prev_012",
+  "5sent_20prev_014",
+  "5sent_20prev_015",
+  "5sent_20prev_016",
+  "5sent_20prev_017",
+  "5sent_20prev_018",
+  "5sent_20prev_019",
+  "5sent_20prev_020",
+  "5sent_20prev_022",
+  "5sent_20prev_025",
+  "5sent_20prev_026",
+  "5sent_20prev_027",
+  "5sent_20prev_029",
+  "5sent_20prev_031",
+  "5sent_20prev_032",
+  "5sent_20prev_037",
+  "5sent_20prev_038",
+  "5sent_20prev_039",
+  "5sent_40prev_000",
+  "5sent_40prev_001",
+  "5sent_40prev_002",
+  "5sent_40prev_004",
+  "5sent_40prev_005",
+  "5sent_40prev_007",
+  "5sent_40prev_008",
+  "5sent_40prev_012",
+  "5sent_40prev_014",
+  "5sent_40prev_017",
+  "5sent_40prev_019",
+  "5sent_40prev_021",
+  "5sent_40prev_022",
+  "5sent_40prev_024",
+  "5sent_40prev_025",
+  "5sent_40prev_027",
+  "5sent_40prev_029",
+  "5sent_40prev_031",
+  "5sent_40prev_035"
+ ],
+ "ground_truth": {
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ],
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Candidate Profiles",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Government Spending",
+   "Gun Control Legislation",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies",
+   "Racial Equality",
+   "Refugee Policies",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "Universal Healthcare",
+   "War and Peace",
+   "Women's Rights"
+  ]
+ },
+ "errors": {},
+ "assignments": {
+  "5sent_40prev_017": [
+   "Foreign Policy",
+   "Government Policies"
+  ],
+  "10sent_20prev_014": [
+   "Campaign Promises",
+   "Fundraising",
+   "Government Spending",
+   "Political Rallies"
+  ],
+  "10sent_40prev_034": [
+   "Immigration Reform",
+   "Gun Control Legislation",
+   "Government Policies"
+  ],
+  "10sent_40prev_024": [
+   "Political Rallies",
+   "Gun Control Legislation",
+   "Party Factionalism"
+  ],
+  "10sent_40prev_032": [
+   "Immigration",
+   "Gun Control Legislation",
+   "Refugee Policies"
+  ],
+  "5sent_20prev_015": [
+   "Immigration",
+   "Gun Control Legislation"
+  ],
+  "10sent_20prev_020": [
+   "Political Rallies",
+   "Gun Control Legislation"
+  ],
+  "5sent_20prev_029": [
+   "Unemployment",
+   "Government Policies"
+  ],
+  "5sent_20prev_025": [
+   "Political Rallies"
+  ],
+  "5sent_20prev_012": [
+   "Gun Control Legislation",
+   "Foreign Policy"
+  ],
+  "5sent_20prev_031": [
+   "Healthcare"
+  ],
+  "5sent_40prev_001": [
+   "Children's Rights",
+   "Immigration",
+   "Healthcare",
+   "Immigration",
+   "Political Rallies"
+  ],
+  "10sent_20prev_039": [
+   "Political Parties",
+   "Education Policies",
+   "Nature Conservation",
+   "Party History",
+   "Party Leadership",
+   "Party Platforms",
+   "Immigration Reform",
+   "War and Peace"
+  ],
+  "10sent_20prev_019": [
+   "Political Parties",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "Nature Conservation",
+   "Education Policies",
+   "Government Spending"
+  ],
+  "5sent_20prev_027": [
+   "Government Policies",
+   "Economic Policies",
+   "Healthcare",
+   "Political Rallies"
+  ],
+  "5sent_40prev_007": [
+   "LGBTQ+ Rights",
+   "Foreign Policy",
+   "Government Policies",
+   "War and Peace"
+  ],
+  "10sent_20prev_012": [
+   "LGBTQ+ Rights",
+   "Economic Policies",
+   "Education Policies",
+   "Political Rallies",
+   "Government Policies",
+   "War and Peace"
+  ],
+  "5sent_40prev_021": [
+   "Healthcare",
+   "Government Policies",
+   "Economic Policies",
+   "Immigration"
+  ],
+  "10sent_40prev_008": [
+   "Political Parties",
+   "Party Factionalism",
+   "Party Leadership",
+   "Party Platforms",
+   "LGBTQ+ Rights",
+   "Gun Control",
+   "Environment",
+   "Education Policies",
+   "Healthcare",
+   "Political Rallies"
+  ],
+  "5sent_20prev_022": [
+   "Government Policies",
+   "Healthcare Policies",
+   "Environment"
+  ],
+  "5sent_20prev_005": [
+   "Political Parties",
+   "LGBTQ+ Rights",
+   "International Relations Policies"
+  ],
+  "5sent_20prev_038": [
+   "Government Policies",
+   "Political Parties"
+  ],
+  "10sent_40prev_014": [
+   "Government Policies",
+   "International Relations Policies",
+   "Healthcare Policies",
+   "Children's Rights"
+  ],
+  "10sent_20prev_000": [
+   "Government Policies",
+   "Immigration",
+   "Healthcare Policies",
+   "Political Rallies"
+  ],
+  "10sent_40prev_019": [
+   "Government Policies",
+   "International Relations Policies",
+   "Healthcare Policies",
+   "Education Policies"
+  ],
+  "5sent_20prev_002": [
+   "Government Policies",
+   "Immigration",
+   "Political Parties"
+  ],
+  "10sent_20prev_016": [
+   "Government Policies",
+   "Healthcare Policies",
+   "Political Parties"
+  ],
+  "5sent_40prev_022": [
+   "Economy",
+   "Environment",
+   "Government Policies"
+  ],
+  "10sent_20prev_021": [
+   "Government Policies",
+   "Economy",
+   "Healthcare Policies"
+  ],
+  "10sent_40prev_037": [
+   "Healthcare",
+   "International Relations Policies",
+   "Diplomatic Relations"
+  ],
+  "10sent_40prev_017": [
+   "Drug Policy",
+   "Political Parties",
+   "Government Policies"
+  ],
+  "10sent_20prev_017": [
+   "Gun Control Legislation",
+   "Environment",
+   "Government Policies",
+   "International Relations Policies"
+  ],
+  "10sent_40prev_039": [
+   "Gun Control",
+   "Healthcare Policies",
+   "Economy",
+   "Government Spending",
+   "Political Parties"
+  ],
+  "5sent_40prev_008": [
+   "Economy",
+   "Government Policies",
+   "War and Peace"
+  ],
+  "5sent_40prev_005": [
+   "Environment",
+   "Nature Conservation"
+  ],
+  "10sent_40prev_016": [
+   "Environment",
+   "LGBTQ+ Rights",
+   "Education Policies",
+   "Government Policies",
+   "Economy"
+  ],
+  "10sent_40prev_010": [
+   "Government Policies",
+   "Political Parties",
+   "Human Rights",
+   "Environment",
+   "Election Campaigns"
+  ],
+  "5sent_40prev_002": [
+   "Human Rights",
+   "Political Parties"
+  ],
+  "5sent_40prev_025": [
+   "Environment",
+   "Education Policies"
+  ],
+  "10sent_20prev_036": [
+   "Political Parties",
+   "Party History"
+  ],
+  "10sent_40prev_023": [
+   "Gun Control Legislation",
+   "Universal Healthcare",
+   "Education Policies"
+  ],
+  "5sent_40prev_012": [
+   "Campaign Promises",
+   "Healthcare Policies"
+  ],
+  "5sent_20prev_032": [
+   "Political Parties",
+   "Party Factionalism"
+  ],
+  "10sent_20prev_007": [
+   "Government Policies",
+   "Political Parties",
+   "Party History"
+  ],
+  "10sent_20prev_018": [
+   "Government Policies",
+   "International Relations Policies",
+   "Economic Policies"
+  ],
+  "5sent_20prev_026": [
+   "Government Policies",
+   "Economic Policies"
+  ],
+  "10sent_20prev_010": [
+   "Government Policies",
+   "Economic Policies"
+  ],
+  "10sent_40prev_018": [
+   "Economic Policies",
+   "War and Peace",
+   "Government Policies"
+  ],
+  "10sent_20prev_031": [
+   "Healthcare Policies",
+   "Political Parties",
+   "Campaign Promises",
+   "Fundraising"
+  ],
+  "5sent_20prev_014": [
+   "Border Control Policies"
+  ],
+  "5sent_20prev_020": [
+   "Government Spending",
+   "Economic Policies"
+  ],
+  "10sent_20prev_015": [
+   "Drug Policy",
+   "Healthcare",
+   "Immigration Reform"
+  ],
+  "5sent_40prev_004": [
+   "Political Parties",
+   "Immigration"
+  ],
+  "5sent_20prev_018": [
+   "Environment",
+   "Government Policies"
+  ],
+  "5sent_20prev_037": [
+   "Political Parties",
+   "Government Policies"
+  ],
+  "5sent_40prev_027": [
+   "Immigration",
+   "Government Policies"
+  ],
+  "10sent_40prev_026": [
+   "Immigration Reform",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Political Parties"
+  ],
+  "5sent_20prev_016": [
+   "Environment",
+   "Immigration"
+  ],
+  "10sent_40prev_022": [
+   "Government Policies",
+   "Immigration Reform",
+   "Environment",
+   "Air Pollution",
+   "Party History"
+  ],
+  "5sent_40prev_031": [
+   "Refugee Policies",
+   "International Relations Policies",
+   "Government Policies"
+  ],
+  "5sent_20prev_017": [
+   "Immigration",
+   "Environment",
+   "Air Pollution",
+   "Party Factionalism"
+  ],
+  "10sent_20prev_023": [
+   "Political Parties",
+   "Party Factionalism",
+   "Government Policies",
+   "Party Leadership",
+   "Party Platforms",
+   "Political Rallies"
+  ],
+  "10sent_20prev_005": [
+   "Government Policies",
+   "Healthcare",
+   "Mental Health",
+   "Political Parties",
+   "Party Factionalism",
+   "Political Rallies"
+  ],
+  "10sent_20prev_034": [
+   "Government Policies",
+   "Environment",
+   "Air Pollution",
+   "Climate Change",
+   "Party History",
+   "Party Leadership",
+   "Political Rallies"
+  ],
+  "5sent_40prev_000": [
+   "Candidate Profiles",
+   "Political Parties",
+   "Immigration",
+   "Election Campaigns"
+  ],
+  "5sent_20prev_004": [
+   "Education Policies",
+   "Government Policies",
+   "Human Rights",
+   "Political Parties"
+  ],
+  "10sent_40prev_030": [
+   "Government Policies",
+   "Economic Policies",
+   "Environment",
+   "Climate Change",
+   "International Relations Policies",
+   "Political Rallies"
+  ],
+  "10sent_20prev_006": [
+   "Government Policies",
+   "Economic Policies",
+   "Fiscal Policy",
+   "Political Rallies",
+   "Political Parties"
+  ],
+  "5sent_20prev_019": [
+   "Government Policies",
+   "Economic Policies",
+   "Fiscal Policy"
+  ],
+  "5sent_40prev_024": [
+   "Government Policies",
+   "Healthcare",
+   "Mental Health"
+  ],
+  "10sent_40prev_002": [
+   "Government Policies",
+   "Gun Control",
+   "Political Parties",
+   "Party Platforms",
+   "Political Rallies"
+  ],
+  "5sent_20prev_039": [
+   "Political Parties",
+   "Party Leadership",
+   "Party Factionalism"
+  ],
+  "5sent_40prev_035": [
+   "Government Policies",
+   "Healthcare",
+   "Children's Rights"
+  ],
+  "10sent_20prev_032": [
+   "Government Policies",
+   "Healthcare",
+   "Economic Policies",
+   "Drug Policy",
+   "Education Policies",
+   "International Relations Policies"
+  ],
+  "5sent_20prev_006": [
+   "Government Policies",
+   "International Relations Policies"
+  ],
+  "10sent_40prev_009": [
+   "Government Policies",
+   "International Relations Policies",
+   "Economic Policies",
+   "Education Policies",
+   "Political Parties",
+   "Party History",
+   "Party Leadership"
+  ],
+  "5sent_40prev_014": [
+   "Government Policies",
+   "International Relations Policies",
+   "Human Rights"
+  ],
+  "5sent_40prev_029": [
+   "Government Policies",
+   "Education Policies",
+   "Racial Equality",
+   "Human Rights"
+  ]
+ },
+ "coverage_split": {
+  "generic": 1.0,
+  "specific": 0.75
+ },
+ "coverage": 0.875,
+ "n_generated": 50,
+ "finished": "2026-10-09T10:14:32"
+}

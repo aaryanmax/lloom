@@ -1,0 +1,1149 @@
+{
+ "status": "complete",
+ "started": "2026-10-08T14:14:36",
+ "config": {
+  "distill_model": "qwen",
+  "synth_model": "qwen",
+  "score_model": "qwen",
+  "min_cluster_size": 3,
+  "n_concepts_per_cluster": 1,
+  "score_batch_size": 20,
+  "use_filter": false,
+  "seed_phrase": "about politics",
+  "skip_score": true
+ },
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 40,
+  "trial": 0
+ },
+ "doc_ids": [
+  "10sent_20prev_000",
+  "10sent_20prev_002",
+  "10sent_20prev_003",
+  "10sent_20prev_006",
+  "10sent_20prev_009",
+  "10sent_20prev_012",
+  "10sent_20prev_015",
+  "10sent_20prev_017",
+  "10sent_20prev_020",
+  "10sent_20prev_022",
+  "10sent_20prev_029",
+  "10sent_20prev_030",
+  "10sent_20prev_031",
+  "10sent_20prev_032",
+  "10sent_20prev_034",
+  "10sent_20prev_037",
+  "10sent_40prev_002",
+  "10sent_40prev_006",
+  "10sent_40prev_008",
+  "10sent_40prev_015",
+  "10sent_40prev_020",
+  "10sent_40prev_021",
+  "10sent_40prev_026",
+  "10sent_40prev_027",
+  "10sent_40prev_029",
+  "10sent_40prev_030",
+  "10sent_40prev_033",
+  "5sent_20prev_004",
+  "5sent_20prev_010",
+  "5sent_20prev_016",
+  "5sent_20prev_030",
+  "5sent_20prev_037",
+  "5sent_20prev_039",
+  "5sent_40prev_006",
+  "5sent_40prev_008",
+  "5sent_40prev_014",
+  "5sent_40prev_017",
+  "5sent_40prev_020",
+  "5sent_40prev_025",
+  "5sent_40prev_031"
+ ],
+ "ground_truth": {
+  "specific": [
+   "Air Pollution",
+   "Assault Weapons Ban",
+   "Background Checks",
+   "Border Control Policies",
+   "Campaign Promises",
+   "Children's Rights",
+   "Climate Change",
+   "Diplomatic Relations",
+   "Drug Policy",
+   "Economic Policies",
+   "Education Policies",
+   "Fiscal Policy",
+   "Fundraising",
+   "Government Spending",
+   "Health Insurance",
+   "Healthcare Policies",
+   "Illegal Immigration",
+   "Immigration Reform",
+   "International Aid",
+   "International Relations Policies",
+   "LGBTQ+ Rights",
+   "Mental Health",
+   "Nature Conservation",
+   "Party Factionalism",
+   "Party History",
+   "Party Leadership",
+   "Political Rallies",
+   "Racial Equality",
+   "Refugee Policies",
+   "Renewable Energy",
+   "Second Amendment Rights",
+   "Taxes",
+   "Trade Agreements",
+   "Unemployment",
+   "War and Peace",
+   "Women's Rights"
+  ],
+  "generic": [
+   "Economy",
+   "Election Campaigns",
+   "Environment",
+   "Foreign Policy",
+   "Government Policies",
+   "Gun Control",
+   "Healthcare",
+   "Human Rights",
+   "Immigration",
+   "Political Parties"
+  ]
+ },
+ "errors": {},
+ "distilled": [
+  {
+   "quotes": [],
+   "bullets": [
+    "Amended bill text distributed to staff",
+    "Registry proposal for immigrant status adjustment",
+    "Comprehensive reform pairs enforcement with legalization",
+    "Political events captured through media and imagery"
+   ],
+   "doc_id": "10sent_20prev_000"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political debate broadcast on regional channel",
+    "Court upholds right to bear arms at home",
+    "Public engagement through school tours and live blogs",
+    "Session activities include cleaning and printing"
+   ],
+   "doc_id": "10sent_20prev_002"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event attendance exceeded expectations",
+    "Health warnings issued due to high pollution levels",
+    "Security measures enforced at event venues",
+    "County symbols displayed during public celebration"
+   ],
+   "doc_id": "10sent_20prev_003"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events draw large crowds",
+    "Legislators debate economic strategies",
+    "Facility operations ensure smooth proceedings",
+    "New fiscal rules limit spending growth"
+   ],
+   "doc_id": "10sent_20prev_006"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "County clerk certifies election results",
+    "Unemployment rises due to mill closure",
+    "Delegation delayed by weather issues",
+    "Public affairs channel broadcasts debate"
+   ],
+   "doc_id": "10sent_20prev_009"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Court extends spousal benefits to same-sex partners",
+    "New bill subsidizes broadband in small townships",
+    "Public events and media coverage during legislative session",
+    "Administrative tasks and delays impact legislative process"
+   ],
+   "doc_id": "10sent_20prev_012"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events marked by logistical preparations",
+    "Legal changes proposed to address drug issues",
+    "Public engagement and security measures noted",
+    "Ceremonial and procedural activities highlighted"
+   ],
+   "doc_id": "10sent_20prev_015"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events disrupt local traffic",
+    "Legislation expands firearm vetting",
+    "Government commits to arms control talks",
+    "Political activities involve multiple stakeholders"
+   ],
+   "doc_id": "10sent_20prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events and schedules are communicated to the press.",
+    "Community issues involve legal challenges over voting rights.",
+    "Public meetings extend beyond scheduled times due to discussions."
+   ],
+   "doc_id": "10sent_20prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Volunteers register new voters at market",
+    "Lawmakers debate health coverage for asylum seekers",
+    "High turnout and packed hearing rooms noted",
+    "Weather impacts event schedules and attendance"
+   ],
+   "doc_id": "10sent_20prev_022"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Administrative delays due to technical issues",
+    "Preparation efforts for official events",
+    "Financial discrepancies uncovered in audit",
+    "Support staff ensuring event readiness"
+   ],
+   "doc_id": "10sent_20prev_029"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Career centers overwhelmed by laid-off staff",
+    "Security measures heightened at convention hall",
+    "Automation risks rising unemployment rates",
+    "Political events disrupted by weather"
+   ],
+   "doc_id": "10sent_20prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "County opens 24/7 crisis line",
+    "Political activities and events occur",
+    "Volunteers register new voters",
+    "State officials manage election results"
+   ],
+   "doc_id": "10sent_20prev_031"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Lawmakers discuss medicine pricing controls",
+    "Procedural debates disrupt civic center traffic",
+    "Regulators shift sleep aid accessibility status"
+   ],
+   "doc_id": "10sent_20prev_032"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Roll call and committee preparations",
+    "County celebration and flag display",
+    "Environmental enforcement actions",
+    "Political meeting and staff recognition"
+   ],
+   "doc_id": "10sent_20prev_034"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events marked by preparation and formality",
+    "Institutional procedures and rule changes highlighted",
+    "Legacy and history preserved through physical symbols",
+    "Public engagement and ceremonial aspects emphasized"
+   ],
+   "doc_id": "10sent_20prev_037"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political events and security measures highlighted",
+    "Constitutional rights and conventions discussed",
+    "Disputes and debates impact political processes"
+   ],
+   "doc_id": "10sent_40prev_002"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "City council creates racial equity commission",
+    "Minority firms face contract disparity",
+    "Heat wave linked to climate change",
+    "Voter registration efforts at farmers market"
+   ],
+   "doc_id": "10sent_40prev_006"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political actions address workplace harassment",
+    "Legislative efforts focus on public safety",
+    "Historical events depicted in public spaces",
+    "Policy changes target environmental and social issues"
+   ],
+   "doc_id": "10sent_40prev_008"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Government plans to boost local drug production",
+    "Legislative actions address gun sale loopholes",
+    "Public engagement exceeds expectations in elections",
+    "Political processes highlighted through media coverage"
+   ],
+   "doc_id": "10sent_40prev_015"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Amendment ensures children's right to safe home",
+    "Employers still hire unauthorized workers",
+    "Foster agencies must place siblings together",
+    "Political events face attendance and logistical challenges"
+   ],
+   "doc_id": "10sent_40prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Regulators announce premium increase",
+    "Judges strike down gun control ordinance",
+    "Health department mandates infection data",
+    "Auditors uncover no-bid contract issues"
+   ],
+   "doc_id": "10sent_40prev_021"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Proposed visa reforms prioritize skilled workers",
+    "Political tensions arise over climate policies",
+    "News events drive media and public attention",
+    "Political factions threaten to split over key issues"
+   ],
+   "doc_id": "10sent_40prev_026"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Security measures at convention entrances",
+    "Volunteers restore trout habitat efforts",
+    "Schools plan to hire psychologists",
+    "Partnership reduces customs paperwork"
+   ],
+   "doc_id": "10sent_40prev_027"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "State honors constitutional history",
+    "Legislative reforms protect victims",
+    "Public safety and security measures",
+    "Political events and ceremonial preparations"
+   ],
+   "doc_id": "10sent_40prev_029"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Budget expansion for need-based scholarships",
+    "Coastal planning adapts to climate change",
+    "Political debates over community funding",
+    "Public events face logistical challenges"
+   ],
+   "doc_id": "10sent_40prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Conservation deal preserves ranch from subdivision",
+    "Political events include rallies and treaty ratification",
+    "Legislative actions focus on medicine pricing and bill amendments",
+    "Campaign activities involve crowd engagement and seating arrangements"
+   ],
+   "doc_id": "10sent_40prev_033"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Schoolchildren tour state capitol",
+    "Department faces hiring overhaul",
+    "Rain impacts press attendance",
+    "Elevator worker retires after 40 years"
+   ],
+   "doc_id": "5sent_20prev_004"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Event logistics and coordination",
+    "Volunteer fundraising efforts",
+    "Venue setup and technical support",
+    "Operational maintenance tasks"
+   ],
+   "doc_id": "5sent_20prev_010"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Crossing guard manages morning traffic",
+    "Reception logs high visitor numbers",
+    "Solar array powers six thousand homes",
+    "Mural highlights state's constitutional history"
+   ],
+   "doc_id": "5sent_20prev_016"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Hearing room filled with attendees",
+    "Moderator enforces phone silence",
+    "County flags displayed for celebration",
+    "Vote delays due to labor disputes"
+   ],
+   "doc_id": "5sent_20prev_030"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Political event details described",
+    "Media coverage of legislative actions",
+    "Historical political lineage mentioned",
+    "Event logistics and preparations"
+   ],
+   "doc_id": "5sent_20prev_037"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Outgoing chairman endorses successor",
+    "Procedural wrangling delays hearing",
+    "Maintenance work disrupts rotunda",
+    "Bunting removed from podium area"
+   ],
+   "doc_id": "5sent_20prev_039"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Moderator urges audience to silence phones",
+    "Reform bill ties legalization to employment",
+    "Staffers distribute amended bill copies",
+    "Policy links state contracts to local hiring"
+   ],
+   "doc_id": "5sent_40prev_006"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Televised debate on regional channel",
+    "Memorial honors border conflict victims",
+    "Roll call signaled by ringing bells",
+    "Budget surplus sparks spending debate"
+   ],
+   "doc_id": "5sent_40prev_008"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Reporters await briefings in hallways",
+    "Crossing guards manage morning traffic",
+    "Officials and donors gather at arena",
+    "Aid workers deliver relief supplies"
+   ],
+   "doc_id": "5sent_40prev_014"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Leaders meet for state talks",
+    "Preparations for major event",
+    "High-level diplomatic visit",
+    "Staff ensure venue readiness"
+   ],
+   "doc_id": "5sent_40prev_017"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Volunteers assist asylum seekers with housing",
+    "County clerk certifies election results",
+    "Aides update press on upcoming schedule",
+    "Sunset clause ends prohibition after ten years"
+   ],
+   "doc_id": "5sent_40prev_020"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Schoolchildren visit capitol during session",
+    "Substance misuse framed as public health issue",
+    "Schools install air filters due to parent concerns",
+    "Reception logs high visitor numbers"
+   ],
+   "doc_id": "5sent_40prev_025"
+  },
+  {
+   "quotes": [],
+   "bullets": [
+    "Refugee admission cap increased by 10,000",
+    "Resettlement services expanded for war refugees",
+    "Event decorations removed quickly after ceremony",
+    "Corporate box mixed officials and donor guests"
+   ],
+   "doc_id": "5sent_40prev_031"
+  }
+ ],
+ "clusters": {
+  "1": [
+   "10sent_20prev_000",
+   "10sent_20prev_012",
+   "5sent_40prev_006"
+  ],
+  "4": [
+   "10sent_20prev_000",
+   "10sent_20prev_002",
+   "10sent_20prev_012",
+   "10sent_20prev_017",
+   "10sent_40prev_008",
+   "10sent_40prev_015",
+   "10sent_40prev_020",
+   "10sent_40prev_020",
+   "10sent_40prev_021",
+   "10sent_40prev_027",
+   "10sent_40prev_029",
+   "5sent_40prev_020",
+   "5sent_40prev_025"
+  ],
+  "16": [
+   "10sent_20prev_000",
+   "10sent_20prev_012",
+   "10sent_20prev_020",
+   "10sent_40prev_015",
+   "10sent_40prev_026"
+  ],
+  "12": [
+   "10sent_20prev_002",
+   "10sent_20prev_009",
+   "5sent_20prev_037",
+   "5sent_40prev_008"
+  ],
+  "10": [
+   "10sent_20prev_003",
+   "10sent_20prev_006",
+   "10sent_40prev_033"
+  ],
+  "3": [
+   "10sent_20prev_003",
+   "10sent_20prev_015",
+   "10sent_20prev_022",
+   "10sent_20prev_032",
+   "10sent_20prev_034",
+   "10sent_40prev_006",
+   "10sent_40prev_008",
+   "10sent_40prev_015",
+   "10sent_40prev_021",
+   "10sent_40prev_021",
+   "10sent_40prev_026",
+   "10sent_40prev_030",
+   "10sent_40prev_033",
+   "5sent_40prev_006",
+   "5sent_40prev_025"
+  ],
+  "11": [
+   "10sent_20prev_003",
+   "10sent_20prev_015",
+   "10sent_20prev_030",
+   "10sent_40prev_027",
+   "10sent_40prev_029",
+   "5sent_40prev_014"
+  ],
+  "18": [
+   "10sent_20prev_003",
+   "10sent_20prev_031",
+   "10sent_20prev_034",
+   "10sent_20prev_037",
+   "10sent_40prev_029",
+   "5sent_20prev_016",
+   "5sent_20prev_030",
+   "5sent_40prev_008"
+  ],
+  "2": [
+   "10sent_20prev_006",
+   "10sent_20prev_006",
+   "10sent_20prev_020",
+   "10sent_40prev_030",
+   "5sent_40prev_008"
+  ],
+  "5": [
+   "10sent_20prev_006",
+   "10sent_20prev_029",
+   "10sent_20prev_029",
+   "10sent_40prev_030",
+   "5sent_20prev_010",
+   "5sent_20prev_010",
+   "5sent_20prev_037",
+   "5sent_40prev_017",
+   "5sent_40prev_017"
+  ],
+  "13": [
+   "10sent_20prev_009",
+   "10sent_20prev_031",
+   "5sent_40prev_020"
+  ],
+  "8": [
+   "10sent_20prev_009",
+   "10sent_20prev_012",
+   "10sent_20prev_029",
+   "10sent_20prev_029",
+   "10sent_20prev_030",
+   "10sent_20prev_030",
+   "10sent_20prev_032",
+   "10sent_20prev_037",
+   "10sent_40prev_006",
+   "10sent_40prev_020",
+   "10sent_40prev_021",
+   "5sent_20prev_004",
+   "5sent_20prev_004",
+   "5sent_20prev_030",
+   "5sent_20prev_039",
+   "5sent_20prev_039",
+   "5sent_40prev_006"
+  ],
+  "7": [
+   "10sent_20prev_009",
+   "10sent_20prev_022",
+   "10sent_20prev_030",
+   "10sent_20prev_032",
+   "5sent_20prev_004"
+  ],
+  "21": [
+   "10sent_20prev_015",
+   "10sent_40prev_029",
+   "5sent_40prev_017"
+  ],
+  "17": [
+   "10sent_20prev_015",
+   "10sent_20prev_037",
+   "10sent_40prev_008"
+  ],
+  "20": [
+   "10sent_20prev_017",
+   "10sent_40prev_033",
+   "5sent_40prev_017"
+  ],
+  "19": [
+   "10sent_20prev_017",
+   "10sent_40prev_002",
+   "10sent_40prev_026"
+  ],
+  "14": [
+   "10sent_20prev_022",
+   "10sent_20prev_031",
+   "10sent_40prev_006",
+   "10sent_40prev_006"
+  ],
+  "9": [
+   "10sent_20prev_022",
+   "5sent_20prev_016",
+   "5sent_20prev_016",
+   "5sent_20prev_030",
+   "5sent_40prev_014",
+   "5sent_40prev_025"
+  ],
+  "22": [
+   "10sent_20prev_031",
+   "10sent_20prev_037",
+   "5sent_20prev_037",
+   "5sent_20prev_037"
+  ],
+  "6": [
+   "10sent_20prev_034",
+   "5sent_20prev_030",
+   "5sent_40prev_006",
+   "5sent_40prev_008",
+   "5sent_40prev_014"
+  ],
+  "15": [
+   "10sent_40prev_027",
+   "10sent_40prev_030",
+   "5sent_20prev_010",
+   "5sent_40prev_014",
+   "5sent_40prev_020",
+   "5sent_40prev_031",
+   "5sent_40prev_031"
+  ],
+  "0": [
+   "10sent_40prev_027",
+   "5sent_20prev_039",
+   "5sent_40prev_031"
+  ]
+ },
+ "concepts": [
+  {
+   "name": "Efficient Event Management",
+   "criteria_prompt": "Does the text describe a situation where event logistics or decorations are handled swiftly and efficiently?",
+   "representative_example_ids": [
+    "5sent_40prev_031",
+    "5sent_20prev_039"
+   ],
+   "cluster_label": 0
+  },
+  {
+   "name": "Bill Distribution",
+   "criteria_prompt": "Does the text mention the distribution of a bill or its amendments to staff or officials?",
+   "representative_example_ids": [
+    "10sent_20prev_000",
+    "5sent_40prev_006"
+   ],
+   "cluster_label": 1
+  },
+  {
+   "name": "Fiscal Policy Debate",
+   "criteria_prompt": "Does the text discuss debates or decisions related to government spending, budgeting, or financial rules?",
+   "representative_example_ids": [
+    "10sent_20prev_006",
+    "5sent_40prev_008"
+   ],
+   "cluster_label": 2
+  },
+  {
+   "name": "Policy Regulation",
+   "criteria_prompt": "Is the text discussing new laws, regulations, or changes in policy aimed at controlling or addressing a specific issue?",
+   "representative_example_ids": [
+    "10sent_20prev_015",
+    "10sent_40prev_033"
+   ],
+   "cluster_label": 3
+  },
+  {
+   "name": "Gun Regulation",
+   "criteria_prompt": "Does the text discuss laws, policies, or court decisions related to the regulation, control, or ownership of firearms?",
+   "representative_example_ids": [
+    "10sent_40prev_015",
+    "10sent_40prev_021"
+   ],
+   "cluster_label": 4
+  },
+  {
+   "name": "Event Logistics",
+   "criteria_prompt": "Does the text describe the planning, coordination, and execution of logistical aspects for an event?",
+   "representative_example_ids": [
+    "5sent_20prev_010",
+    "5sent_40prev_017"
+   ],
+   "cluster_label": 5
+  },
+  {
+   "name": "Formal Meeting Procedures",
+   "criteria_prompt": "Does the text describe actions taken to maintain order or follow protocol during a formal meeting or assembly?",
+   "representative_example_ids": [
+    "5sent_20prev_030",
+    "5sent_40prev_008"
+   ],
+   "cluster_label": 6
+  },
+  {
+   "name": "Weather Disruption",
+   "criteria_prompt": "Does the text mention weather-related disruptions to political events or activities?",
+   "representative_example_ids": [
+    "10sent_20prev_009",
+    "10sent_20prev_022"
+   ],
+   "cluster_label": 7
+  },
+  {
+   "name": "Administrative Delays",
+   "criteria_prompt": "Does the text describe delays caused by bureaucratic processes, technical issues, or procedural challenges?",
+   "representative_example_ids": [
+    "10sent_20prev_012",
+    "10sent_20prev_029"
+   ],
+   "cluster_label": 8
+  },
+  {
+   "name": "High Attendance",
+   "criteria_prompt": "Does the text mention a large number of people attending an event or gathering?",
+   "representative_example_ids": [
+    "5sent_20prev_030",
+    "5sent_40prev_025"
+   ],
+   "cluster_label": 9
+  },
+  {
+   "name": "Crowd Engagement",
+   "criteria_prompt": "Does the text describe political events with significant public participation or crowd interaction?",
+   "representative_example_ids": [
+    "10sent_20prev_003",
+    "10sent_20prev_006"
+   ],
+   "cluster_label": 10
+  },
+  {
+   "name": "Security Measures",
+   "criteria_prompt": "Does the text mention specific actions or protocols implemented to ensure safety or prevent threats in public or event spaces?",
+   "representative_example_ids": [
+    "10sent_20prev_003",
+    "10sent_40prev_027"
+   ],
+   "cluster_label": 11
+  },
+  {
+   "name": "Political Debate Broadcast",
+   "criteria_prompt": "Is the text describing a televised or broadcast debate related to political topics?",
+   "representative_example_ids": [
+    "10sent_20prev_002",
+    "10sent_40prev_008"
+   ],
+   "cluster_label": 12
+  },
+  {
+   "name": "Certification of Results",
+   "criteria_prompt": "Does the text mention a county clerk certifying election results?",
+   "representative_example_ids": [
+    "10sent_20prev_009",
+    "5sent_40prev_020"
+   ],
+   "cluster_label": 13
+  },
+  {
+   "name": "Voter Registration",
+   "criteria_prompt": "Does the text mention activities related to registering voters or increasing voter participation?",
+   "representative_example_ids": [
+    "10sent_20prev_022",
+    "10sent_40prev_006"
+   ],
+   "cluster_label": 14
+  },
+  {
+   "name": "Refugee Assistance",
+   "criteria_prompt": "Does the text describe actions or policies aimed at supporting refugees, asylum seekers, or resettlement efforts?",
+   "representative_example_ids": [
+    "5sent_40prev_020",
+    "5sent_40prev_031"
+   ],
+   "cluster_label": 15
+  },
+  {
+   "name": "Media Coverage of Politics",
+   "criteria_prompt": "Does the text describe how political events are covered by media or public attention?",
+   "representative_example_ids": [
+    "10sent_20prev_000",
+    "10sent_40prev_026"
+   ],
+   "cluster_label": 16
+  },
+  {
+   "name": "Ceremonial Focus",
+   "criteria_prompt": "Does the text emphasize ceremonial or procedural aspects of political events?",
+   "representative_example_ids": [
+    "10sent_20prev_015",
+    "10sent_20prev_037"
+   ],
+   "cluster_label": 17
+  },
+  {
+   "name": "Symbolic Celebration",
+   "criteria_prompt": "Does the text describe the display or use of symbols (like flags, murals, or monuments) during a public celebration or commemoration of historical or political significance?",
+   "representative_example_ids": [
+    "10sent_20prev_003",
+    "5sent_20prev_030"
+   ],
+   "cluster_label": 18
+  },
+  {
+   "name": "Stakeholder Conflict",
+   "criteria_prompt": "Does the text describe disagreement or tension among different groups or individuals with competing interests in a political context?",
+   "representative_example_ids": [
+    "10sent_40prev_026",
+    "10sent_40prev_002"
+   ],
+   "cluster_label": 19
+  },
+  {
+   "name": "Political Negotiations",
+   "criteria_prompt": "Does the text mention formal discussions or meetings between political leaders aimed at resolving disputes or reaching agreements?",
+   "representative_example_ids": [
+    "10sent_20prev_017",
+    "5sent_40prev_017"
+   ],
+   "cluster_label": 20
+  },
+  {
+   "name": "Political Ceremonial Prep",
+   "criteria_prompt": "Does the text describe political events involving ceremonial or logistical preparations for high-level activities?",
+   "representative_example_ids": [
+    "10sent_20prev_015",
+    "10sent_40prev_029"
+   ],
+   "cluster_label": 21
+  },
+  {
+   "name": "Political Event Formality",
+   "criteria_prompt": "Does the text describe a political event with emphasis on preparation and formal procedures?",
+   "representative_example_ids": [
+    "10sent_20prev_037",
+    "5sent_20prev_037"
+   ],
+   "cluster_label": 22
+  }
+ ],
+ "scores": {},
+ "finished": "2026-10-08T14:26:36",
+ "coverage_split": {
+  "generic": 0.4,
+  "specific": 0.1388888888888889
+ },
+ "coverage": 0.1956521739130435,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": "Fiscal Policy Debate",
+   "rationale": "Fiscal policy debate directly addresses the management of government spending and financial rules, which is the core of the Economy ground truth."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "None of the generated concepts capture the broad scope of election campaigns; they focus on specific procedural or logistical aspects."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "No generated concept addresses environmental issues or policies."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "No generated concept addresses international relations or foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": "Policy Regulation",
+   "rationale": "Policy regulation is synonymous with the implementation and control aspects of government policies."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": "Gun Regulation",
+   "rationale": "Gun regulation is a direct synonym for gun control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "No generated concept addresses healthcare."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "No generated concept addresses human rights."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": "Refugee Assistance",
+   "rationale": "Refugee assistance is a specific subset of immigration, but given the lack of a broader concept, it is the closest thematic match."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "No generated concept addresses political parties or their organizational activities."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses environmental pollution or air quality."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "The generated concept 'Gun Regulation' is broader than the specific policy of an assault weapons ban."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "The generated concept 'Gun Regulation' is broader than the specific policy of background checks."
+  },
+  {
+   "ground_truth": "Border Control Policies",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses border security or immigration control policies."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses the commitments made by candidates during campaigns."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "No generated concept addresses the rights or welfare of children."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "No generated concept addresses climate change or environmental policy."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "No generated concept addresses international relations or diplomacy."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": null,
+   "rationale": "No generated concept addresses the regulation or policy regarding drugs."
+  },
+  {
+   "ground_truth": "Economic Policies",
+   "concept": "Fiscal Policy Debate",
+   "rationale": "Fiscal policy debate is synonymous with the discussion and implementation of government economic and spending policies."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses education policy."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": "Fiscal Policy Debate",
+   "rationale": "The generated concept directly maps to the ground truth of fiscal policy."
+  },
+  {
+   "ground_truth": "Fundraising",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses political fundraising."
+  },
+  {
+   "ground_truth": "Government Spending",
+   "concept": null,
+   "rationale": "Fiscal Policy Debate covers government spending, but it is already matched to Fiscal Policy."
+  },
+  {
+   "ground_truth": "Health Insurance",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses health insurance."
+  },
+  {
+   "ground_truth": "Healthcare Policies",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses healthcare policies."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses illegal immigration."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": null,
+   "rationale": "Refugee Assistance is too narrow and distinct from general immigration reform."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses international aid."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses international relations."
+  },
+  {
+   "ground_truth": "LGBTQ+ Rights",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses LGBTQ+ rights."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "No generated concept addresses mental health."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "No generated concept addresses nature conservation."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": null,
+   "rationale": "Stakeholder Conflict is too broad and not specific to political parties."
+  },
+  {
+   "ground_truth": "Party History",
+   "concept": null,
+   "rationale": "No generated concept addresses party history."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "No generated concept addresses party leadership."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": "Crowd Engagement",
+   "rationale": "Crowd Engagement captures the essence of political rallies involving public participation."
+  },
+  {
+   "ground_truth": "Racial Equality",
+   "concept": null,
+   "rationale": "No generated concept addresses racial equality."
+  },
+  {
+   "ground_truth": "Refugee Policies",
+   "concept": "Refugee Assistance",
+   "rationale": "Refugee Assistance directly aligns with the ground truth of refugee policies."
+  },
+  {
+   "ground_truth": "Renewable Energy",
+   "concept": null,
+   "rationale": "No generated concept addresses renewable energy."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": "Gun Regulation",
+   "rationale": "The generated concept directly addresses the regulation and ownership of firearms, which is synonymous with the scope of Second Amendment Rights."
+  },
+  {
+   "ground_truth": "Taxes",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically target taxation; 'Fiscal Policy Debate' is too broad as it includes spending and budgeting."
+  },
+  {
+   "ground_truth": "Trade Agreements",
+   "concept": null,
+   "rationale": "There is no generated concept that specifically addresses international trade or trade agreements."
+  },
+  {
+   "ground_truth": "Unemployment",
+   "concept": null,
+   "rationale": "None of the generated concepts address labor markets, joblessness, or unemployment."
+  },
+  {
+   "ground_truth": "War and Peace",
+   "concept": null,
+   "rationale": "None of the generated concepts address international conflict, military engagement, or peace treaties."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts address gender equality or women's rights."
+  }
+ ],
+ "n_generated": 23
+}
