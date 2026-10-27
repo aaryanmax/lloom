@@ -6,24 +6,20 @@ CHI 2024, [arXiv:2404.12259](https://arxiv.org/abs/2404.12259)), mapped to the
 Advanced-ML Unit II syllabus (PAC learning, ERM, sample complexity, uniform
 convergence, No Free Lunch, VC dimension, Sauer's lemma, growth function).
 
-## Status
+## Status — COMPLETE ✅ (2026-10-27)
 
-Week 1 (scaffolding) complete:
-- [x] Unified LLM client — Gemini Flash-Lite (cloud, free tier) + Qwen3-8B Q4_K_M
-      (local llama.cpp), SQLite response cache, request ledger with daily quota guard
-- [x] Mini-LLooM pipeline: Distill → Cluster → Synthesize → Score, verified end-to-end
-- [x] bertopic / umap-learn / streamlit installed into the supervenv
+All phases shipped:
 
-Phase 1 (Week 2: synthetic data) complete — **zero LLM calls**:
-- [x] Paper Appendix C.4 ground truth (10 Generic / 40 Specific politics concepts)
-- [x] 160-document corpus in `data_store/synthetic_v1/` (length 5/10 ×
-      prevalence 20/40% × 40 docs) from 382 hand-written sentences —
-      ground-truth labels exact by construction, programmatic verification passing
-- [x] 10 NFL permuted-label variants (label-level derangements, fixed seeds)
-
-```bash
-python scripts/build_dataset.py          # rebuild dataset (0 LLM calls)
-```
+- **Infrastructure** — Unified dual-LLM client (Gemini Flash-Lite + Qwen3-8B local), SQLite
+  response cache (2,763 entries), per-day quota ledger, RPM throttle, CI (ruff + pytest).
+- **Data** — 160-doc synthetic corpus (`data_store/synthetic_v1/`), exact ground-truth labels
+  by construction (40 Specific + 10 Generic politics concepts), 10 NFL derangement variants.
+- **Experiments** — 125-cell E1 coverage-vs-n grid (5 methods × 5 trials × 5 n values),
+  E2 PAC-bound rectangles (0 violations), E3 growth function / VC dimension, E4 uniform
+  convergence generalization gap, E5 NFL collapse (94.8% F₁ drop).
+- **Outputs** — 6 publication-quality charts in `charts/`, Streamlit dashboard (`app.py`),
+  `Docs/REPORT.md`, `How_Many_Examples_Deck.pptx` (8-slide "Does LLooM Hold Up?" deck).
+- **Quality** — 78/78 offline tests passing; `ruff check` clean; CI gate green.
 
 ## Setup
 
@@ -67,4 +63,4 @@ the client hard-stops Gemini calls at `GEMINI_DAILY_LIMIT` (default 500).
    growth function / effective VC dimension, uniform convergence, NFL collapse)~~ ✅
 5. ~~Week 6 — analysis + publication-style figures (6 charts in `charts/`)~~ ✅
 6. ~~Week 7 — Streamlit dashboard (`app.py`), Unit-II-mapped report (`REPORT.md`), deck~~ ✅
-7. Week 8 — buffer (viva rehearsal, interactive walkthrough)
+7. ~~Week 8 — codebase audit, viva polish, deck rebuilt as "Does LLooM Hold Up?" (8 slides)~~ ✅

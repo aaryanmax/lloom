@@ -1,0 +1,77 @@
+AML-Project / lloom-lab — Documentation Index
+================================================
+All project documentation lives in this /Docs folder.
+Only README.md is kept in the repo root as the entry point.
+
+Files
+-----
+
+CONTRIBUTING.md
+  Developer setup and workflow rules. Covers the one-time venv install,
+  daily lint/test workflow, branch naming, commit style, LLM discipline
+  (cache-first, quota-guarded), and a short map of where things live in
+  the repo. Read this before making any code changes.
+
+E1_RESUME_GUIDE.md
+  Operational guide for the E1 coverage-vs-n experiment grid (125 cells).
+  Explains the two-layer checkpoint system (atomic JSON files + SQLite
+  cache), how to safely stop mid-run (Ctrl+C or Stop-Process), how to
+  check current progress with a one-liner, and how to resume by restarting
+  llama-server then running run_e1.py. Also covers partial-method runs.
+
+GUIDE.md
+  Comprehensive project guide ("How Many Examples Does It Take?"). Covers
+  the project summary, the full end-to-end pipeline (with Mermaid diagrams),
+  tech stack table, the theory → experiment mapping (E1–E5), how an
+  experiment flows, paper references, repo map, and quick-start commands.
+  Good first read for understanding the whole project.
+
+PLAN_WEEKS_4_7.md
+  Detailed implementation plan for the final project phase (Weeks 4–7).
+  Contains the week-by-week timeline, the Kaggle GPU offload strategy,
+  ready-to-run script skeletons for rescore_e1.py, run_e2.py, run_e3.py,
+  run_e4.py, run_e5.py, kaggle/run_local_cells.py, scripts/merge_cache.py,
+  and charts/make_figures.py, plus the Streamlit dashboard skeleton and
+  the written report section outline.
+
+PROJECT_STATE.md
+  Single source of truth for the project. Contains the project identity
+  YAML, tech stack, full repo map, coding conventions and invariants
+  (cache-first, quota guard, config centralization), current status per
+  phase, the active TODO list, and an append-only journal of every major
+  implementation event from project kickoff through the final audit.
+  Always check this first before starting any work.
+
+Paper.md
+  Complete plain-English breakdown of the primary source paper:
+  "Concept Induction: Analyzing Unstructured Text with High-Level Concepts
+  Using LLooM" (Lam et al., CHI 2024, arXiv:2404.12259). Covers the
+  problem statement, all algorithm operators (Distill, Cluster, Synthesize,
+  Score, Loop), the LLooM Workbench, all four real-world scenarios, the
+  technical benchmarks (Bills, Wiki, synthetic), scoring/IRR results,
+  expert case studies, and practical application examples. Includes
+  references to the 16 extracted PDF figures in /images.
+
+REPORT.md
+  Final written course report, fully mapped to Unit II of Advanced ML.
+  Presents the executive summary, the Unit II curriculum mapping table,
+  system architecture, and detailed results for all five experiments
+  (E1 sample-complexity grid, E2 PAC bound, E3 VC dimension, E4 uniform
+  convergence, E5 No-Free-Lunch). Includes quantitative results tables,
+  analysis, and a complete artifact index with file links. Status: Final.
+
+SLIDES.md
+  Slide content specification for the 7-slide presentation deck. Defines
+  the global visual system (color palette, fonts, sizes), and provides
+  per-slide layout instructions including exact coordinates, colors,
+  and text for every element. Also contains speaker notes for each slide.
+  Used to generate How_Many_Examples_Deck.pptx.
+
+self.md
+  All-in-one project reference document, written for quick human recall
+  (e.g., viva prep). Covers what the project is, what was done step by
+  step, a full glossary of every term (LLooM paper terms + project-specific
+  terms), dataset design details, all five experiments with key numbers,
+  architecture decisions with rationale, paper vs project comparison,
+  anticipated viva Q&A, file/folder map, demo run commands, and a
+  one-paragraph narrative summary.

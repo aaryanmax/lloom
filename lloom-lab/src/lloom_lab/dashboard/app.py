@@ -14,9 +14,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
-RESULTS_DIR = REPO_ROOT / "lloom-lab" / "results"
-CHARTS_DIR = REPO_ROOT / "lloom-lab" / "charts"
+PACKAGE_ROOT = Path(__file__).resolve().parents[3]
+RESULTS_DIR = PACKAGE_ROOT / "results" if (PACKAGE_ROOT / "results").exists() else PACKAGE_ROOT / "lloom-lab" / "results"
+CHARTS_DIR = PACKAGE_ROOT / "charts" if (PACKAGE_ROOT / "charts").exists() else PACKAGE_ROOT / "lloom-lab" / "charts"
 
 
 def load_e1_summary():

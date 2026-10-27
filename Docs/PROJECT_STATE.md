@@ -137,7 +137,7 @@ AML-Project/                        ← git repo root (branch: main)
 
 ---
 
-## 5. Status (as of 2026-10-05)
+## 5. Status (as of 2026-10-27) — ALL DELIVERABLES COMPLETE ✅
 
 **Week 1 (scaffolding) — COMPLETE ✅**
 - Unified LLM client: Gemini Flash-Lite + Qwen3-8B, shared SQLite response cache
@@ -164,7 +164,7 @@ AML-Project/                        ← git repo root (branch: main)
 - Known limitation (fine for now): filler pool of 62 sentences is reused
   ~14×/corpus; optional expansion via local Qwen later.
 
-**No experiments run yet.** E1–E5 results and charts do not exist.
+**All experiments complete.** 125-cell E1 grid, E2–E5 modules, 6 publication charts, Streamlit dashboard, REPORT.md, and presentation deck all shipped — see Journal entries from 2026-10-19 and 2026-10-27.
 
 ---
 
@@ -181,7 +181,7 @@ AML-Project/                        ← git repo root (branch: main)
       - E4 uniform convergence empirical vs held-out risk gap tightening to zero.
       - E5 No-Free-Lunch collapse (94.8% drop to chance on label derangements).
 - [x] **Phase 4 (Week 6)** — Publication-style figures: 6 high-DPI charts in `charts/`.
-- [x] **Phase 5 (Week 7)** — Deliverables: Streamlit dashboard (`app.py`), comprehensive Unit II report (`REPORT.md`), slide deck (`SLIDES.md`, `How_Many_Examples_Deck.pptx`).
+- [x] **Phase 5 (Week 7)** — Deliverables: Streamlit dashboard (`app.py`), comprehensive Unit II report (`REPORT.md`), slide deck rebuilt as 8-slide "Does LLooM Hold Up?" (`lloom-lab/scripts/make_deck.py` → `How_Many_Examples_Deck.pptx`).
 
 ### Current Work / Viva Polish
 
@@ -189,6 +189,7 @@ AML-Project/                        ← git repo root (branch: main)
 - [x] Symmetrical experiment architecture: modularized E5 (`experiments/e5.py`), added E4 CLI driver (`scripts/run_e4.py`), promoted `make_deck.py`.
 - [x] Full offline unit testing: 78/78 tests passing across all components.
 - [x] 100% CI linter compliance: `ruff check` clean (0 errors).
+- [x] Presentation deck rebuilt ("Does LLooM Hold Up?", 8 slides, paper-targeted contrast).
 - [ ] Viva presentation rehearsal and dry runs (interactive demo via `streamlit run lloom-lab/app.py`).
 
 ### Known risks & mitigations
