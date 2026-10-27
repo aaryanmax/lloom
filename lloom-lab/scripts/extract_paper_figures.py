@@ -5,16 +5,17 @@ block; the figure art sits between the page header (or, on page 1, the author
 block) and that caption.
 """
 
-import os
+from pathlib import Path
 
 import pymupdf
 
-PDF = r"C:\Users\Admin\Projects\AML-Project\Concept Induction-Analyzing Unstructured Text with High-Level.pdf"
-OUT = r"C:\Users\Admin\Projects\AML-Project\images"
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+PDF = REPO_ROOT / "Concept Induction-Analyzing Unstructured Text with High-Level.pdf"
+OUT = REPO_ROOT / "images"
 ZOOM = 200 / 72  # ~200 DPI
 
-doc = pymupdf.open(PDF)
-os.makedirs(OUT, exist_ok=True)
+doc = pymupdf.open(str(PDF))
+OUT.mkdir(parents=True, exist_ok=True)
 
 
 def find_block(pno, contains=None, startswith=None):
@@ -52,7 +53,7 @@ def header_bottom(pno):
 def save(pno, y0, y1, name, x0=48.0, x1=566.0):
     page = doc[pno]
     pix = page.get_pixmap(matrix=pymupdf.Matrix(ZOOM, ZOOM), clip=pymupdf.Rect(x0, y0, x1, y1))
-    path = os.path.join(OUT, name)
+    path = str(OUT / name)
     pix.save(path)
     print(f"{name}: {pix.width}x{pix.height}px  (page {pno + 1}, y {y0:.0f}-{y1:.0f})")
 

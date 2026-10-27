@@ -91,7 +91,6 @@ AML-Project/                        ← git repo root (branch: main)
 ├── .github/workflows/ci.yml        ← ruff + offline pytest gate
 ├── Paper.md                        ← LLooM paper breakdown (plain-English, all numbers)
 ├── images/                         ← 16 figures cropped from the source PDF
-├── extract_paper_figures.py        ← reusable PyMuPDF figure-cropper (caption-anchored)
 └── lloom-lab/                      ← the Python package (pyproject.toml, src layout)
     ├── pyproject.toml              ← metadata, deps, ruff & pytest config, build-dataset script
     ├── README.md                   ← status, setup, cost model, roadmap
