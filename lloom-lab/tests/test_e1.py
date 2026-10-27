@@ -80,7 +80,7 @@ def test_collect_aggregates_per_method(tmp_path):
 
 def test_write_summary_renders_tables(tmp_path):
     result = e1.collect(["lloom_gemma"], ns=[10], n_trials=1, out_dir=tmp_path)
-    jpath, mpath = e1.write_summary(result)
+    jpath, mpath = e1.write_summary(result, summary_dir=tmp_path)
     text = mpath.read_text(encoding="utf-8")
     assert "## lloom_gemma" in text and "| 10 |" in text
     assert jpath.exists()

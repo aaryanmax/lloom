@@ -43,7 +43,7 @@ Implemented the paper's 4-operator pipeline under free-tier budget:
 | **Synthesize** | GPT-4 | Gemini Flash-Lite (cloud) | The "smart" call; low volume |
 | **Score** | GPT-3.5-Turbo | Qwen3-8B (local) | Paper's costliest step (~80% of cost) |
 
-**Key infrastructure:** Every LLM call goes through a SQLite cache (prompt-hash keyed), so re-runs cost nothing — 2,763 entries cached. Gemini is rate-limited at 500 requests/day with RPM throttling and a failover chain.
+**Key infrastructure:** Every LLM call goes through a SQLite cache (prompt-hash keyed), so re-runs cost nothing — 2,872 entries cached. Gemini is rate-limited at 500 requests/day with RPM throttling and a failover chain.
 
 ### Step 3: Validate the Coverage Matcher
 We need a way to check if an *induced* concept matches a *ground-truth* concept. We built a **batched few-shot Gemini matcher** (10 ground truths per request) that scores semantic match. We validated it on 38 hand-labeled pairs.
@@ -58,7 +58,7 @@ Five experiments mapping directly to Unit II theory (see Section 5).
 - Streamlit interactive dashboard (`lloom-lab/app.py`)
 - Written report (`REPORT.md`)
 - Slide deck (`SLIDES.md`, `How_Many_Examples_Deck.pptx`)
-- 72 offline unit tests (CI-gated via GitHub Actions)
+- 78 offline unit tests (CI-gated via GitHub Actions)
 
 ---
 
@@ -125,7 +125,7 @@ Five experiments mapping directly to Unit II theory (see Section 5).
 | **Kaggle T4** | NVIDIA Tesla T4 GPU (16 GB VRAM) on Kaggle's free-tier notebooks. Used to run lloom_qwen at full scale (25 grid cells in 45.6 minutes). |
 | **Pilot** | A GO/NO-GO pre-experiment: n ∈ {10,25,50,100} × 2 trials to check curve stability (CV ≤ 0.25) before committing the full 125-cell E1 grid. First pilot: NO-GO (CV=0.75). Fixed recipe → GO (CV=0.24). |
 | **UMAP** | Uniform Manifold Approximation and Projection. Dimensionality reduction before HDBSCAN. Added after the pilot NO-GO — reduced noise from 59% unclustered → 14%. |
-| **SQLite cache** | Persistent key-value store keyed by hash(model + prompt). All LLM responses cached, so re-runs and dashboard rehearsals cost nothing. 2,763 entries at completion. |
+| **SQLite cache** | Persistent key-value store keyed by hash(model + prompt). All LLM responses cached, so re-runs and dashboard rehearsals cost nothing. 2,872 entries in SQLite cache. |
 | **Quota guard / ledger** | Per-model daily request counter. Hard-stops Gemini at 500 req/day. Pauses the grid cleanly; resumes next day from cache. |
 | **RPM throttle** | Rate-per-minute throttle. Gemini Flash-Lite free tier: 15 RPM. Client spaces requests proactively (60/RPM × 1.15s apart) to avoid 429 errors. |
 | **min_cluster_size** | HDBSCAN parameter. Set to 3 bullets. Too large → everything becomes noise; too small → hundreds of micro-clusters. |
@@ -264,8 +264,8 @@ m ≥ (4/ε) · ln(13/δ)
 | **1, 2, 4** | VC dimensions: thresholds, intervals, rectangles (E3) |
 | **+0.065 → ~0** | Generalization gap at n=40 → n=80 (E4) |
 | **94.8%** | Performance collapse in E5 NFL test (Gemini, n=160) |
-| **72** | Offline unit tests passing in CI |
-| **2,763** | LLM responses cached in SQLite |
+| **78** | Offline unit tests passing in CI |
+| **2,872** | LLM responses cached in SQLite |
 | **45.6 min** | Kaggle T4 execution time for 25 lloom_qwen grid cells |
 | **500/day** | Gemini Flash-Lite free tier daily quota |
 | **15 RPM** | Gemini Flash-Lite rate limit |
@@ -354,7 +354,7 @@ First pilot: 8 runs, CV=0.75 (too noisy). Root cause: 3 concepts per cluster →
 ---
 
 **Q: What does "cache-first" mean and why is it important?**  
-Every LLM call is stored in SQLite keyed by hash(model + prompt). Same call again = instant cache hit, zero API calls, zero cost. This means: (a) crashed experiments resume for free, (b) dashboard demos during presentations are free, (c) the entire study is reproducible without quota. 2,763 responses cached.
+Every LLM call is stored in SQLite keyed by hash(model + prompt). Same call again = instant cache hit, zero API calls, zero cost. This means: (a) crashed experiments resume for free, (b) dashboard demos during presentations are free, (c) the entire study is reproducible without quota. 2,872 responses cached.
 
 ---
 
@@ -425,7 +425,7 @@ AML-Project/
     │   ├── e3/e3_results.json                ← E3 VC + growth function data
     │   ├── e4/e4_rows.json                   ← E4 generalization gap data
     │   ├── e5/e5_{results,summary}.{json,md} ← E5 NFL data
-    │   └── llm_cache.sqlite3                 ← 2,763 cached LLM responses
+    │   └── llm_cache.sqlite3                 ← 2,872 cached LLM responses
     └── src/lloom_lab/
         ├── config.py               ← All paths/models/quotas (central control)
         ├── llm/                    ← client.py, cache.py, accounting.py
@@ -446,7 +446,7 @@ AML-Project/
 streamlit run lloom-lab/app.py
 
 # Run offline test suite (no API, no Qwen server needed)
-pytest -m "not live"   # → 72 passed
+pytest -m "not live"   # → 78 passed
 
 # Rebuild the synthetic dataset from seeds (if data_store/ is missing)
 build-dataset
@@ -456,10 +456,250 @@ build-dataset
 ```
 
 > [!IMPORTANT]
-> The dashboard loads entirely from the SQLite cache. **No Qwen server or API key is needed** for the demo. Everything runs from 2,763 cached responses.
+> The dashboard loads entirely from the SQLite cache. **No Qwen server or API key is needed** for the demo. Everything runs from 2,872 cached responses.
 
 ---
 
 ## 12. The One-Paragraph Narrative
 
 > Topic models like LDA and BERTopic tell you which words co-occur. But analysts need to know *what idea the posts are expressing* — that's what LLooM does: it uses an LLM pipeline (Distill → Cluster → Synthesize → Score) to extract named, criteria-defined concepts from raw text. The CHI 2024 paper showed this works impressively, beating BERTopic by +17.9% coverage. We asked the question classical learning theory demands: *how many examples does it actually need?* We built a 160-document controlled corpus with exact ground-truth labels across 50 politics concepts, re-implemented LLooM on a zero-dollar budget (local Qwen3-8B + free Gemini), and ran five experiments mapping PAC learning, VC dimension, uniform convergence, and No Free Lunch directly onto the LLooM system. The headline result: LLooM's specific coverage rises monotonically from 1% at n=10 to 80% at n=160, with trial variance collapsing from CV=2.24 to 0.00 — a textbook PAC sample-complexity curve. The answer to our question is not a single number — it's a curve, and classical learning theory draws it.
+
+---
+
+## 13. Launch Guide — Running the Project & Showcase
+
+All commands below should be executed from the repository root (`c:\Users\Admin\Projects\AML-Project`) using the shared virtual environment (`.supervenv`).
+
+### 13.1 Environment Activation & Setup
+
+```powershell
+# 1. Activate Python virtual environment (PowerShell)
+& C:\Users\Admin\Projects\.supervenv\Scripts\Activate.ps1
+
+# Alternative: activate in Windows Command Prompt (CMD)
+# C:\Users\Admin\Projects\.supervenv\Scripts\activate.bat
+
+# Alternative: execute commands directly via the supervenv Python binary:
+# C:\Users\Admin\Projects\.supervenv\Scripts\python.exe <command>
+
+# 2. (Optional) Set Gemini API Key — only required for fresh live cloud runs
+# Demo, offline tests, and dashboard rely entirely on local cache and require NO API key.
+$env:GEMINI_API_KEY="your-gemini-api-key-here"
+```
+
+---
+
+### 13.2 Interactive Showcase: Streamlit Dashboard
+
+The central showcase deliverable is a multi-tab interactive Streamlit web dashboard.
+
+```powershell
+# Launch the interactive Streamlit showcase
+streamlit run lloom-lab/app.py
+
+# Alternatively, launch using explicit python module:
+python -m streamlit run lloom-lab/app.py
+```
+
+- **URL**: Opens automatically at `http://localhost:8501`.
+- **Cache-First Guarantee**: Loads all data instantly from [`llm_cache.sqlite3`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/llm_cache.sqlite3) and aggregated JSONs. Requires **zero API calls, zero GPU compute, and zero external network access**.
+- **Showcase Navigation Modules**:
+  1. **Executive Summary**: Overview of sample complexity, Unit II syllabus connections, and core figures.
+  2. **E1: Coverage vs Sample Size ($n$)**: Interactive plots of specific and generic coverage curves across all 5 methods (`lloom_qwen`, `lloom_gemma`, `zeroshot_gemini`, `zeroshot_qwen`, `bertopic`) and variance collapse (CV decay to 0.00).
+  3. **E2: PAC Bound Control (Rectangles)**: Monte Carlo empirical error of consistent rectangle learner vs. Mitchell's PAC sample complexity bound $m \ge \frac{4}{\epsilon}\ln\frac{13}{\delta}$ (verifying 0 bound violations).
+  4. **E3: Growth Function & VC Dimension**: Empirical growth function $\Pi_H(m)$ transition from $2^m$ shattering to Sauer's polynomial bound for Thresholds ($d=1$), Intervals ($d=2$), and Rectangles ($d=4$).
+  5. **E4: Generalization Gap & Uniform Convergence**: Empirical risk on training vs disjoint held-out documents showing the gap $|R_S(h) - R_{\text{held}}(h)|$ shrinking to near zero as $n$ scales.
+  6. **E5: No-Free-Lunch Theorem Collapse**: Empirical test of performance on ground-truth vs 10 label derangements (demonstrating the 94.8% F1 collapse).
+  7. **Concept Inspector**: Qualitative inspector allowing inspection of discovered concept names, natural language inclusion criteria, and document matching scores.
+
+---
+
+### 13.3 Real-Time Stats Terminals & Monitoring Consoles
+
+Launch these direct commands in dedicated terminal windows to inspect live status, statistics, and validation metrics:
+
+#### Terminal A: Live E1 Grid Experiment & Quota Monitor
+Tracks the 125-cell grid progress in real time with auto-refresh, ASCII progress bars, and cloud quota ledger consumption:
+```powershell
+# Launch live grid monitor (refreshes every 60s by default)
+python lloom-lab/scripts/monitor_e1.py
+
+# Launch live grid monitor with custom 10-second auto-refresh
+python lloom-lab/scripts/monitor_e1.py --interval 10
+```
+- **Terminal Output Displays**:
+  - Method-by-method progress bars (e.g., `lloom_qwen: [##########] 25/25 (100%) [DONE]`).
+  - Total grid progress across all 125 cells (`[====================] 125/125 (100.0%)`).
+  - Active cloud quota ledger counts (`gemini-flash-lite-latest`, `gemini-3.1-flash-lite`, `gemma`).
+
+#### Terminal B: Matcher Validation Agreement Statistics
+Evaluates agreement statistics, precision, recall, and MAE between the LLM semantic matcher and human gold-standard labels:
+```powershell
+# Compute and print agreement statistics report vs human ground truth
+python lloom-lab/scripts/validate_matcher.py --report
+```
+- **Terminal Output Displays**:
+  - Sample size: 38 hand-labeled concept pairs.
+  - Overall agreement: `71.1%`.
+  - Recall: `1.000` (captures all valid semantic matches).
+  - Precision: `0.214` (reflects broad umbrella matching on generic concepts).
+  - Outputs saved directly to [`matcher_validation_report.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/pilot/matcher_validation_report.json).
+
+#### Terminal C: Zero-API Offline Clustering Benchmark
+Evaluates candidate clustering recipes on cached distilled bullets without making LLM calls:
+```powershell
+# Run the offline clustering harness
+python lloom-lab/scripts/cluster_harness.py
+```
+- **Terminal Output Displays**:
+  - Topic recovery rate (0.40 raw HDBSCAN vs 0.66 UMAP+HDBSCAN).
+  - Cluster purity metrics across candidate recipes.
+  - Noise bullet percentage (demonstrating noise reduction from 59% down to 14%).
+
+#### Terminal D: Cache & Local Infrastructure Smoke Stats
+Inspects SQLite response cache entries, distinct models, and ledger operations:
+```powershell
+# Verify cache entries, JSON extraction, and ledger tracking
+python lloom-lab/scripts/smoke_local.py
+
+# Optional: verify cloud Gemini API connectivity and quota limits
+python lloom-lab/scripts/smoke_gemini.py
+
+# Optional: run single end-to-end milestone pipeline smoke test
+python lloom-lab/scripts/smoke_e2e.py --synth gemini
+```
+
+---
+
+### 13.4 Deliverable & Presentation Generation Commands
+
+```powershell
+# 1. Regenerate all 6 publication-quality figures (300 DPI PNGs in lloom-lab/charts/)
+python lloom-lab/scripts/plot_all_figures.py
+
+# 2. Build the final 8-slide presentation deck (How_Many_Examples_Deck.pptx)
+python lloom-lab/scripts/make_deck.py
+```
+
+---
+
+### 13.5 Automated Test Suite & Code Quality Gates
+
+```powershell
+# Run full offline test suite (78 tests, zero API calls, completes in ~15-20s)
+pytest -m "not live"
+
+# Run code style & lint inspection
+ruff check .
+```
+
+---
+
+### 13.6 Pipeline Reproduction & Live Execution (Optional)
+
+To rerun experiments from scratch rather than using cached responses:
+
+```powershell
+# 1. Start the local Qwen3-8B server (OpenAI-compatible endpoint on port 8123)
+.\lloom-lab\scripts\start_qwen_server.bat
+# Or GPU-optimized batch script:
+# .\lloom-lab\scripts\start_qwen_gpu.bat
+
+# 2. Rebuild synthetic dataset (160 documents + 10 NFL derangements)
+build-dataset
+# Or via script:
+python lloom-lab/scripts/build_dataset.py
+
+# 3. Execute individual experiments:
+python lloom-lab/scripts/run_e1.py   # E1: 125-cell coverage grid
+python lloom-lab/scripts/run_e2.py   # E2: PAC bound rectangle simulation
+python lloom-lab/scripts/run_e3.py   # E3: Growth function & VC dimension
+python lloom-lab/scripts/run_e4.py   # E4: Generalization gap & uniform convergence
+python lloom-lab/scripts/run_e5.py   # E5: No-Free-Lunch label derangement collapse
+```
+
+---
+
+## 14. Locations of Stats, Results, and Outcomes
+
+This section provides an exhaustive catalog of where all experimental data, statistical summaries, raw outputs, databases, publication charts, and deliverables are stored in the repository.
+
+### 14.1 Aggregated Experiment Results & Statistics
+
+| Experiment / Metric | File Path | Format | Description / Key Statistics Stored |
+|---|---|---|---|
+| **E1 Summary (JSON)** | [`lloom-lab/results/e1/e1_summary.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e1/e1_summary.json) | JSON | Mean, std, and CV for specific & generic coverage across all 5 methods and $n \in \{10,20,40,80,160\}$. Contains variance collapse data (CV $2.24 \to 0.00$). |
+| **E1 Summary (Markdown)** | [`lloom-lab/results/e1/e1_summary.md`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e1/e1_summary.md) | Markdown | Human-readable markdown summary table of the complete 125-cell grid results. |
+| **E2 PAC Bound Data** | [`lloom-lab/results/e2/e2_rows.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e2/e2_rows.json) | JSON | 400 Monte Carlo trials per $(\epsilon, \delta)$ grid for axis-parallel rectangles against Mitchell's PAC bound ($m \ge \frac{4}{\epsilon}\ln\frac{13}{\delta}$), logging sample sizes $m$, empirical errors, and verifying **0 bound violations**. |
+| **E3 VC & Growth Data** | [`lloom-lab/results/e3/e3_results.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e3/e3_results.json) | JSON | Realizability tests, empirical growth function $\Pi_H(m)$, and verified VC dimensions ($d=1$ for thresholds, $d=2$ for intervals, $d=4$ for rectangles). |
+| **E4 Generalization Gap** | [`lloom-lab/results/e4/e4_rows.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e4/e4_rows.json) | JSON | Empirical risk on training vs disjoint held-out documents at $n \in \{40, 80, 160\}$, logging the decay of the generalization gap $|R_S(h) - R_{\text{held}}(h)| \to 0$. |
+| **E4 Per-Run Records** | [`lloom-lab/results/e4/`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e4/) | JSON files | 15 detailed individual trial runs (`lloom_qwen_n040_t0.json` … `lloom_qwen_n160_t4.json`) recording train and held-out scoring matrices. |
+| **E5 NFL Results (JSON)** | [`lloom-lab/results/e5/e5_results.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e5/e5_results.json) | JSON | F1 scores across 10 label derangements vs ground truth, showing 94.8% collapse for Gemini (0.613 $\to$ 0.032) and 87.9% for Qwen (0.240 $\to$ 0.029). |
+| **E5 NFL Summary (MD)** | [`lloom-lab/results/e5/e5_summary.md`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e5/e5_summary.md) | Markdown | Summary table and statistical interpretation of the Wolpert No-Free-Lunch collapse. |
+| **Pilot Gate Summary** | [`lloom-lab/results/pilot/pilot_summary.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/pilot/pilot_summary.json) | JSON / MD | Pre-experiment GO/NO-GO gate data (v1 NO-GO CV=0.75 vs v2 GO CV=0.24 after clustering fix). |
+| **Matcher Validation Report** | [`lloom-lab/results/pilot/matcher_validation_report.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/pilot/matcher_validation_report.json) | JSON | Human-vs-LLM matcher agreement statistics on 38 pairs: agreement (71.1%), precision (0.214), recall (1.000). |
+| **Matcher Labeled Pairs** | [`lloom-lab/results/pilot/matcher_validation_pairs.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/pilot/matcher_validation_pairs.json) | JSON | The 38 ground-truth annotated (induced concept, ground-truth concept) evaluation pairs. |
+| **Milestone E2E Record** | [`lloom-lab/results/e2e_milestone.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/e2e_milestone.json) | JSON | Initial end-to-end pipeline verification record. |
+
+---
+
+### 14.2 Per-Trial Raw Execution Logs (The 125-Cell E1 Grid)
+
+All individual, unaggregated run records for the headline E1 experiment are stored in:
+- **Directory**: [`lloom-lab/results/runs/e1/`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/runs/e1/)
+- **File Naming Pattern**: `{method}_n{n:03d}_t{t}.json` (e.g., `lloom_qwen_n160_t0.json`, `zeroshot_gemini_n080_t3.json`)
+- **Total Files**: 125 run files (5 methods $\times$ 5 $n$-values $\times$ 5 trials)
+- **Each Run File Contains**:
+  - `meta`: Method identifier, sample size $n$, trial index $t$, timestamp, execution time.
+  - `concepts`: Complete list of induced concepts (names, synthesized inclusion criteria prompts, representative examples).
+  - `cluster_info`: Number of clusters formed, bullets per cluster, unclustered noise counts.
+  - `coverage`: Detailed matching results against all 40 Specific and 10 Generic ground-truth concepts.
+  - `scores`: Full document-by-concept scoring matrix.
+
+---
+
+### 14.3 Cache, Ledgers & Quota Infrastructure Databases
+
+| Database | File Path | Format | Description / Capacity |
+|---|---|---|---|
+| **LLM Response Cache** | [`lloom-lab/results/llm_cache.sqlite3`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/llm_cache.sqlite3) | SQLite 3 | **2,872 cached prompt-response pairs** keyed by SHA-256 hash of model + prompt. Enables 100% offline showcase demos and zero-cost re-runs. |
+| **Request Quota Ledger** | [`lloom-lab/results/request_ledger.sqlite3`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/results/request_ledger.sqlite3) | SQLite 3 | Request timestamp logs per model and day, enforcing the 500 req/day quota guard and 15 RPM throttling. |
+
+---
+
+### 14.4 Publication Charts & Visual Outcomes (300 DPI)
+
+All publication figures are rendered at 300 DPI in [`lloom-lab/charts/`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/):
+
+| Figure | File Path | Focus & Key Finding |
+|---|---|---|
+| **Figure 1** | [`figure1_e1_coverage_vs_n.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure1_e1_coverage_vs_n.png) | **E1 Headline Sample Complexity**: Specific & generic concept coverage vs sample size $n \in \{10, 20, 40, 80, 160\}$ showing monotonic PAC rise ($0.01 \to 0.80$). |
+| **Figure 2** | [`figure2_e1_variance_collapse.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure2_e1_variance_collapse.png) | **E1 Variance Collapse**: Coefficient of Variation (CV) vs $n$, demonstrating uniform convergence signature ($2.24 \to 0.00$). |
+| **Figure 3** | [`figure3_e2_pac_bound_rectangles.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure3_e2_pac_bound_rectangles.png) | **E2 PAC Bound Anchor**: Empirical failure rate vs sample size $m$ for rectangle consistent learner, confirming 0 violations above Mitchell's PAC bound. |
+| **Figure 4** | [`figure4_e3_growth_function_sauer.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure4_e3_growth_function_sauer.png) | **E3 VC Dimension & Sauer's Lemma**: Growth function $\Pi_H(m)$ transition from $2^m$ exponential shattering to polynomial bound for $d \in \{1, 2, 4\}$. |
+| **Figure 5** | [`figure5_e4_generalization_gap.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure5_e4_generalization_gap.png) | **E4 Uniform Convergence**: Empirical training error vs held-out error, showing generalization gap $|R_S - R_{\text{held}}| \to 0$. |
+| **Figure 6** | [`figure6_e5_nfl_collapse.png`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/charts/figure6_e5_nfl_collapse.png) | **E5 No-Free-Lunch Collapse**: Performance drop under 10 label derangements (94.8% F1 collapse). |
+
+---
+
+### 14.5 Synthetic Dataset & Ground-Truth Files
+
+Located in [`lloom-lab/data_store/synthetic_v1/`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/data_store/synthetic_v1/):
+
+| Asset | File Path | Format | Content / Purpose |
+|---|---|---|---|
+| **Synthetic Corpus** | [`docs.jsonl`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/data_store/synthetic_v1/docs.jsonl) | JSONL | 160 synthetic political documents across 4 design cells (5/10 sentences $\times$ 20/40% prevalence) with exact ground-truth specific and generic concept labels. |
+| **Corpus Manifest** | [`manifest.json`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/data_store/synthetic_v1/manifest.json) | JSON | Dataset metadata, seed sentence distributions, and round-robin concept assignments (6–7 appearances per specific concept). |
+| **10 NFL Derangements** | [`nfl/`](file:///c:/Users/Admin/Projects/AML-Project/lloom-lab/data_store/synthetic_v1/nfl/) | JSON (10 files) | Permuted label sets (`nfl_v00_seed2026.json` to `nfl_v09_seed2035.json`) with zero fixed points ($\sigma(y) \ne y$ for all documents) for the E5 No-Free-Lunch experiment. |
+
+---
+
+### 14.6 Reports, Slide Decks & Deliverables
+
+| Deliverable | File Path | Description |
+|---|---|---|
+| **Comprehensive Report** | [`Docs/REPORT.md`](file:///c:/Users/Admin/Projects/AML-Project/Docs/REPORT.md) | Final written academic report mapping all five experiments (E1–E5) directly to Unit II learning theory. |
+| **Presentation Slides** | [`Docs/SLIDES.md`](file:///c:/Users/Admin/Projects/AML-Project/Docs/SLIDES.md) | Slide outline, talking points, speaker notes, and presentation script. |
+| **PowerPoint Deck** | [`How_Many_Examples_Deck.pptx`](file:///c:/Users/Admin/Projects/AML-Project/How_Many_Examples_Deck.pptx) | Final 8-slide presentation deck ("Does LLooM Hold Up? — Sample Complexity & Capacity Analysis of LLM Concept Induction"). |
+| **Project State Journal** | [`Docs/PROJECT_STATE.md`](file:///c:/Users/Admin/Projects/AML-Project/Docs/PROJECT_STATE.md) | Single source of truth containing project history, audit log, architecture decisions, and development journal. |
+

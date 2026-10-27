@@ -336,9 +336,9 @@ def collect(methods: list[str] | tuple = METHODS, ns: list[int] | tuple = NS,
             "paused": paused}
 
 
-def write_summary(result: dict) -> tuple[Path, Path]:
+def write_summary(result: dict, summary_dir: Path | None = None) -> tuple[Path, Path]:
     """Persist the summary JSON + a markdown table per method."""
-    summary_dir = SUMMARY_DIR
+    summary_dir = summary_dir or SUMMARY_DIR
     summary_dir.mkdir(parents=True, exist_ok=True)
     jpath = summary_dir / "e1_summary.json"
     jpath.write_text(json.dumps(result, ensure_ascii=False, indent=1),

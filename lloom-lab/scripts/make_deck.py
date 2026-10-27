@@ -13,7 +13,9 @@
 #   S8  Closing            – one-liner + team
 # ─────────────────────────────────────────────────────────────────────────────
 
+import json
 import math
+from pathlib import Path
 
 from pptx import Presentation
 from pptx.chart.data import CategoryChartData
@@ -23,6 +25,52 @@ from pptx.enum.shapes import MSO_CONNECTOR, MSO_SHAPE
 from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.oxml.ns import qn
 from pptx.util import Inches, Pt
+
+RESULTS_DIR = Path(__file__).resolve().parent.parent / "results"
+
+
+def load_e1_series():
+    """Load exact E1 specific coverage means from e1_summary.json with robust fallbacks."""
+    summary_path = RESULTS_DIR / "e1" / "e1_summary.json"
+    if summary_path.exists():
+        try:
+            d = json.loads(summary_path.read_text(encoding="utf-8"))
+            pm = d.get("per_method", {})
+            return {
+                "lloom_qwen": tuple(round(r["specific"]["mean"], 2) for r in pm.get("lloom_qwen", {}).get("per_n", [])),
+                "zeroshot_gemini": tuple(round(r["specific"]["mean"], 2) for r in pm.get("zeroshot_gemini", {}).get("per_n", [])),
+                "zeroshot_qwen": tuple(round(r["specific"]["mean"], 2) for r in pm.get("zeroshot_qwen", {}).get("per_n", [])),
+                "bertopic": tuple(round(r["specific"]["mean"], 2) for r in pm.get("bertopic", {}).get("per_n", [])),
+            }
+        except Exception:
+            pass
+    return {
+        "lloom_qwen": (0.01, 0.08, 0.20, 0.42, 0.80),
+        "zeroshot_gemini": (0.73, 0.90, 0.91, 0.99, 1.00),
+        "zeroshot_qwen": (0.36, 0.62, 0.69, 0.78, 0.89),
+        "bertopic": (0.00, 0.02, 0.00, 0.01, 0.00),
+    }
+
+
+def load_e5_stats():
+    """Load exact E5 NFL collapse metrics from e5_results.json with robust fallbacks."""
+    e5_path = RESULTS_DIR / "e5" / "e5_results.json"
+    if e5_path.exists():
+        try:
+            d = json.loads(e5_path.read_text(encoding="utf-8"))
+            g160 = d.get("zeroshot_gemini", {}).get("160", {})
+            return {
+                "true_f1": f"F1 = {g160.get('true_f1_mean', 0.613):.3f}",
+                "nfl_f1": f"F1 = {g160.get('nfl_f1_mean', 0.032):.3f}",
+                "collapse": f"{g160.get('collapse_pct', 94.8):.1f}% collapse",
+            }
+        except Exception:
+            pass
+    return {
+        "true_f1": "F1 = 0.613",
+        "nfl_f1": "F1 = 0.032",
+        "collapse": "94.8% collapse",
+    }
 
 # ── Palette ──────────────────────────────────────────────────────────────────
 INK = RGBColor(0x0D, 0x14, 0x21)
@@ -339,12 +387,13 @@ tb(s, 0.7, 1.15, 12.0, 0.36,
    "E1  |  125 cells  |  n in {10, 20, 40, 80, 160}  |  5 methods  |  5 trials each",
    size=14, color=MUTED, font=FC)
 
+e1_series = load_e1_series()
 cd = CategoryChartData()
 cd.categories = ["10", "20", "40", "80", "160"]
-cd.add_series("LLooM-Qwen (ours)", (0.01, 0.08, 0.19, 0.42, 0.80))
-cd.add_series("Zero-Shot Gemini",  (0.73, 0.90, 0.91, 0.99, 1.00))
-cd.add_series("Zero-Shot Qwen",    (0.36, 0.62, 0.69, 0.78, 0.89))
-cd.add_series("BERTopic",          (0.00, 0.02, 0.00, 0.01, 0.00))
+cd.add_series("LLooM-Qwen (ours)", e1_series["lloom_qwen"])
+cd.add_series("Zero-Shot Gemini",  e1_series["zeroshot_gemini"])
+cd.add_series("Zero-Shot Qwen",    e1_series["zeroshot_qwen"])
+cd.add_series("BERTopic",          e1_series["bertopic"])
 
 gf = s.shapes.add_chart(XL_CHART_TYPE.LINE_MARKERS, Inches(0.55), Inches(1.52),
                         Inches(7.8), Inches(4.6), cd)
@@ -420,9 +469,10 @@ tb(s, 0.7, 1.15, 12.0, 0.36,
    "E5  |  10 label derangements  |  zero fixed points  |  the paper never tested this",
    size=14, color=MUTED, font=FC)
 
+e5_stats = load_e5_stats()
 rect(s, 0.65, 1.62, 5.6, 4.3, fill=TINT, rounded=True, radius=0.08)
 tb(s, 0.85, 1.82, 5.2, 0.4, "True labels", size=15, bold=True, color=PRIMARY)
-tb(s, 0.85, 2.28, 5.2, 1.0, "F1 = 0.613",
+tb(s, 0.85, 2.28, 5.2, 1.0, e5_stats["true_f1"],
    size=46, bold=True, color=PRIMARY)
 tb(s, 0.85, 3.42, 5.2, 0.35, "Zero-Shot Gemini @ n=160", size=13, color=MUTED)
 
@@ -431,12 +481,12 @@ tb(s, 6.42, 3.38, 0.95, 0.55, "->", size=36, bold=True, color=FAIL,
 
 rect(s, 7.5, 1.62, 5.1, 4.3, fill=RGBColor(0xFF, 0xF0, 0xF0), rounded=True, radius=0.08)
 tb(s, 7.7, 1.82, 4.7, 0.4, "Deranged labels", size=15, bold=True, color=FAIL)
-tb(s, 7.7, 2.28, 4.7, 1.0, "F1 = 0.032",
+tb(s, 7.7, 2.28, 4.7, 1.0, e5_stats["nfl_f1"],
    size=46, bold=True, color=FAIL)
 tb(s, 7.7, 3.42, 4.7, 0.35, "Same docs, permuted GT (pi(y) != y)", size=13, color=MUTED)
 
 tb(s, 0.65, 6.1, 12.0, 0.6,
-   [("94.8% collapse ", {"bold": True, "color": FAIL, "size": 22}),
+   [(f"{e5_stats['collapse']} ", {"bold": True, "color": FAIL, "size": 22}),
     ("— performance drops to random chance when concept-label alignment is broken. "
      "The paper's gains are real, not a measurement artifact.", {"size": 15, "color": TEXT})],
    line=1.2)
