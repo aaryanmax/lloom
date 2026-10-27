@@ -1,0 +1,482 @@
+[
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 40,
+   "trial": 0
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.5354166666666668,
+  "mean_held_out": 0.35625,
+  "mean_gap": 0.1791666666666667,
+  "gaps": [
+   {
+    "concept": "Gun Regulation",
+    "empirical": 0.1625,
+    "held_out": 0.2,
+    "gap": -0.037500000000000006
+   },
+   {
+    "concept": "Formal Meeting Procedures",
+    "empirical": 0.76875,
+    "held_out": 0.58125,
+    "gap": 0.1875
+   },
+   {
+    "concept": "Crowd Engagement",
+    "empirical": 0.675,
+    "held_out": 0.2875,
+    "gap": 0.38750000000000007
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 40,
+   "trial": 1
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.17500000000000002,
+  "mean_held_out": 0.18125,
+  "mean_gap": -0.006249999999999994,
+  "gaps": [
+   {
+    "concept": "Educational Outreach",
+    "empirical": 0.1,
+    "held_out": 0.00625,
+    "gap": 0.09375
+   },
+   {
+    "concept": "Courtroom Restrictions",
+    "empirical": 0.05625,
+    "held_out": 0.1,
+    "gap": -0.043750000000000004
+   },
+   {
+    "concept": "Public Safety Measures",
+    "empirical": 0.36875,
+    "held_out": 0.4375,
+    "gap": -0.06874999999999998
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 40,
+   "trial": 2
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.3416666666666666,
+  "mean_held_out": 0.36041666666666666,
+  "mean_gap": -0.01874999999999999,
+  "gaps": [
+   {
+    "concept": "Bill Distribution",
+    "empirical": 0.15,
+    "held_out": 0.16875,
+    "gap": -0.018750000000000017
+   },
+   {
+    "concept": "Event Logistics",
+    "empirical": 0.625,
+    "held_out": 0.73125,
+    "gap": -0.10624999999999996
+   },
+   {
+    "concept": "Weather Disruption",
+    "empirical": 0.25,
+    "held_out": 0.18125,
+    "gap": 0.06875
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 40,
+   "trial": 3
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.2625,
+  "mean_held_out": 0.12291666666666667,
+  "mean_gap": 0.1395833333333333,
+  "gaps": [
+   {
+    "concept": "Voter Registration",
+    "empirical": 0.075,
+    "held_out": 0.1,
+    "gap": -0.02500000000000001
+   },
+   {
+    "concept": "Public Safety Oversight",
+    "empirical": 0.175,
+    "held_out": 0.1125,
+    "gap": 0.062499999999999986
+   },
+   {
+    "concept": "High Attendance",
+    "empirical": 0.5375,
+    "held_out": 0.15625,
+    "gap": 0.38125
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 40,
+   "trial": 4
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.22708333333333333,
+  "mean_held_out": 0.19375,
+  "mean_gap": 0.03333333333333335,
+  "gaps": [
+   {
+    "concept": "Constitutional Recognition",
+    "empirical": 0.225,
+    "held_out": 0.05625,
+    "gap": 0.16875
+   },
+   {
+    "concept": "Accountability Gaps",
+    "empirical": 0.275,
+    "held_out": 0.3,
+    "gap": -0.024999999999999967
+   },
+   {
+    "concept": "Weather Disruption",
+    "empirical": 0.18125,
+    "held_out": 0.225,
+    "gap": -0.04375000000000001
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 80,
+   "trial": 0
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.27708333333333335,
+  "mean_held_out": 0.23124999999999998,
+  "mean_gap": 0.04583333333333333,
+  "gaps": [
+   {
+    "concept": "Public Engagement",
+    "empirical": 0.5625,
+    "held_out": 0.26875,
+    "gap": 0.29375
+   },
+   {
+    "concept": "Fiscal Policy Adjustments",
+    "empirical": 0.20625,
+    "held_out": 0.35625,
+    "gap": -0.15000000000000002
+   },
+   {
+    "concept": "Refugee Policy Expansion",
+    "empirical": 0.0625,
+    "held_out": 0.06875,
+    "gap": -0.0062500000000000056
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 80,
+   "trial": 1
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.13541666666666666,
+  "mean_held_out": 0.13333333333333333,
+  "mean_gap": 0.00208333333333334,
+  "gaps": [
+   {
+    "concept": "Economic Impact Trends",
+    "empirical": 0.2625,
+    "held_out": 0.3125,
+    "gap": -0.04999999999999999
+   },
+   {
+    "concept": "Bell Signaling Roll Call",
+    "empirical": 0.075,
+    "held_out": 0.075,
+    "gap": 0.0
+   },
+   {
+    "concept": "Diplomatic Restoration",
+    "empirical": 0.06875,
+    "held_out": 0.0125,
+    "gap": 0.05625000000000001
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 80,
+   "trial": 2
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.3729166666666666,
+  "mean_held_out": 0.38958333333333334,
+  "mean_gap": -0.016666666666666677,
+  "gaps": [
+   {
+    "concept": "Stakeholder Engagement",
+    "empirical": 0.875,
+    "held_out": 0.99375,
+    "gap": -0.11875000000000002
+   },
+   {
+    "concept": "Political Traffic Disruption",
+    "empirical": 0.125,
+    "held_out": 0.10625,
+    "gap": 0.018750000000000003
+   },
+   {
+    "concept": "International Cooperation",
+    "empirical": 0.11875,
+    "held_out": 0.06875,
+    "gap": 0.04999999999999999
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 80,
+   "trial": 3
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.11666666666666668,
+  "mean_held_out": 0.10833333333333334,
+  "mean_gap": 0.008333333333333338,
+  "gaps": [
+   {
+    "concept": "Healthcare Policy Debate",
+    "empirical": 0.2625,
+    "held_out": 0.25,
+    "gap": 0.012500000000000011
+   },
+   {
+    "concept": "Illegal Border Activity",
+    "empirical": 0.05,
+    "held_out": 0.075,
+    "gap": -0.024999999999999994
+   },
+   {
+    "concept": "Community Energy Projects",
+    "empirical": 0.0375,
+    "held_out": 0.0,
+    "gap": 0.0375
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 80,
+   "trial": 4
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.25416666666666665,
+  "mean_held_out": 0.29583333333333334,
+  "mean_gap": -0.041666666666666664,
+  "gaps": [
+   {
+    "concept": "Intra-Party Conflict",
+    "empirical": 0.1375,
+    "held_out": 0.06875,
+    "gap": 0.06875
+   },
+   {
+    "concept": "Regulatory Crowd Control",
+    "empirical": 0.175,
+    "held_out": 0.10625,
+    "gap": 0.06874999999999999
+   },
+   {
+    "concept": "Ceremonial Engagement",
+    "empirical": 0.45,
+    "held_out": 0.7125,
+    "gap": -0.2625
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 160,
+   "trial": 0
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.34791666666666665,
+  "mean_held_out": 0.0,
+  "mean_gap": 0.34791666666666665,
+  "gaps": [
+   {
+    "concept": "Snowstorm Delay",
+    "empirical": 0.125,
+    "held_out": 0.0,
+    "gap": 0.125
+   },
+   {
+    "concept": "Policy and Commitment",
+    "empirical": 0.83125,
+    "held_out": 0.0,
+    "gap": 0.83125
+   },
+   {
+    "concept": "Career Highlighting",
+    "empirical": 0.0875,
+    "held_out": 0.0,
+    "gap": 0.0875
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 160,
+   "trial": 1
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.34791666666666665,
+  "mean_held_out": 0.0,
+  "mean_gap": 0.34791666666666665,
+  "gaps": [
+   {
+    "concept": "Snowstorm Delay",
+    "empirical": 0.125,
+    "held_out": 0.0,
+    "gap": 0.125
+   },
+   {
+    "concept": "Policy and Commitment",
+    "empirical": 0.83125,
+    "held_out": 0.0,
+    "gap": 0.83125
+   },
+   {
+    "concept": "Career Highlighting",
+    "empirical": 0.0875,
+    "held_out": 0.0,
+    "gap": 0.0875
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 160,
+   "trial": 2
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.34791666666666665,
+  "mean_held_out": 0.0,
+  "mean_gap": 0.34791666666666665,
+  "gaps": [
+   {
+    "concept": "Snowstorm Delay",
+    "empirical": 0.125,
+    "held_out": 0.0,
+    "gap": 0.125
+   },
+   {
+    "concept": "Policy and Commitment",
+    "empirical": 0.83125,
+    "held_out": 0.0,
+    "gap": 0.83125
+   },
+   {
+    "concept": "Career Highlighting",
+    "empirical": 0.0875,
+    "held_out": 0.0,
+    "gap": 0.0875
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 160,
+   "trial": 3
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.34791666666666665,
+  "mean_held_out": 0.0,
+  "mean_gap": 0.34791666666666665,
+  "gaps": [
+   {
+    "concept": "Snowstorm Delay",
+    "empirical": 0.125,
+    "held_out": 0.0,
+    "gap": 0.125
+   },
+   {
+    "concept": "Policy and Commitment",
+    "empirical": 0.83125,
+    "held_out": 0.0,
+    "gap": 0.83125
+   },
+   {
+    "concept": "Career Highlighting",
+    "empirical": 0.0875,
+    "held_out": 0.0,
+    "gap": 0.0875
+   }
+  ]
+ },
+ {
+  "meta": {
+   "experiment": "E1",
+   "method": "lloom_qwen",
+   "n": 160,
+   "trial": 4
+  },
+  "n_concepts": 3,
+  "mean_empirical": 0.34791666666666665,
+  "mean_held_out": 0.0,
+  "mean_gap": 0.34791666666666665,
+  "gaps": [
+   {
+    "concept": "Snowstorm Delay",
+    "empirical": 0.125,
+    "held_out": 0.0,
+    "gap": 0.125
+   },
+   {
+    "concept": "Policy and Commitment",
+    "empirical": 0.83125,
+    "held_out": 0.0,
+    "gap": 0.83125
+   },
+   {
+    "concept": "Career Highlighting",
+    "empirical": 0.0875,
+    "held_out": 0.0,
+    "gap": 0.0875
+   }
+  ]
+ }
+]

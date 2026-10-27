@@ -1,6 +1,6 @@
 {
  "status": "complete",
- "started": "2026-10-07T19:36:09",
+ "started": "2026-10-19T04:56:32",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -9,7 +9,7 @@
   "n_concepts_per_cluster": 1,
   "score_batch_size": 20,
   "use_filter": false,
-  "seed_phrase": "about politics",
+  "seed_phrase": "",
   "skip_score": true
  },
  "meta": {
@@ -68,19 +68,19 @@
    "quotes": [],
    "bullets": [
     "Political factions compete for leadership roles",
-    "Leadership election involves vote counting",
-    "Political events face logistical challenges",
-    "Official processes confirm election results"
+    "Event logistics and preparations detailed",
+    "Public engagement with media and vendors",
+    "Official processes confirmed through certification"
    ],
    "doc_id": "10sent_20prev_013"
   },
   {
    "quotes": [],
    "bullets": [
-    "Roll call and committee preparations",
-    "County celebration and flag display",
-    "Environmental enforcement actions",
-    "Political meeting and staff recognition"
+    "Formal procedures and checks conducted before meetings.",
+    "County celebrations and inspections highlighted.",
+    "Meeting logistics and security measures in place.",
+    "Environmental regulations and staff recognition noted."
    ],
    "doc_id": "10sent_20prev_034"
   },
@@ -88,166 +88,268 @@
    "quotes": [],
    "bullets": [
     "Civic ceremony opens with bagpiper's tune",
-    "Public events highlight political issues",
-    "Protests and meetings mark legislative session",
-    "Weapons ban focuses on magazine capacity"
+    "Supporters protest battlefield weapon ban",
+    "Schoolchildren tour capitol during session",
+    "Protester and place cards highlight event details"
    ],
    "doc_id": "10sent_20prev_038"
   },
   {
    "quotes": [],
    "bullets": [
-    "Government operations continue during holidays",
-    "Efforts to improve public services and safety",
-    "Administrative tasks support policy implementation",
-    "Emergency responses and international cooperation"
+    "Basement photocopiers operated through weekend.",
+    "County clerk certified recount results.",
+    "Emergency supplies sent to earthquake-affected areas.",
+    "Interns organized constituent letters into bins."
    ],
    "doc_id": "10sent_40prev_011"
   },
   {
    "quotes": [],
    "bullets": [
-    "Proposed visa reforms prioritize skilled workers",
-    "Political tensions arise over climate policies",
-    "News events drive media and public attention",
-    "Political factions threaten to split over key issues"
+    "Senate proposes visa reforms for skilled workers",
+    "Roll call begins with corridor bells ringing",
+    "Press conference broadcast by local radio stations",
+    "Plant closure impacts 1200 workers overnight"
    ],
    "doc_id": "10sent_40prev_026"
   },
   {
    "quotes": [],
    "bullets": [
-    "Database upgrade reduces purchase screening wait time",
-    "Heavy rain lowers press availability attendance",
-    "Reporters gather outside briefing room for updates",
-    "County clerk confirms election results after recount"
+    "Database upgrade reduced purchase wait times",
+    "Heavy rain lowered press attendance",
+    "Reporters gathered outside briefing room",
+    "County clerk confirmed election results"
    ],
    "doc_id": "5sent_20prev_036"
   },
   {
    "quotes": [],
    "bullets": [
-    "Candidate promises tax elimination",
-    "Historical figures displayed publicly",
-    "Preparation for major announcement",
-    "Interns organize constituent feedback"
+    "Challenger promises tax elimination plan",
+    "Historical artifacts displayed publicly",
+    "Preparation for major announcement underway",
+    "Interns organize constituent communications"
    ],
    "doc_id": "5sent_20prev_038"
   },
   {
    "quotes": [],
    "bullets": [
-    "Candidate's military and political background highlighted",
-    "Campaign emphasizes immigrant roots and working-class ties",
-    "Convention security and traffic disruptions noted",
-    "City hall meeting extended beyond scheduled time"
+    "Nominee's military service highlighted",
+    "Campaign emphasizes immigrant roots",
+    "Convention security measures strict",
+    "Meeting extends beyond scheduled time"
    ],
    "doc_id": "5sent_40prev_000"
   },
   {
    "quotes": [],
    "bullets": [
-    "Political actions include firearm regulations",
-    "Ranked-choice voting proposed in congressional races",
-    "Volunteers focus on voter registration efforts",
-    "Facility preparation starts early for events"
+    "Vendor sells buttons and hot dogs at plaza.",
+    "Senate passes firearm regulations.",
+    "Party advocates ranked-choice voting.",
+    "Volunteers register voters at market."
    ],
    "doc_id": "5sent_40prev_004"
   },
   {
    "quotes": [],
    "bullets": [
-    "Homeowners seek tax valuation review",
-    "Caterers prepare for session with refreshments",
-    "Voters face tobacco tax increase decision",
-    "Heavy rain impacts press attendance"
+    "Homeowners seek tax reassessment",
+    "Caterers prepare for session",
+    "Voters decide tobacco tax hike",
+    "Heavy rain lowers attendance"
    ],
    "doc_id": "5sent_40prev_015"
   }
  ],
  "clusters": {
-  "2": [
+  "0": [
    "10sent_20prev_013",
+   "10sent_20prev_013",
+   "10sent_20prev_013",
+   "10sent_20prev_034",
+   "10sent_20prev_034",
+   "10sent_20prev_034",
+   "10sent_20prev_038",
+   "10sent_40prev_011",
+   "10sent_40prev_011",
+   "10sent_40prev_026",
+   "5sent_20prev_036",
+   "5sent_20prev_036",
+   "5sent_20prev_038",
+   "5sent_20prev_038",
    "5sent_40prev_000",
-   "5sent_40prev_000"
+   "5sent_40prev_000",
+   "5sent_40prev_004",
+   "5sent_40prev_015"
   ],
   "1": [
-   "10sent_20prev_013",
-   "10sent_20prev_013",
    "10sent_20prev_034",
-   "5sent_20prev_036",
-   "5sent_20prev_038",
-   "5sent_40prev_004",
-   "5sent_40prev_004",
-   "5sent_40prev_015",
-   "5sent_40prev_015"
-  ],
-  "3": [
-   "10sent_20prev_013",
-   "10sent_20prev_034",
-   "10sent_20prev_038",
-   "10sent_20prev_038",
-   "10sent_20prev_038",
    "10sent_40prev_011",
-   "10sent_40prev_011",
-   "10sent_40prev_011",
-   "10sent_40prev_011",
-   "10sent_40prev_026",
-   "10sent_40prev_026",
-   "10sent_40prev_026",
-   "5sent_40prev_004"
-  ],
-  "0": [
-   "10sent_20prev_034",
-   "5sent_20prev_036",
-   "5sent_20prev_036",
-   "5sent_20prev_036",
-   "5sent_20prev_038",
-   "5sent_40prev_000",
-   "5sent_40prev_000",
-   "5sent_40prev_004",
-   "5sent_40prev_015",
-   "5sent_40prev_015"
+   "5sent_20prev_036"
   ]
  },
  "concepts": [
   {
-   "name": "Event Preparation",
-   "criteria_prompt": "Is the text describing activities related to organizing or preparing for a political event or meeting?",
-   "representative_example_ids": [
-    "5sent_40prev_004",
-    "5sent_40prev_015"
-   ],
-   "cluster_label": 0
-  },
-  {
-   "name": "Election Processes",
-   "criteria_prompt": "Does the text describe activities related to counting votes, confirming election results, or proposing voting methods?",
-   "representative_example_ids": [
-    "10sent_20prev_013",
-    "5sent_40prev_004"
-   ],
-   "cluster_label": 1
-  },
-  {
-   "name": "Leadership Competition",
-   "criteria_prompt": "Does the text describe political factions vying for leadership positions?",
+   "name": "Event Organization",
+   "criteria_prompt": "Does the text describe activities related to planning, managing, or executing an event such as logistics, security, catering, or attendee engagement?",
    "representative_example_ids": [
     "10sent_20prev_013",
     "5sent_40prev_000"
    ],
-   "cluster_label": 2
+   "cluster_label": 0
   },
   {
-   "name": "Political Legislation",
-   "criteria_prompt": "Does the text describe legislative actions, policy proposals, or legal measures related to governance and lawmaking?",
+   "name": "County Clerk Actions",
+   "criteria_prompt": "Does the text mention a county clerk performing an action related to election results or certifications?",
    "representative_example_ids": [
-    "10sent_40prev_026",
-    "5sent_40prev_004"
+    "10sent_40prev_011",
+    "5sent_20prev_036"
    ],
-   "cluster_label": 3
+   "cluster_label": 1
   }
  ],
  "scores": {},
- "finished": "2026-10-07T19:41:42"
+ "finished": "2026-10-19T04:57:55",
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "Neither generated concept relates to economic systems or financial activity."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "County Clerk Actions is too narrow and specific to administrative tasks rather than the broader scope of election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "Neither generated concept relates to environmental issues or policy."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "Neither generated concept relates to international relations or foreign policy."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "Neither generated concept relates to firearm regulation."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "Neither generated concept relates to medical services or health policy."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "Neither generated concept relates to migration or border policy."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "Neither generated concept relates to the structure or activities of political parties."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "Neither generated concept relates to air quality or pollution."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "Neither generated concept relates to specific firearm legislation."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "Neither generated concept relates to the process of verifying an individual's history."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "Neither generated concept relates to political pledges or platform commitments."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": null,
+   "rationale": "Neither generated concept relates to biographical information or candidate descriptions."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "Neither generated concept relates to environmental issues or global warming."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "Neither generated concept relates to international statecraft or foreign policy."
+  },
+  {
+   "ground_truth": "Gun Control Legislation",
+   "concept": null,
+   "rationale": "Neither generated concept relates to firearms policy or legal restrictions."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": null,
+   "rationale": "Neither generated concept relates to border policy or immigration law."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "Neither generated concept relates to foreign assistance or humanitarian relief."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "Neither generated concept relates to psychological well-being or psychiatric care."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": null,
+   "rationale": "Neither generated concept relates to internal political party divisions."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "Neither generated concept relates to the internal hierarchy or leadership of political parties."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "Neither generated concept relates to the policy agendas or platforms of political parties."
+  },
+  {
+   "ground_truth": "Taxes",
+   "concept": null,
+   "rationale": "Neither generated concept relates to fiscal policy or taxation."
+  },
+  {
+   "ground_truth": "Trade Agreements",
+   "concept": null,
+   "rationale": "Neither generated concept relates to international trade or economic agreements."
+  },
+  {
+   "ground_truth": "Unemployment",
+   "concept": null,
+   "rationale": "Neither generated concept relates to labor markets or unemployment statistics."
+  },
+  {
+   "ground_truth": "Universal Healthcare",
+   "concept": null,
+   "rationale": "Neither generated concept relates to healthcare policy or systems."
+  }
+ ],
+ "n_generated": 2
 }

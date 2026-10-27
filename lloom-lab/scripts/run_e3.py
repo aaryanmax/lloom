@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 import numpy as np
+
 from lloom_lab.config import RESULTS_DIR
 from lloom_lab.theory import vc
 
@@ -18,7 +19,9 @@ def main():
     result = {}
 
     # (1) textbook anchors — must reproduce thresholds d=1, intervals d=2, rectangles d=4
-    uniform01 = lambda m: np.random.default_rng(42).uniform(0, 1, size=(m, 1))
+    def uniform01(m: int):
+        return np.random.default_rng(42).uniform(0, 1, size=(m, 1))
+
     result["threshold_vc"] = vc.effective_vc_dim(
         uniform01, vc.threshold_realizer_1d, d_max=3, trials=50
     )
@@ -44,15 +47,26 @@ def main():
         "sauer": [int(vc.sauer_bound(m, 2)) for m in ms],
     }
 
-    (out / "e3_results.json").write_text(json.dumps(result, indent=2, default=float), encoding="utf-8")
-    
+    (out / "e3_results.json").write_text(
+        json.dumps(result, indent=2, default=float), encoding="utf-8"
+    )
+
     print("\n[E3 COMPLETE] Effective VC Dimensions:")
     print(f"  * Thresholds 1D : VC = {result['threshold_vc']} (Expected: 1)")
     print(f"  * Intervals 1D  : VC = {result['interval_vc']} (Expected: 2)")
     print(f"  * Rectangles 2D : VC = {result['rectangle_vc']} (Expected: 4)")
-    print(f"\nGrowth Function vs Sauer Bound (Intervals d=2):")
-    for m, pi, sauer in zip(result["growth"]["m"][:7], result["growth"]["Pi_H"][:7], result["growth"]["sauer"][:7]):
-        print(f"  m={m:2d} | Pi_H={pi:3d} | Sauer's Bound={sauer:3d} | Dichotomies Shattered: {pi == 2**m}")
+    print("\nGrowth Function vs Sauer Bound (Intervals d=2):")
+    zip_items = zip(
+        result["growth"]["m"][:7],
+        result["growth"]["Pi_H"][:7],
+        result["growth"]["sauer"][:7],
+        strict=False,
+    )
+    for m, pi, sauer in zip_items:
+        print(
+            f"  m={m:2d} | Pi_H={pi:3d} | Sauer's Bound={sauer:3d} | "
+            f"Dichotomies Shattered: {pi == 2**m}"
+        )
 
     print(f"\nResults saved to: {out / 'e3_results.json'}")
 

@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 80,
+  "trial": 4
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.25416666666666665,
+ "mean_held_out": 0.29583333333333334,
+ "mean_gap": -0.041666666666666664,
+ "gaps": [
+  {
+   "concept": "Intra-Party Conflict",
+   "empirical": 0.1375,
+   "held_out": 0.06875,
+   "gap": 0.06875
+  },
+  {
+   "concept": "Regulatory Crowd Control",
+   "empirical": 0.175,
+   "held_out": 0.10625,
+   "gap": 0.06874999999999999
+  },
+  {
+   "concept": "Ceremonial Engagement",
+   "empirical": 0.45,
+   "held_out": 0.7125,
+   "gap": -0.2625
+  }
+ ]
+}

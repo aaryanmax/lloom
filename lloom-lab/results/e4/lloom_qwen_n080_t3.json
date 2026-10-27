@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 80,
+  "trial": 3
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.11666666666666668,
+ "mean_held_out": 0.10833333333333334,
+ "mean_gap": 0.008333333333333338,
+ "gaps": [
+  {
+   "concept": "Healthcare Policy Debate",
+   "empirical": 0.2625,
+   "held_out": 0.25,
+   "gap": 0.012500000000000011
+  },
+  {
+   "concept": "Illegal Border Activity",
+   "empirical": 0.05,
+   "held_out": 0.075,
+   "gap": -0.024999999999999994
+  },
+  {
+   "concept": "Community Energy Projects",
+   "empirical": 0.0375,
+   "held_out": 0.0,
+   "gap": 0.0375
+  }
+ ]
+}

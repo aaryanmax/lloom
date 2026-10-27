@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 160,
+  "trial": 1
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.34791666666666665,
+ "mean_held_out": 0.0,
+ "mean_gap": 0.34791666666666665,
+ "gaps": [
+  {
+   "concept": "Snowstorm Delay",
+   "empirical": 0.125,
+   "held_out": 0.0,
+   "gap": 0.125
+  },
+  {
+   "concept": "Policy and Commitment",
+   "empirical": 0.83125,
+   "held_out": 0.0,
+   "gap": 0.83125
+  },
+  {
+   "concept": "Career Highlighting",
+   "empirical": 0.0875,
+   "held_out": 0.0,
+   "gap": 0.0875
+  }
+ ]
+}

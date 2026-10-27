@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 80,
+  "trial": 1
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.13541666666666666,
+ "mean_held_out": 0.13333333333333333,
+ "mean_gap": 0.00208333333333334,
+ "gaps": [
+  {
+   "concept": "Economic Impact Trends",
+   "empirical": 0.2625,
+   "held_out": 0.3125,
+   "gap": -0.04999999999999999
+  },
+  {
+   "concept": "Bell Signaling Roll Call",
+   "empirical": 0.075,
+   "held_out": 0.075,
+   "gap": 0.0
+  },
+  {
+   "concept": "Diplomatic Restoration",
+   "empirical": 0.06875,
+   "held_out": 0.0125,
+   "gap": 0.05625000000000001
+  }
+ ]
+}

@@ -23,3 +23,10 @@ venv/
 .zcode/
 *.log
 *.tmp
+
+# archives & staging
+*.7z
+*.zip
+kaggle_upload/
+kaggle_results/
+*_backup/

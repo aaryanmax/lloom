@@ -1,6 +1,6 @@
 {
  "status": "complete",
- "started": "2026-10-07T19:36:09",
+ "started": "2026-10-19T04:56:32",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -9,7 +9,7 @@
   "n_concepts_per_cluster": 1,
   "score_batch_size": 20,
   "use_filter": false,
-  "seed_phrase": "about politics",
+  "seed_phrase": "",
   "skip_score": true
  },
  "meta": {
@@ -64,179 +64,279 @@
   {
    "quotes": [],
    "bullets": [
-    "Women's equality rights demanded at rally",
-    "Political roles underrepresented by women",
-    "Public spaces maintained for civic events",
-    "Civic duties enforced by various roles"
+    "Maintenance crew replaces chandelier bulbs",
+    "Women underrepresented in supervisory roles",
+    "Protester demands women's equality rights",
+    "Courtroom artists sketch without cameras"
    ],
    "doc_id": "10sent_20prev_001"
   },
   {
    "quotes": [],
    "bullets": [
-    "Political event attendance exceeded expectations",
-    "Health warnings issued due to high pollution levels",
-    "Security measures enforced at event venues",
-    "County symbols displayed during public celebration"
+    "Corporate event with high turnout",
+    "Health warnings due to smog",
+    "Event security and logistics",
+    "County celebration with flags"
    ],
    "doc_id": "10sent_20prev_003"
   },
   {
    "quotes": [],
    "bullets": [
-    "Political rally with public support",
-    "Safety measures enacted for events",
-    "Legislation passed on gun storage",
-    "Public displays and ceremonial events"
+    "Rally and protest activities described",
+    "Safety measures and regulations mentioned",
+    "Public events and gatherings highlighted",
+    "Legal provisions related to weapons"
    ],
    "doc_id": "10sent_40prev_024"
   },
   {
    "quotes": [],
    "bullets": [
-    "Proposed visa reforms prioritize skilled workers",
-    "Political tensions arise over climate policies",
-    "News events drive media and public attention",
-    "Political factions threaten to split over key issues"
+    "Senate proposes visa reforms for skilled workers",
+    "Roll call begins with corridor bells ringing",
+    "Press conference broadcast by local radio stations",
+    "Plant closure impacts 1200 workers overnight"
    ],
    "doc_id": "10sent_40prev_026"
   },
   {
    "quotes": [],
    "bullets": [
-    "Federal agents dismantle illegal entry tunnel",
-    "Courtroom artists sketch restricted scene",
-    "Protester opposes immigration policy",
-    "Courthouse weather vane restored"
+    "Federal agents dismantle illegal entry tunnel.",
+    "Courtroom artists sketch restricted scene.",
+    "Protester displays hand-lettered sign outside.",
+    "Clerks update vote tally board status."
    ],
    "doc_id": "5sent_20prev_015"
   },
   {
    "quotes": [],
    "bullets": [
-    "Firearms registration under new ban",
-    "Event setup continues in auditorium",
-    "Roll call signaled by bell ringing",
-    "Maintenance on visitors' walkway"
+    "Previous event confetti remains on floor",
+    "Caterers prepare coffee and pastries",
+    "Bells signal roll call start",
+    "Firearms registration required under ban"
    ],
    "doc_id": "5sent_20prev_017"
   },
   {
    "quotes": [],
    "bullets": [
-    "Commissioner thanks retiring staff",
-    "Governor proposes infrastructure stimulus",
-    "High turnout in county precincts",
-    "Convention hall enforces bag security"
+    "Commissioner thanked retiring staff",
+    "Governor proposed infrastructure stimulus",
+    "Turnout exceeded precinct expectations",
+    "Transcript and security measures detailed"
    ],
    "doc_id": "5sent_20prev_020"
   },
   {
    "quotes": [],
    "bullets": [
-    "Database upgrade reduces purchase screening wait time",
-    "Heavy rain lowers press availability attendance",
-    "Reporters gather outside briefing room for updates",
-    "County clerk confirms election results after recount"
+    "Database upgrade reduced purchase wait times",
+    "Heavy rain lowered press attendance",
+    "Reporters gathered outside briefing room",
+    "County clerk confirmed election results"
    ],
    "doc_id": "5sent_20prev_036"
   },
   {
    "quotes": [],
    "bullets": [
-    "Annual reports stored in records room",
-    "Conservation deal preserves ranch land",
-    "New reserve protects prairie orchid",
-    "Schoolchildren visit capitol during session"
+    "Clerks store annual reports in records room",
+    "Conservation deal preserves ranch from subdivision",
+    "New reserve protects prairie orchid population",
+    "Schoolchildren tour capitol during session"
    ],
    "doc_id": "5sent_40prev_005"
   },
   {
    "quotes": [],
    "bullets": [
-    "Moderator urges audience to silence phones",
-    "Reform bill ties legalization to employment",
-    "Staffers distribute amended bill copies",
-    "Policy links state contracts to local hiring"
+    "Moderator urges phone silence",
+    "Bill ties legalization to work/classes",
+    "Staff distributes amended bill copies",
+    "Policy links contracts to local hires"
    ],
    "doc_id": "5sent_40prev_006"
   }
  ],
  "clusters": {
-  "1": [
-   "10sent_20prev_001",
-   "10sent_20prev_001",
-   "10sent_20prev_001",
-   "10sent_20prev_001",
-   "10sent_20prev_003",
-   "10sent_20prev_003",
+  "2": [
    "10sent_20prev_003",
    "10sent_20prev_003",
    "10sent_40prev_024",
    "10sent_40prev_024",
-   "10sent_40prev_024",
-   "10sent_40prev_024",
-   "10sent_40prev_026",
-   "10sent_40prev_026",
-   "10sent_40prev_026",
    "5sent_20prev_015",
    "5sent_20prev_015",
-   "5sent_20prev_015",
-   "5sent_20prev_015",
-   "5sent_20prev_017",
-   "5sent_20prev_017",
-   "5sent_20prev_017",
-   "5sent_20prev_020",
    "5sent_20prev_020",
    "5sent_20prev_036",
-   "5sent_40prev_005",
-   "5sent_40prev_005",
-   "5sent_40prev_005",
    "5sent_40prev_006"
+  ],
+  "1": [
+   "10sent_20prev_003",
+   "10sent_40prev_024",
+   "5sent_20prev_020"
   ],
   "0": [
    "10sent_40prev_026",
-   "5sent_20prev_020",
-   "5sent_40prev_006",
-   "5sent_40prev_006",
-   "5sent_40prev_006"
-  ],
-  "2": [
    "5sent_20prev_036",
-   "5sent_20prev_036",
-   "5sent_20prev_036",
-   "5sent_40prev_005"
+   "5sent_20prev_036"
   ]
  },
  "concepts": [
   {
-   "name": "Policy Linkage",
-   "criteria_prompt": "Does the text describe a policy that connects legal status, employment, or contracts to specific actions or conditions?",
+   "name": "Media Coverage Context",
+   "criteria_prompt": "Does the text describe a situation where media coverage is being discussed or reported on, such as press conferences, attendance, or reporter activities?",
    "representative_example_ids": [
-    "5sent_40prev_006",
-    "5sent_40prev_006"
+    "10sent_40prev_026",
+    "5sent_20prev_036"
    ],
    "cluster_label": 0
   },
   {
-   "name": "Political Engagement",
-   "criteria_prompt": "Does the text describe political activities, events, or public involvement in political processes?",
+   "name": "Security Protocols",
+   "criteria_prompt": "Does the text mention specific security measures or protocols related to event management?",
    "representative_example_ids": [
-    "10sent_20prev_001",
-    "10sent_40prev_026"
+    "10sent_20prev_003",
+    "5sent_20prev_020"
    ],
    "cluster_label": 1
   },
   {
-   "name": "Event Impact",
-   "criteria_prompt": "Does the text describe an event and its impact on a specific activity or outcome?",
+   "name": "Public Gatherings",
+   "criteria_prompt": "Does the text describe a public event or gathering with multiple participants?",
    "representative_example_ids": [
-    "5sent_20prev_036",
-    "5sent_40prev_005"
+    "10sent_20prev_003",
+    "10sent_40prev_024"
    ],
    "cluster_label": 2
   }
  ],
  "scores": {},
- "finished": "2026-10-07T19:40:52"
+ "finished": "2026-10-19T04:58:00",
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.07142857142857142
+ },
+ "coverage": 0.043478260869565216,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to economic systems, finance, or markets."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "None of the generated concepts describe political campaigning or electoral processes."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to environmental issues or nature."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to international relations or diplomacy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts describe the formulation or implementation of government policy."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to firearms or legislative control of weapons."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to civil liberties or human rights."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to migration or border policy."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to political organizations or partisan activity."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to atmospheric quality or pollution."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to gun control legislation."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to gun control legislation."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to international relations or diplomacy."
+  },
+  {
+   "ground_truth": "Economic Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to economic or fiscal policy."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to economic or fiscal policy."
+  },
+  {
+   "ground_truth": "Gun Control Legislation",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to gun control legislation."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to immigration."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to immigration."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to environmental or nature conservation."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to political party dynamics or factionalism."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": "Public Gatherings",
+   "rationale": "Political rallies are a specific type of public gathering, but in the context of this set, it is the only concept that captures the essence of a public event with participants."
+  },
+  {
+   "ground_truth": "Unemployment",
+   "concept": null,
+   "rationale": "None of the generated concepts describe economic conditions or labor market status."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "None of the generated concepts relate to gender equality or human rights advocacy."
+  }
+ ],
+ "n_generated": 3
 }

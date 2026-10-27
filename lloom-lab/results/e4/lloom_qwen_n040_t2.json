@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 40,
+  "trial": 2
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.3416666666666666,
+ "mean_held_out": 0.36041666666666666,
+ "mean_gap": -0.01874999999999999,
+ "gaps": [
+  {
+   "concept": "Bill Distribution",
+   "empirical": 0.15,
+   "held_out": 0.16875,
+   "gap": -0.018750000000000017
+  },
+  {
+   "concept": "Event Logistics",
+   "empirical": 0.625,
+   "held_out": 0.73125,
+   "gap": -0.10624999999999996
+  },
+  {
+   "concept": "Weather Disruption",
+   "empirical": 0.25,
+   "held_out": 0.18125,
+   "gap": 0.06875
+  }
+ ]
+}

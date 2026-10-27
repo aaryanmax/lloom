@@ -63,7 +63,8 @@ def render_dashboard(client) -> None:
 
     print("-" * 64)
     total_pct = (total_done / total_cells) * 100
-    overall_bar = "[" + "=" * int(20 * total_done / total_cells) + " " * (20 - int(20 * total_done / total_cells)) + "]"
+    n_fill = int(20 * total_done / total_cells)
+    overall_bar = "[" + "=" * n_fill + " " * (20 - n_fill) + "]"
     print(f"TOTAL PROGRESS     : {overall_bar} {total_done:3d}/{total_cells} ({total_pct:.1f}%)")
 
     # Cloud Quota usage

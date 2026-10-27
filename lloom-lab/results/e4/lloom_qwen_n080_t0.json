@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 80,
+  "trial": 0
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.27708333333333335,
+ "mean_held_out": 0.23124999999999998,
+ "mean_gap": 0.04583333333333333,
+ "gaps": [
+  {
+   "concept": "Public Engagement",
+   "empirical": 0.5625,
+   "held_out": 0.26875,
+   "gap": 0.29375
+  },
+  {
+   "concept": "Fiscal Policy Adjustments",
+   "empirical": 0.20625,
+   "held_out": 0.35625,
+   "gap": -0.15000000000000002
+  },
+  {
+   "concept": "Refugee Policy Expansion",
+   "empirical": 0.0625,
+   "held_out": 0.06875,
+   "gap": -0.0062500000000000056
+  }
+ ]
+}

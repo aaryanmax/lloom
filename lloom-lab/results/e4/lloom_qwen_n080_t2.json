@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 80,
+  "trial": 2
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.3729166666666666,
+ "mean_held_out": 0.38958333333333334,
+ "mean_gap": -0.016666666666666677,
+ "gaps": [
+  {
+   "concept": "Stakeholder Engagement",
+   "empirical": 0.875,
+   "held_out": 0.99375,
+   "gap": -0.11875000000000002
+  },
+  {
+   "concept": "Political Traffic Disruption",
+   "empirical": 0.125,
+   "held_out": 0.10625,
+   "gap": 0.018750000000000003
+  },
+  {
+   "concept": "International Cooperation",
+   "empirical": 0.11875,
+   "held_out": 0.06875,
+   "gap": 0.04999999999999999
+  }
+ ]
+}

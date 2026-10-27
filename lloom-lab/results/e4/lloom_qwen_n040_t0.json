@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 40,
+  "trial": 0
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.5354166666666668,
+ "mean_held_out": 0.35625,
+ "mean_gap": 0.1791666666666667,
+ "gaps": [
+  {
+   "concept": "Gun Regulation",
+   "empirical": 0.1625,
+   "held_out": 0.2,
+   "gap": -0.037500000000000006
+  },
+  {
+   "concept": "Formal Meeting Procedures",
+   "empirical": 0.76875,
+   "held_out": 0.58125,
+   "gap": 0.1875
+  },
+  {
+   "concept": "Crowd Engagement",
+   "empirical": 0.675,
+   "held_out": 0.2875,
+   "gap": 0.38750000000000007
+  }
+ ]
+}

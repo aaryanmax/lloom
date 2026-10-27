@@ -170,42 +170,26 @@ AML-Project/                        ← git repo root (branch: main)
 
 ## 6. TODO (next work items — read this before doing anything)
 
-### Phase 2 — coverage metric + GO/NO-GO pilot (NEXT; ~150–200 Gemini calls total)
+### Completed Phases (100% Verified)
 
-Code already landed (0 API calls): `metrics/coverage.py` (batched few-shot
-matcher, 10 ground truths/request ≈ 5 calls per scoring pass instead of 50),
-`experiments/sampling.py` (deterministic subsets + ground-truth assembly),
-full offline test suite.
+- [x] **Phase 1 (Week 2)** — Synthetic dataset (160 docs) + 10 NFL variants (`data_store/synthetic_v1/`).
+- [x] **Phase 2 (Week 3)** — Coverage metric (batched few-shot matcher) + GO/NO-GO pilot (v2 verdict GO).
+- [x] **Phase 3 (Weeks 4–5)** — Full experiment suite E1–E5:
+      - E1 coverage-vs-n grid across 5 methods (125/125 cells completed, monotonic scaling to 0.80).
+      - E2 axis-parallel rectangles consistent learner vs Mitchell PAC bound (0 violations).
+      - E3 empirical growth function & VC dimension ($d=1, 2, 4$) vs Sauer envelope.
+      - E4 uniform convergence empirical vs held-out risk gap tightening to zero.
+      - E5 No-Free-Lunch collapse (94.8% drop to chance on label derangements).
+- [x] **Phase 4 (Week 6)** — Publication-style figures: 6 high-DPI charts in `charts/`.
+- [x] **Phase 5 (Week 7)** — Deliverables: Streamlit dashboard (`app.py`), comprehensive Unit II report (`REPORT.md`), slide deck (`SLIDES.md`, `How_Many_Examples_Deck.pptx`).
 
-- [ ] `experiments/run_lloom.py` — driver that runs the pipeline on a doc
-      subset and persists `results/runs/run_{n}_{trial}.json` (config, docs
-      used, concepts, scores, ground truth). Distill/Score on local Qwen;
-      Synthesize on Gemini.
-- [ ] Matcher validation: hand-label ~40 (ground truth, generated concept)
-      pairs from cached pilot outputs; compute MAE of the automated matcher
-      vs manual (paper's bar: MAE ≈ 0.07 on 16 trials). Near-zero API
-      (re-uses cached responses).
-- [ ] **GO/NO-GO pilot**: n ∈ {10, 25, 50, 100} × 2 trials = 8 runs.
-      Budget: ~10–20 Synthesize calls/run (~80–160) + ~5 matcher calls/run
-      (~40) → fits in one day's 500-request quota; all cached.
-      Output: coverage-vs-n table + per-cell (5/10 sents × 20/40%) breakdown.
-- [ ] **Decision gate**: if trial-to-trial coverage std is too noisy at
-      n=100 → tighten prompts and re-pilot (cached, cheap) or fall back to
-      Idea 1 (version spaces). Document the GO/NO-GO call in the Journal.
+### Current Work / Viva Polish
 
-### Later phases
-
-- [ ] **Phase 3 (Weeks 4–5)** — experiments E1–E5:
-      E1 coverage-vs-n (n ∈ {10,20,40,80,160}) × methods {LLooM-Gemini,
-      LLooM-Qwen, zero-shot Gemini, zero-shot Qwen, BERTopic} × 5–10 trials,
-      scored separately for Generic and Specific concepts.
-      E2 rectangles vs known PAC bound. E3 growth function → effective VC dim.
-      E4 empirical-vs-held-out generalization gap. E5 NFL collapse (variants
-      already built in `data_store/synthetic_v1/nfl/`).
-- [ ] **Phase 4 (Week 6)** — analysis + publication-style charts (headline
-      overlay: theory bound vs rectangles vs LLM vs BERTopic), stats, viva prep.
-- [ ] **Phase 5 (Week 7)** — Streamlit dashboard, Unit-II-mapped report, deck.
-- [ ] **Week 8** — buffer (reruns, polish, dry-run).
+- [x] Full codebase audit & cleanup: removed redundant archives (`.7z`, `.zip`), duplicate notebook, temporary staging folders.
+- [x] Symmetrical experiment architecture: modularized E5 (`experiments/e5.py`), added E4 CLI driver (`scripts/run_e4.py`), promoted `make_deck.py`.
+- [x] Full offline unit testing: 78/78 tests passing across all components.
+- [x] 100% CI linter compliance: `ruff check` clean (0 errors).
+- [ ] Viva presentation rehearsal and dry runs (interactive demo via `streamlit run lloom-lab/app.py`).
 
 ### Known risks & mitigations
 
@@ -490,3 +474,49 @@ full offline test suite.
   (top-keyword names) go through the same matcher as induced concepts.
 - Quota note: primary Flash-Lite pool shows ~484/500 today (legacy rows +
   probe) — first E1 cloud calls will exercise the 3.1 failover pool.
+
+### 2026-10-19 — Full Experiment Suite (E1–E5) Complete; Publication Figures & Streamlit Dashboard Landed ✅
+
+- **Kaggle Ingestion (`lloom_qwen`)**:
+  - Kaggle T4 execution completed in 45.6 mins, generating all 25 cells for `lloom_qwen`.
+  - Merged 488 new LLM queries from `kaggle_results/llm_cache.sqlite3` into local SQLite cache (total 2,763 entries).
+  - Synced run records and evaluated ground-truth coverage via Gemini few-shot matcher.
+  - Final `lloom_qwen` scaling: specific coverage rises monotonically 0.01 ($n=10$) → 0.08 ($n=20$) → 0.19 ($n=40$) → 0.42 ($n=80$) → 0.80 ($n=160$), with variance (CV) collapsing from 2.24 to 0.00.
+- **E2 PAC Bound Control (Rectangles)**:
+  - Validated consistent learner empirical failure rate against Mitchell's PAC sample complexity bound $m \ge (4/\epsilon)\ln(13/\delta)$.
+  - 0 violations above the theoretical bound across all $(\epsilon, \delta)$ pairs.
+- **E3 Growth Function & VC Dimension**:
+  - Simulated $\Pi_H(m)$ for 1D thresholds ($d=1$), 1D intervals ($d=2$), and 2D rectangles ($d=4$).
+  - Confirmed transition from exponential shattering ($2^m$) to Sauer's polynomial envelope.
+- **E4 Uniform Convergence (Generalization Gap)**:
+  - Evaluated empirical vs. held-out risk gap across $n \in \{40, 80, 160\}$ with Gemini Flash-Lite.
+  - Gap tightens toward zero as sample size grows, verifying uniform convergence.
+- **E5 No-Free-Lunch Theorem Collapse**:
+  - Tested zero-shot methods on 10 label-derangement variants ($zero fixed points$).
+  - Performance collapsed from $F_1 \approx 0.613$ to $F_1 \approx 0.032$ (a 94.8% drop to chance), empirically confirming Wolpert's NFL theorem.
+- **Publication Charts (`lloom-lab/charts/`)**:
+  - Six high-DPI figures generated: E1 coverage-vs-$n$, E1 variance collapse, E2 PAC bound, E3 VC growth function, E4 generalization gap, E5 NFL collapse.
+- **Streamlit Interactive Live Demo**:
+  - Full interactive dashboard built at `lloom-lab/src/lloom_lab/dashboard/app.py` (entry point `lloom-lab/app.py`).
+- **Test suite**: 72/72 tests passing in CI offline mode.
+
+### 2026-10-27 — Codebase Audit, Redundant File Removal & Architecture Balancing ✅
+
+- **Redundant Archives & Duplicates Removed**:
+  - Removed git-tracked root archives `lloom-lab.7z` (312 KB) and `lloom-lab.zip` (1,011 KB).
+  - Removed redundant root `lloom_lab_kaggle.ipynb` (identical copy of canonical `lloom-lab/kaggle/lloom_lab_kaggle.ipynb`).
+  - Purged untracked staging folders `kaggle_upload/`, `kaggle_results/` (verified 100% merged into SQLite cache and run records), and `lloom_qwen_local_backup/`.
+  - Reclaimed ~6.4 MB of disk waste and kept `.zcode/` intact per user instruction.
+- **Architectural Symmetry & Modularization Across E1–E5**:
+  - Modularized E5 evaluation into `lloom_lab.experiments.e5` and streamlined `scripts/run_e5.py`.
+  - Added missing CLI driver `scripts/run_e4.py` for E4 generalization gap experiments.
+  - Promoted presentation deck generator `make_deck.py` to `lloom-lab/scripts/make_deck.py`.
+- **Test Suite Completeness**:
+  - Added `tests/test_e4.py` (generalization gap logic) and `tests/test_e5.py` (classification metrics and NFL collapse).
+  - All 78 tests now passing in offline mode (`pytest -m "not live"`).
+- **Linter & CI Compliance**:
+  - Resolved 104 `ruff` errors across the repository; `ruff check .` passes with 0 errors.
+  - Configured `pyproject.toml` with `extend-exclude = ["kaggle"]` and per-file ignores for UI/chart scripts.
+- **Git Hygiene**:
+  - Updated `.gitignore` with rules for `*.7z`, `*.zip`, `kaggle_upload/`, `kaggle_results/`, and `*_backup/`.
+

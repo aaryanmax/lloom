@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 40,
+  "trial": 1
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.17500000000000002,
+ "mean_held_out": 0.18125,
+ "mean_gap": -0.006249999999999994,
+ "gaps": [
+  {
+   "concept": "Educational Outreach",
+   "empirical": 0.1,
+   "held_out": 0.00625,
+   "gap": 0.09375
+  },
+  {
+   "concept": "Courtroom Restrictions",
+   "empirical": 0.05625,
+   "held_out": 0.1,
+   "gap": -0.043750000000000004
+  },
+  {
+   "concept": "Public Safety Measures",
+   "empirical": 0.36875,
+   "held_out": 0.4375,
+   "gap": -0.06874999999999998
+  }
+ ]
+}

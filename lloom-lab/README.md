@@ -62,9 +62,9 @@ the client hard-stops Gemini calls at `GEMINI_DAILY_LIMIT` (default 500).
 1. ~~Week 1 — scaffolding, dual-LLM client, e2e milestone~~ ✅
 2. ~~Week 2 — synthetic dataset generator (paper §5.2: 10 Generic / 40 Specific
    concepts, politics domain, 5/10 sentences, 20/40% prevalence) + NFL variants~~ ✅
-3. Week 3 — coverage metric (Appendix A.5 matcher) + validation + GO/NO-GO pilot
-4. Weeks 4–5 — experiments E1–E5 (coverage curves, rectangles vs PAC bound,
-   growth function / effective VC dimension, uniform convergence, NFL collapse)
-5. Week 6 — analysis + charts
-6. Week 7 — Streamlit dashboard, Unit-II-mapped report, deck
-7. Week 8 — buffer
+3. ~~Week 3 — coverage metric (Appendix A.5 matcher) + validation + GO/NO-GO pilot~~ ✅
+4. ~~Weeks 4–5 — experiments E1–E5 (coverage curves, rectangles vs PAC bound,
+   growth function / effective VC dimension, uniform convergence, NFL collapse)~~ ✅
+5. ~~Week 6 — analysis + publication-style figures (6 charts in `charts/`)~~ ✅
+6. ~~Week 7 — Streamlit dashboard (`app.py`), Unit-II-mapped report (`REPORT.md`), deck~~ ✅
+7. Week 8 — buffer (viva rehearsal, interactive walkthrough)

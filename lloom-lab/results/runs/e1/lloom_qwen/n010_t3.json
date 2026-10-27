@@ -1,6 +1,6 @@
 {
  "status": "complete",
- "started": "2026-10-07T19:41:44",
+ "started": "2026-10-19T04:58:00",
  "config": {
   "distill_model": "qwen",
   "synth_model": "qwen",
@@ -9,7 +9,7 @@
   "n_concepts_per_cluster": 1,
   "score_batch_size": 20,
   "use_filter": false,
-  "seed_phrase": "about politics",
+  "seed_phrase": "",
   "skip_score": true
  },
  "meta": {
@@ -60,20 +60,20 @@
   {
    "quotes": [],
    "bullets": [
-    "Political figures rise through various roles",
-    "Events and meetings often extend beyond time",
-    "Public spaces reflect political activity",
-    "Historical documents are displayed publicly"
+    "Vendor sells buttons and hot dogs",
+    "Contender rises from council to governor",
+    "Clock stops during final vote",
+    "Librarian curates state archives display"
    ],
    "doc_id": "10sent_20prev_039"
   },
   {
    "quotes": [],
    "bullets": [
-    "Political event with large attendance",
-    "Platform shifts from single-payer to public option",
-    "Historical apology for segregation policies",
-    "Legislative actions on discriminatory language"
+    "Crowded hearing room and parking",
+    "Platform shifts to public option",
+    "Apology for segregation history",
+    "Voters remove discriminatory language"
    ],
    "doc_id": "10sent_40prev_025"
   },
@@ -81,19 +81,19 @@
    "quotes": [],
    "bullets": [
     "Security measures at convention entrances",
-    "Volunteers restore trout habitat efforts",
-    "Schools plan to hire psychologists",
-    "Partnership reduces customs paperwork"
+    "Catering setup before session starts",
+    "Volunteer stream restoration efforts",
+    "Committee preparedness checks"
    ],
    "doc_id": "10sent_40prev_027"
   },
   {
    "quotes": [],
    "bullets": [
-    "Snowstorm delays committee hearing",
-    "Candidate's career highlighted in profiles",
-    "Delegation arrives late due to fog",
-    "Caterers prepare refreshments before session"
+    "Snowstorm delays committee hearing.",
+    "Candidate's career highlighted in profiles.",
+    "Delegation delayed by foggy flight.",
+    "Caterers prepare coffee and pastries."
    ],
    "doc_id": "5sent_20prev_001"
   },
@@ -101,133 +101,221 @@
    "quotes": [],
    "bullets": [
     "Clerk reads resolution in empty chamber",
-    "Media captures press conference live",
-    "Amendment read due to camera failure",
-    "Settlement mandates sibling placements"
+    "Photographers capture press conference",
+    "Document camera fails during speech",
+    "Settlement mandates sibling placement"
    ],
    "doc_id": "5sent_20prev_003"
   },
   {
    "quotes": [],
    "bullets": [
-    "Staffers distributed amended bill copies",
-    "Parking garage filled early morning",
-    "Janitorial staff prepared assembly hall",
-    "Mayor defended public safety budget line"
+    "Staffers distributed amended bill copies.",
+    "Parking garage reached full capacity early.",
+    "Janitorial staff prepared assembly hall pre-dawn.",
+    "Mayor defended public safety complex budget line."
    ],
    "doc_id": "5sent_20prev_027"
   },
   {
    "quotes": [],
    "bullets": [
-    "Radio stations live-streamed press conference",
-    "Volunteers register voters at farmers market",
-    "Interns organize constituent letters by color",
-    "Farmers adopt carbon-storing soil techniques"
+    "Radio stations live broadcast press conference.",
+    "Vendor sells buttons and hot dogs at plaza.",
+    "Farmers adopt carbon-storing soil techniques.",
+    "Volunteers register voters at farmers market."
    ],
    "doc_id": "5sent_20prev_028"
   },
   {
    "quotes": [],
    "bullets": [
-    "Reporters await briefings in hallways",
-    "Crossing guards manage morning traffic",
-    "Officials and donors gather at arena",
-    "Aid workers deliver relief supplies"
+    "Reporters await briefing room updates",
+    "Crossing guard manages morning traffic",
+    "Corporate box hosts officials and donors",
+    "Aid delivers relief supplies to flooded areas"
    ],
    "doc_id": "5sent_40prev_014"
   },
   {
    "quotes": [],
    "bullets": [
-    "Council debates procedural issues",
-    "Youth unemployment doubles",
-    "State commits to net-zero by 2050",
-    "Audience urged to silence phones"
+    "Local bloggers document council debates",
+    "Youth unemployment doubles sharply",
+    "Aides communicate during testimony",
+    "State commits to net-zero by 2050"
    ],
    "doc_id": "5sent_40prev_022"
   },
   {
    "quotes": [],
    "bullets": [
-    "Candidates' personal histories highlighted",
-    "Media coverage focuses on past events",
-    "Public interest drives political attention",
-    "Political narratives shaped by media"
+    "Reporters examine candidate's financial past.",
+    "Nominee's single parent story highlighted.",
+    "Court artists depict courtroom scenes.",
+    "Elevator worker retires after statehouse service."
    ],
    "doc_id": "5sent_40prev_028"
   }
  ],
  "clusters": {
-  "1": [
+  "0": [
+   "10sent_20prev_039",
    "10sent_20prev_039",
    "10sent_20prev_039",
    "10sent_20prev_039",
    "10sent_40prev_025",
+   "10sent_40prev_025",
+   "10sent_40prev_025",
+   "10sent_40prev_025",
+   "10sent_40prev_027",
+   "10sent_40prev_027",
+   "10sent_40prev_027",
+   "10sent_40prev_027",
+   "5sent_20prev_001",
+   "5sent_20prev_001",
+   "5sent_20prev_001",
    "5sent_20prev_001",
    "5sent_20prev_003",
+   "5sent_20prev_003",
+   "5sent_20prev_003",
+   "5sent_20prev_003",
+   "5sent_20prev_027",
+   "5sent_20prev_027",
+   "5sent_20prev_027",
+   "5sent_20prev_027",
    "5sent_20prev_028",
+   "5sent_20prev_028",
+   "5sent_20prev_028",
+   "5sent_20prev_028",
+   "5sent_40prev_014",
+   "5sent_40prev_014",
+   "5sent_40prev_014",
+   "5sent_40prev_014",
+   "5sent_40prev_022",
+   "5sent_40prev_022",
+   "5sent_40prev_022",
    "5sent_40prev_022",
    "5sent_40prev_028",
    "5sent_40prev_028",
    "5sent_40prev_028",
    "5sent_40prev_028"
-  ],
-  "0": [
-   "10sent_40prev_025",
-   "10sent_40prev_025",
-   "10sent_40prev_027",
-   "5sent_20prev_003",
-   "5sent_20prev_003",
-   "5sent_20prev_003",
-   "5sent_20prev_027",
-   "5sent_20prev_027",
-   "5sent_20prev_028",
-   "5sent_40prev_022",
-   "5sent_40prev_022",
-   "5sent_40prev_022"
-  ],
-  "2": [
-   "10sent_40prev_027",
-   "5sent_20prev_001",
-   "5sent_20prev_001",
-   "5sent_20prev_027",
-   "5sent_20prev_027",
-   "5sent_20prev_028",
-   "5sent_40prev_014",
-   "5sent_40prev_014",
-   "5sent_40prev_014"
   ]
  },
  "concepts": [
   {
-   "name": "Policy Reforms",
-   "criteria_prompt": "Does the text describe legislative or institutional changes aimed at addressing historical injustices or improving public services?",
+   "name": "Event Logistics",
+   "criteria_prompt": "Does the text describe activities related to organizing or managing events, such as setup, security, transportation, or resource allocation?",
    "representative_example_ids": [
-    "10sent_40prev_025",
-    "5sent_40prev_022"
+    "10sent_40prev_027",
+    "5sent_20prev_027"
    ],
    "cluster_label": 0
-  },
-  {
-   "name": "Media Coverage",
-   "criteria_prompt": "Does the text describe how media outlets report on political events or figures?",
-   "representative_example_ids": [
-    "5sent_20prev_028",
-    "5sent_40prev_028"
-   ],
-   "cluster_label": 1
-  },
-  {
-   "name": "Event Preparation",
-   "criteria_prompt": "Is the text describing actions taken to prepare for an event or gathering?",
-   "representative_example_ids": [
-    "5sent_20prev_027",
-    "5sent_40prev_014"
-   ],
-   "cluster_label": 2
   }
  ],
  "scores": {},
- "finished": "2026-10-07T19:46:36"
+ "finished": "2026-10-19T04:59:19",
+ "coverage_split": {
+  "generic": 0.0,
+  "specific": 0.0
+ },
+ "coverage": 0.0,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to the economy."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": null,
+   "rationale": "Event Logistics is a narrow operational aspect and does not encompass the broader scope of election campaigns."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to the environment."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to foreign policy."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to healthcare."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to human rights."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to political parties."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to campaign promises."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to candidate profiles."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "Event Logistics does not relate to children's rights."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Climate Change."
+  },
+  {
+   "ground_truth": "Government Spending",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Government Spending."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as International Aid."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Mental Health."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Nature Conservation."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Party Platforms."
+  },
+  {
+   "ground_truth": "Racial Equality",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Racial Equality."
+  },
+  {
+   "ground_truth": "Trade Agreements",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Trade Agreements."
+  },
+  {
+   "ground_truth": "Unemployment",
+   "concept": null,
+   "rationale": "Event Logistics does not share the same meaning as Unemployment."
+  }
+ ],
+ "n_generated": 1
 }

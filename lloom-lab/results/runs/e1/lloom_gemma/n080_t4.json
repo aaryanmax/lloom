@@ -1,5 +1,5 @@
 {
- "status": "complete_with_errors",
+ "status": "complete",
  "started": "2026-10-07T18:54:03",
  "config": {
   "distill_model": "qwen",
@@ -1802,5 +1802,259 @@
   }
  ],
  "scores": {},
- "finished": "2026-10-07T19:14:14"
+ "finished": "2026-10-07T19:14:14",
+ "coverage_split": {
+  "generic": 0.8,
+  "specific": 0.3076923076923077
+ },
+ "coverage": 0.40816326530612246,
+ "match_rows": [
+  {
+   "ground_truth": "Economy",
+   "concept": "Fiscal Policy Tension",
+   "rationale": "The generated concept focuses on government spending and economic policy adjustments, which aligns with the core meaning of Economy."
+  },
+  {
+   "ground_truth": "Election Campaigns",
+   "concept": "Political Campaign Promises",
+   "rationale": "The generated concept directly captures the essence of political campaign activity through the lens of candidate pledges."
+  },
+  {
+   "ground_truth": "Environment",
+   "concept": "Climate Policy Action",
+   "rationale": "The generated concept specifically addresses initiatives related to climate change, which is the primary focus of the Environment ground truth."
+  },
+  {
+   "ground_truth": "Foreign Policy",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address international relations or foreign policy."
+  },
+  {
+   "ground_truth": "Government Policies",
+   "concept": "State Policy Reform",
+   "rationale": "The generated concept covers the broad scope of state-level legislative actions and policy changes."
+  },
+  {
+   "ground_truth": "Gun Control",
+   "concept": "Firearm Legislative Action",
+   "rationale": "The generated concept is synonymous with the ground truth of Gun Control."
+  },
+  {
+   "ground_truth": "Healthcare",
+   "concept": "Legislative Healthcare Policy",
+   "rationale": "The generated concept directly maps to the ground truth of Healthcare."
+  },
+  {
+   "ground_truth": "Human Rights",
+   "concept": "Legal Rights Advocacy",
+   "rationale": "The generated concept focuses on the protection and expansion of legal rights for social groups, which aligns with Human Rights."
+  },
+  {
+   "ground_truth": "Immigration",
+   "concept": "Immigration Policy Reform",
+   "rationale": "The generated concept is a direct match for the Immigration ground truth."
+  },
+  {
+   "ground_truth": "Political Parties",
+   "concept": null,
+   "rationale": "The generated concept 'Internal Political Conflict' is too narrow as it only covers factional disputes rather than the broader concept of political parties."
+  },
+  {
+   "ground_truth": "Air Pollution",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address air pollution."
+  },
+  {
+   "ground_truth": "Assault Weapons Ban",
+   "concept": null,
+   "rationale": "While 'Firearm Legislative Action' is related, it is broader than the specific concept of an assault weapons ban."
+  },
+  {
+   "ground_truth": "Background Checks",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses background checks for firearms."
+  },
+  {
+   "ground_truth": "Border Control Policies",
+   "concept": null,
+   "rationale": "The generated concept 'Immigration Policy Reform' is related but distinct from the specific operational concept of border control."
+  },
+  {
+   "ground_truth": "Campaign Promises",
+   "concept": null,
+   "rationale": "The generated concept 'Political Campaign Promises' is semantically identical to the ground truth."
+  },
+  {
+   "ground_truth": "Candidate Profiles",
+   "concept": "Candidate Background Emphasis",
+   "rationale": "The generated concept focuses on highlighting a candidate's personal history and background, which matches the intent of candidate profiles."
+  },
+  {
+   "ground_truth": "Children's Rights",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses the legal or social rights of children."
+  },
+  {
+   "ground_truth": "Climate Change",
+   "concept": null,
+   "rationale": "The generated concepts 'Climate Policy Action' and 'Environmental Conservation Efforts' are related to climate change but do not represent the concept itself."
+  },
+  {
+   "ground_truth": "Diplomatic Relations",
+   "concept": null,
+   "rationale": "None of the generated concepts address international or diplomatic relations."
+  },
+  {
+   "ground_truth": "Drug Policy",
+   "concept": "Regulatory Policy Shifts",
+   "rationale": "The generated concept specifically mentions changing prescription requirements for pharmaceutical drugs, which aligns with drug policy."
+  },
+  {
+   "ground_truth": "Economic Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts specifically address broad economic policies; they focus on administrative, logistical, or specific legislative actions."
+  },
+  {
+   "ground_truth": "Education Policies",
+   "concept": null,
+   "rationale": "The generated concepts related to education focus on social support or student visits, not the broader scope of education policy."
+  },
+  {
+   "ground_truth": "Fiscal Policy",
+   "concept": "Fiscal Policy Tension",
+   "rationale": "The generated concept directly addresses government spending constraints and budget adjustments, which aligns with the definition of fiscal policy."
+  },
+  {
+   "ground_truth": "Fundraising",
+   "concept": null,
+   "rationale": "While campaign finance is mentioned, it focuses on influence and donor impact rather than the act of fundraising itself."
+  },
+  {
+   "ground_truth": "Government Spending",
+   "concept": null,
+   "rationale": "Government spending is mentioned in the context of transparency or fiscal tension, but no concept is dedicated to the policy of government spending itself."
+  },
+  {
+   "ground_truth": "Gun Control Legislation",
+   "concept": "Firearm Legislative Action",
+   "rationale": "The generated concept is synonymous with the ground truth of gun control legislation."
+  },
+  {
+   "ground_truth": "Healthcare Policies",
+   "concept": "Legislative Healthcare Policy",
+   "rationale": "The generated concept directly maps to the ground truth of healthcare policies."
+  },
+  {
+   "ground_truth": "Illegal Immigration",
+   "concept": null,
+   "rationale": "The generated concept covers immigration reform generally but does not specifically isolate the concept of illegal immigration."
+  },
+  {
+   "ground_truth": "Immigration Reform",
+   "concept": "Immigration Policy Reform",
+   "rationale": "The generated concept is a direct match for the ground truth of immigration reform."
+  },
+  {
+   "ground_truth": "International Aid",
+   "concept": null,
+   "rationale": "There is no generated concept that addresses international aid or foreign policy assistance."
+  },
+  {
+   "ground_truth": "International Relations Policies",
+   "concept": null,
+   "rationale": "None of the generated concepts address foreign policy or international relations."
+  },
+  {
+   "ground_truth": "LGBTQ+ Rights",
+   "concept": null,
+   "rationale": "While 'Institutional Social Support' mentions identity-based well-being, it is too broad and focused on educational institutions rather than the specific political concept of LGBTQ+ rights."
+  },
+  {
+   "ground_truth": "Mental Health",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses mental health as a policy or social issue."
+  },
+  {
+   "ground_truth": "Nature Conservation",
+   "concept": "Environmental Conservation Efforts",
+   "rationale": "The generated concept directly mirrors the ground truth of nature conservation."
+  },
+  {
+   "ground_truth": "Party Factionalism",
+   "concept": "Internal Political Conflict",
+   "rationale": "The generated concept explicitly covers internal party struggles and factional disputes."
+  },
+  {
+   "ground_truth": "Party History",
+   "concept": null,
+   "rationale": "No generated concept focuses on the history of political parties."
+  },
+  {
+   "ground_truth": "Party Leadership",
+   "concept": null,
+   "rationale": "While 'Internal Political Conflict' mentions leadership challenges, it does not encompass the broader concept of party leadership."
+  },
+  {
+   "ground_truth": "Party Platforms",
+   "concept": null,
+   "rationale": "No generated concept covers the comprehensive policy platforms of political parties."
+  },
+  {
+   "ground_truth": "Political Rallies",
+   "concept": "Public Political Mobilization",
+   "rationale": "The generated concept describes political events with large public presence, which is synonymous with political rallies."
+  },
+  {
+   "ground_truth": "Racial Equality",
+   "concept": null,
+   "rationale": "No generated concept addresses racial equality or civil rights related to race."
+  },
+  {
+   "ground_truth": "Refugee Policies",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses refugee policies; immigration policy reform is too broad."
+  },
+  {
+   "ground_truth": "Renewable Energy",
+   "concept": "Public Policy Support",
+   "rationale": "The criterion for this concept specifically mentions government-led initiatives aimed at advancing renewable energy."
+  },
+  {
+   "ground_truth": "Second Amendment Rights",
+   "concept": "Firearm Legislative Action",
+   "rationale": "This concept directly maps to the legislative and regulatory aspects of Second Amendment rights."
+  },
+  {
+   "ground_truth": "Taxes",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses tax policy or fiscal revenue generation."
+  },
+  {
+   "ground_truth": "Trade Agreements",
+   "concept": null,
+   "rationale": "No generated concept addresses international trade or economic agreements."
+  },
+  {
+   "ground_truth": "Unemployment",
+   "concept": null,
+   "rationale": "No generated concept addresses labor market conditions or unemployment."
+  },
+  {
+   "ground_truth": "Universal Healthcare",
+   "concept": "Legislative Healthcare Policy",
+   "rationale": "This concept covers government actions and funding decisions related to healthcare services."
+  },
+  {
+   "ground_truth": "War and Peace",
+   "concept": null,
+   "rationale": "No generated concept addresses international conflict, diplomacy, or military engagement."
+  },
+  {
+   "ground_truth": "Women's Rights",
+   "concept": null,
+   "rationale": "No generated concept specifically addresses women's rights; legal rights advocacy is too broad."
+  }
+ ],
+ "n_generated": 51,
+ "score_patched": true
 }

@@ -36,6 +36,7 @@ packages = ["src/lloom_lab"]
 line-length = 100
 target-version = "py311"
 src = ["src", "tests", "scripts"]
+extend-exclude = ["kaggle"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B"]
@@ -48,6 +49,10 @@ ignore = ["E402"]
 # Prompt templates and toy documents are long literal strings.
 "src/lloom_lab/pipeline/distill.py" = ["E501"]
 "scripts/smoke_e2e.py" = ["E501"]
+# Dashboard, figure plotting, and deck generation contain UI copy, LaTeX, and presentation specs.
+"src/lloom_lab/dashboard/app.py" = ["E501"]
+"scripts/plot_all_figures.py" = ["E501"]
+"scripts/make_deck.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

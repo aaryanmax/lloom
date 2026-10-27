@@ -29,9 +29,15 @@ def main():
         bound_m = sel[0]["bound_m"]
         below = [r["m"] for r in sel if r["failure_rate"] > delta and r["theory_ok"]]
         violations += len(below)
-        print(f"eps={eps:<4} delta={delta:<4}: PAC bound m>={bound_m:<4} | violations above bound: {len(below)} (expected: 0)")
+        print(
+            f"eps={eps:<4} delta={delta:<4}: PAC bound m>={bound_m:<4} | "
+            f"violations above bound: {len(below)} (expected: 0)"
+        )
 
-    print(f"\n[E2 COMPLETE] Total PAC bound violations: {violations} (PAC Guarantee Verified: {violations == 0})")
+    print(
+        f"\n[E2 COMPLETE] Total PAC bound violations: {violations} "
+        f"(PAC Guarantee Verified: {violations == 0})"
+    )
     print(f"Results saved to: {out / 'e2_rows.json'}")
 
 

@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "experiment": "E1",
+  "method": "lloom_qwen",
+  "n": 40,
+  "trial": 3
+ },
+ "n_concepts": 3,
+ "mean_empirical": 0.2625,
+ "mean_held_out": 0.12291666666666667,
+ "mean_gap": 0.1395833333333333,
+ "gaps": [
+  {
+   "concept": "Voter Registration",
+   "empirical": 0.075,
+   "held_out": 0.1,
+   "gap": -0.02500000000000001
+  },
+  {
+   "concept": "Public Safety Oversight",
+   "empirical": 0.175,
+   "held_out": 0.1125,
+   "gap": 0.062499999999999986
+  },
+  {
+   "concept": "High Attendance",
+   "empirical": 0.5375,
+   "held_out": 0.15625,
+   "gap": 0.38125
+  }
+ ]
+}

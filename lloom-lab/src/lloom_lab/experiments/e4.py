@@ -10,7 +10,6 @@ import argparse
 import json
 import random
 import sys
-import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
@@ -28,25 +27,40 @@ def load_corpus() -> list[dict]:
     return [json.loads(line) for line in p.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
-def gap_for_record(client, record: dict, corpus: list[dict], model: str = "qwen",
-                   held_cap: int = 40, seed: int = 42) -> dict:
+def gap_for_record(client, record: dict, corpus: list[dict], model: str = "gemini",
+                   held_cap: int = 40, train_cap: int = 40, concept_cap: int = 3,
+                   batch_size: int = 40, seed: int = 42) -> dict:
     """Mean empirical vs held-out score across the record's induced concepts."""
     by_id = {d["doc_id"]: d["text"] for d in corpus}
-    train_ids = list(record.get("doc_ids", []))
-    held_pool = sorted(set(by_id.keys()) - set(train_ids))
+    all_train_ids = list(record.get("doc_ids", []))
     rng = random.Random(seed)
+    if len(all_train_ids) <= train_cap:
+        train_ids = all_train_ids
+    else:
+        train_ids = rng.sample(all_train_ids, train_cap)
+
+    held_pool = sorted(set(by_id.keys()) - set(all_train_ids))
     held_ids = held_pool if len(held_pool) <= held_cap else rng.sample(held_pool, held_cap)
 
+    concepts = record.get("concepts", [])
+    valid_concepts = [c for c in concepts if c.get("name") and c.get("criteria_prompt")]
+    if concept_cap and len(valid_concepts) > concept_cap:
+        selected_concepts = rng.sample(valid_concepts, concept_cap)
+    else:
+        selected_concepts = valid_concepts
+
     gaps = []
-    for c in record.get("concepts", []):
+    for c in selected_concepts:
         name = c.get("name", "")
         criteria = c.get("criteria_prompt", "")
         if not criteria:
             continue
         r_tr = score_examples(client, name, criteria,
-                              {i: by_id[i] for i in train_ids}, model=model)
+                              {i: by_id[i] for i in train_ids}, model=model,
+                              batch_size=batch_size)
         r_ho = score_examples(client, name, criteria,
-                              {i: by_id[i] for i in held_ids}, model=model)
+                              {i: by_id[i] for i in held_ids}, model=model,
+                              batch_size=batch_size)
         emp = sum(v["score"] for v in r_tr.values()) / max(1, len(r_tr))
         hld = sum(v["score"] for v in r_ho.values()) / max(1, len(r_ho))
         gaps.append({
@@ -69,10 +83,14 @@ def gap_for_record(client, record: dict, corpus: list[dict], model: str = "qwen"
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--methods", nargs="+", default=["lloom_gemma", "lloom_qwen"])
+    ap.add_argument("--methods", nargs="+", default=["lloom_qwen"])
     ap.add_argument("--ns", nargs="+", type=int, default=[40, 80, 160])
     ap.add_argument("--trials", type=int, default=5)
-    ap.add_argument("--model", default="qwen")
+    ap.add_argument("--model", default="gemini")
+    ap.add_argument("--concept-cap", type=int, default=3)
+    ap.add_argument("--train-cap", type=int, default=40)
+    ap.add_argument("--held-cap", type=int, default=40)
+    ap.add_argument("--batch-size", type=int, default=40)
     args = ap.parse_args()
 
     client = make_client()
@@ -80,7 +98,10 @@ def main():
     E4_DIR.mkdir(parents=True, exist_ok=True)
     rows = []
 
-    print(f"Running E4: methods={args.methods}, ns={args.ns}, trials={args.trials}, model={args.model}")
+    print(
+        f"Running E4: methods={args.methods}, ns={args.ns}, "
+        f"trials={args.trials}, model={args.model}"
+    )
     for m in args.methods:
         for n in args.ns:
             for t in range(args.trials):
@@ -94,7 +115,9 @@ def main():
                     print(f"[skip] {m} n={n} t={t}: no concepts found")
                     continue
                 try:
-                    row = gap_for_record(client, rec, corpus, model=args.model)
+                    row = gap_for_record(client, rec, corpus, model=args.model,
+                                         held_cap=args.held_cap, train_cap=args.train_cap,
+                                         concept_cap=args.concept_cap, batch_size=args.batch_size)
                 except Exception as ex:
                     print(f"{m} n={n} t={t} FAILED: {ex} — re-run to resume")
                     break
